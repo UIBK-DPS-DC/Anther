@@ -1,0 +1,16 @@
+evaluation/experiment2/measurements/class_A_5KiB.csv filter=lfs diff=lfs merge=lfs -text
+evaluation/experiment2/measurements/class_C_10KiB.csv filter=lfs diff=lfs merge=lfs -text
+evaluation/experiment3/all_old/lambda_0.65_overnight_old/dynamic_50KiB_measurement.csv filter=lfs diff=lfs merge=lfs -text
+evaluation/experiment2/overnight_test/interval_3.csv filter=lfs diff=lfs merge=lfs -text
+evaluation/experiment2/lambda_0_7/dynamic_1_2_5_10.csv filter=lfs diff=lfs merge=lfs -text
+evaluation/experiment2/lambda_0_7/dynamic_50KiB.csv filter=lfs diff=lfs merge=lfs -text
+evaluation/experiment2/split_data/class_A_50KiB.csv filter=lfs diff=lfs merge=lfs -text
+evaluation/experiment2/lambda_0_7/dynamic_50.csv filter=lfs diff=lfs merge=lfs -text
+evaluation/experiment2/measurements/class_C_50KiB.csv filter=lfs diff=lfs merge=lfs -text
+evaluation/experiment2/overnight_test/interval_4.csv filter=lfs diff=lfs merge=lfs -text
+evaluation/experiment2/measurements/class_A_10KiB.csv filter=lfs diff=lfs merge=lfs -text
+evaluation/experiment3/plots/decision_boundary_analysis/utility_grid.csv filter=lfs diff=lfs merge=lfs -text
+evaluation/experiment2/overnight_test/interval_5.csv filter=lfs diff=lfs merge=lfs -text
+evaluation/experiment2/measurements/output.csv filter=lfs diff=lfs merge=lfs -text
+evaluation/experiment2/measurements/class_A_50KiB.csv filter=lfs diff=lfs merge=lfs -text
+evaluation/experiment2/overnight_test/output.csv filter=lfs diff=lfs merge=lfs -text
