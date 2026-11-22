@@ -88,14 +88,14 @@ def plot_scatter(out_path=None):
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11.2, 4.0), sharey=True)
-    draw_panel(ax1, ACC_WARM, "Warm-started Base ([50%, 70%, 80%, 90%, 100%])")
-    draw_panel(ax2, ACC_EARLY, "Early-drift Base ([10%, 30%, 50%, 70%, 100%])")
+    draw_panel(ax1, ACC_WARM, "Warm-started Base")
+    draw_panel(ax2, ACC_EARLY, "Early-drift Base")
     ax1.set_ylabel("Validation Accuracy (%)", fontsize=11)
 
     method_handles = [Patch(facecolor=COLORS[m], edgecolor="none", label=m) for m in METHODS]
     arch_handles = [
         plt.Line2D([0], [0], marker=MARKERS[a], color="w", markerfacecolor="#cccccc",
-                   markeredgecolor="black", markersize=7, label=a) for a in ARCHS
+                   markeredgecolor="black", markeredgewidth=0.5, markersize=3.5, label=a) for a in ARCHS
     ]
 
     fig.legend(

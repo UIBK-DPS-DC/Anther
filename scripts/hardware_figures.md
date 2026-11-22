@@ -32,6 +32,12 @@ The outputs retain their existing names:
 - `figures/plots/hardware_results.csv` and `hardware_provenance.json` — source paths,
   windows, sample counts, cleaning statistics, and the values plotted.
 
+The Figure 9 PDFs are each sized for a `0.475\linewidth` subfigure inside a
+single-column figure, with 7.5-point text at that final size. Their energy axes
+display kJ (the source reports remain in J). `A ref.` and `C ref.` denote the
+separate Class A/C reference runs described above. Lambda and payload size belong
+in the LaTeX subcaptions/caption rather than repeated plot titles.
+
 ## Recording windows matter
 
 The raw dynamic recordings include initial class-switch markers and post-transfer

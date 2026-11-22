@@ -113,11 +113,7 @@ def plot_dynamic_experiments(out_dir=None, data_dir=None, windows_path=None, vol
     dynamic = [r for r in results if r["lambda"] != ""]
     cropped = all(r["energy_scope"] == "explicit_window" for r in dynamic)
     any_cropped = any(r["energy_scope"] == "explicit_window" for r in dynamic)
-    energy_title = (
-        "Windowed measured energy" if cropped else
-        "Measured energy (mixed windows)" if any_cropped else
-        "Full-recording measured energy"
-    )
+    scope_note = "Anther: mixed energy windows" if any_cropped else "Anther: setup/reset included"
 
     series = [
         ("Class A (reference)", "Class A (reference)", tab10(3), "o", "-"),
@@ -126,9 +122,9 @@ def plot_dynamic_experiments(out_dir=None, data_dir=None, windows_path=None, vol
         ("Class C (reference)", "Class C (reference)", tab10(0), "s", "-"),
     ]
     fig, axes = plt.subplots(1, 2, figsize=(11.2, 3.8))
-    for ax, metric, title, ylabel in zip(
+    for ax, metric, ylabel in zip(
         axes, ("transfer_duration_s", "energy_j"),
-        ("Measured transfer duration", energy_title), ("Completion Time (s)", "Energy (J)"),
+        ("Completion Time (s)", "Energy (J)"),
     ):
         for key, label, color, marker, linestyle in series:
             rows = sorted((r for r in results if r["series"] == key), key=lambda r: r["size_kib"])
@@ -138,10 +134,9 @@ def plot_dynamic_experiments(out_dir=None, data_dir=None, windows_path=None, vol
         ax.xaxis.set_major_formatter(plt.ScalarFormatter())
         ax.set_xlabel("File Size (KiB)")
         ax.set_ylabel(ylabel)
-        ax.set_title(title)
         apply_clean_style(ax)
     if not cropped:
-        axes[1].text(0.03, 0.97, "Anther: setup/reset included", transform=axes[1].transAxes,
+        axes[1].text(0.03, 0.97, scope_note, transform=axes[1].transAxes,
                      va="top", fontsize=10, bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.85})
     _legend(fig, axes[0])
     save_figure(fig, out_dir / "comparison.pdf")
@@ -149,9 +144,8 @@ def plot_dynamic_experiments(out_dir=None, data_dir=None, windows_path=None, vol
 
     # Preserve the existing auxiliary output, now based only on hardware data.
     fig, axes = plt.subplots(1, 2, figsize=(9.4, 3.4))
-    for ax, metric, title, ylabel in zip(
+    for ax, metric, ylabel in zip(
         axes, ("transfer_duration_s", "energy_j"),
-        ("Measured transfer duration", energy_title),
         ("Time / File Size (s/KiB)", "Energy / File Size (J/KiB)"),
     ):
         means = [np.mean([r[metric] / r["size_kib"] for r in dynamic if r["lambda"] == lam])
@@ -160,36 +154,43 @@ def plot_dynamic_experiments(out_dir=None, data_dir=None, windows_path=None, vol
         ax.set_xticks(np.arange(len(LAMBDAS)), labels=[str(lam) for lam in LAMBDAS])
         ax.set_xlabel(r"Sensitivity $\lambda$")
         ax.set_ylabel(ylabel)
-        ax.set_title(title)
         apply_clean_style(ax)
+    if not cropped:
+        axes[1].text(0.03, 0.97, scope_note, transform=axes[1].transAxes,
+                     va="top", bbox={"facecolor": "white", "edgecolor": "none"})
     save_figure(fig, out_dir / "compare_lambdas.pdf")
     plt.close(fig)
 
     for lam, filename in ((0.1, "datarate_utility_0_1.pdf"), (0.65, "datarate_utility_0_65.pdf")):
         fig, ax = plt.subplots(figsize=(6.8, 3.8))
         for key, label, color, linestyle in (
-            ("A", "Class A (reference)", tab10(3), "--"),
-            ("C", "Class C (reference)", tab10(0), "--"),
-            (f"lambda_{lam}", rf"Anther ($\lambda={lam}$)", tab10(2), "-"),
+            ("A", "A ref.", tab10(3), "--"),
+            ("C", "C ref.", tab10(0), "--"),
+            (f"lambda_{lam}", "Anther", tab10(2), "-"),
         ):
             trace = traces[key]
             # Integrate every sample, but don't embed tens of thousands of PDF
             # vertices. Keep the measured endpoint exactly; never rescale it.
             indices = np.unique(np.linspace(0, len(trace.time_s) - 1, min(4000, len(trace.time_s))).astype(int))
-            ax.plot(trace.time_s[indices] / 60, trace.energy_j[indices], color=color,
+            # Display kJ to keep tick labels narrow at 0.475 column width.
+            ax.plot(trace.time_s[indices] / 60, trace.energy_j[indices] / 1000, color=color,
                     linestyle=linestyle, linewidth=2 if key.startswith("lambda") else 1.6,
                     label=label, zorder=3)
-        ax.set_xlabel("Measurement Time (minutes)")
-        ax.set_ylabel("Cumulative Measured Energy (J)")
-        ax.set_title(rf"50 KiB Hardware Recording ($\lambda={lam}$)")
+        ax.set_xlabel("Time (min)")
+        ax.set_ylabel("Energy (kJ)")
+        ax.set_yticks([0, 1, 2])
+        ax.xaxis.set_major_locator(plt.MaxNLocator(nbins=3, min_n_ticks=2))
         row = next(r for r in dynamic if r["lambda"] == lam and r["size_kib"] == 50)
         if row["energy_scope"] == "full_recording":
-            ax.text(0.03, 0.97, "Anther: full recording, including setup/reset",
+            ax.text(0.03, 0.97, "Setup/reset included",
                     transform=ax.transAxes, va="top", fontsize=10,
                     bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.85})
         apply_clean_style(ax)
-        _legend(fig, ax)
-        save_figure(fig, out_dir / filename)
+        # The LaTeX subcaptions already supply lambda and the transfer size.
+        # A small in-axes legend avoids repeating a tall footer in each panel.
+        ax.legend(loc="upper right", frameon=False, handlelength=0.9,
+                  handletextpad=0.35, labelspacing=0.15, borderaxespad=0.15)
+        save_figure(fig, out_dir / filename, column_fraction=0.475)
         plt.close(fig)
 
     fields = list(dict.fromkeys(key for result in results for key in result))
