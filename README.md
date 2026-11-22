@@ -21,7 +21,7 @@ python -m pip install numpy scipy matplotlib
 python scripts/generate_all_figures.py
 ```
 
-This writes nine PDFs to `figures/plots/`. The scripts use embedded measurements and model calculations; no connected hardware is needed.
+This writes nine PDFs to `figures/plots/`. No connected hardware is needed. Figures 8–9 require the recorded hardware datasets; see [hardware figure sources and setup](scripts/hardware_figures.md) for the selective Git LFS fetch command and measurement-window limitations.
 
 To regenerate a single figure:
 
@@ -36,7 +36,7 @@ Shared fonts, colors, and spacing are defined in `scripts/plot_style.py`.
 
 Firmware lives in `node/`; experiment-specific scripts and data are under `evaluation/experiment1/`, `experiment2/`, and `experiment3/`. Check the relevant scripts and device configuration before running a hardware experiment. The plotting dependencies above are not a full server or firmware setup.
 
-Large measurement CSVs (10 MB or more) are stored with Git LFS; code, documentation, figures, and smaller files use regular Git. You do not need the large datasets to regenerate the figures. To download them, install [Git LFS](https://git-lfs.com/) and run:
+Large measurement CSVs (10 MB or more) are stored with Git LFS; code, documentation, figures, and smaller files use regular Git. To download them, install [Git LFS](https://git-lfs.com/) and run:
 
 ```sh
 git lfs install

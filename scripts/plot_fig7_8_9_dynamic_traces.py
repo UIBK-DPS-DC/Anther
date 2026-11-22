@@ -1,176 +1,229 @@
+"""Figures 8–9 from hardware logs and INA226 recordings, never simulations.
+
+See hardware_figures.md for source selection, cleaning, and window semantics.
+"""
+
 import argparse
-import sys
+import csv
+import json
 from pathlib import Path
 
-ROOT_DIR = Path(__file__).resolve().parent.parent
-DEFAULT_FIG_DIR = ROOT_DIR / "figures" / "plots"
-DEFAULT_FIG_DIR.mkdir(parents=True, exist_ok=True)
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-
-import matplotlib
-matplotlib.use("Agg")
-matplotlib.rcParams["hatch.linewidth"] = 1.5
 import numpy as np
-import matplotlib.pyplot as plt
-from plot_style import apply_clean_style, save_figure, tab10
-from anther_model import (
-    DR_PARAMS, DEFAULT_POWER, T_INTERVAL, T_RX1, T_TX_OH, T_RX_OH,
-    T_DL_INT, N_UL_BYTES, D_UL, MTU_RX2,
-    lora_toa, evaluate_classes, geometric_utility, adr_schedule_dr,
-)
+from hardware_data import ROOT_DIR, read_power_trace, read_transfer_log, read_windows
+from plot_style import apply_clean_style, plt, save_figure, tab10
+
+DEFAULT_FIG_DIR = ROOT_DIR / "figures" / "plots"
+DEFAULT_DATA_DIR = ROOT_DIR / "evaluation" / "experiment3"
+SIZES_KIB = (1, 2, 5, 10, 50)
+LAMBDAS = (0.1, 0.4, 0.65, 0.7)
+LAMBDA_COLORS = (tab10(2), tab10(9), tab10(1), tab10(4))
+LAMBDA_MARKERS = ("^", "v", "D", "P")
 
 
-def simulate_transfer(total_bytes, mode="dynamic", lam=0.5, power=DEFAULT_POWER):
-    t_elapsed = 0.0
-    e_total = 0.0
-    rem_bytes = float(total_bytes)
-    current_class = "A"
-
-    trace_t = [0.0]
-    trace_e = [0.0]
-    trace_class = []
-
-    while rem_bytes > 0:
-        dr = adr_schedule_dr(t_elapsed)
-        if mode == "A":
-            chosen = "A"
-        elif mode == "C":
-            chosen = "C"
-        else:
-            evals = evaluate_classes(rem_bytes, dr, power=power, candidate_classes=("A", "C"))
-            u_a = geometric_utility(*evals["A"], lam)
-            u_c = geometric_utility(*evals["C"], lam)
-            chosen = "C" if u_c > u_a else "A"
-
-        if chosen != current_class:
-            sf, bw = DR_PARAMS[dr]["SF"], DR_PARAMS[dr]["BW"]
-            t_sw = lora_toa(15, sf, bw) + T_RX1 + lora_toa(8, sf, bw) + T_TX_OH + T_RX_OH
-            e_sw = power["P_tx"] * lora_toa(15, sf, bw) + power["P_rx"] * lora_toa(8, sf, bw) + power["P_idle"] * T_RX1
-            t_elapsed += t_sw
-            e_total += e_sw
-            current_class = chosen
-
-        if chosen == "A":
-            sf, bw, mtu = DR_PARAMS[dr]["SF"], DR_PARAMS[dr]["BW"], DR_PARAMS[dr]["MTU"]
-            chunk = min(rem_bytes, mtu)
-            t_ul = lora_toa(N_UL_BYTES, sf, bw)
-            t_dl = lora_toa(chunk, sf, bw)
-            t_int = max(T_INTERVAL, t_ul / D_UL)
-            dt = t_int + T_TX_OH + t_ul + T_RX1 + t_dl + T_RX_OH
-            de = (
-                power["P_idle"] * T_TX_OH + power["P_tx"] * t_ul + power["P_idle"] * T_RX1 +
-                power["P_rx"] * t_dl + power["P_idle"] * T_RX_OH + power["P_sleep"] * t_int
-            )
-        else:
-            chunk = min(rem_bytes, MTU_RX2)
-            dt = T_DL_INT
-            de = power["P_rx"] * dt
-
-        t_elapsed += dt
-        e_total += de
-        rem_bytes -= chunk
-        trace_t.append(t_elapsed)
-        trace_e.append(e_total)
-        trace_class.append(chosen)
-
-    return t_elapsed, e_total, np.array(trace_t), np.array(trace_e), trace_class
+def _relative(path):
+    return str(path.resolve().relative_to(ROOT_DIR)) if path.resolve().is_relative_to(ROOT_DIR) else str(path)
 
 
-def plot_dynamic_experiments(out_dir=None):
-    if out_dir is None:
-        out_dir = DEFAULT_FIG_DIR
-    out_dir = Path(out_dir)
+def load_hardware_results(data_dir, windows=None, voltage=5.0):
+    data_dir = Path(data_dir)
+    windows = windows or {}
+    results = []
+    traces = {}
+    for lam in LAMBDAS:
+        for size in SIZES_KIB:
+            log = data_dir / "logs" / f"lambda_{lam}" / f"dynamic_{size}KiB.log"
+            measurement = data_dir / "measurements" / f"lambda_{lam}" / f"dynamic_{size}KiB_measurement.csv"
+            key = str(measurement.relative_to(data_dir))
+            window = windows.get(key)
+            transfer = read_transfer_log(log)
+            if transfer["payload_bytes"] != size * 1024 or transfer["lambda"] != lam:
+                raise ValueError(f"Log does not match the requested experiment: {log}")
+            trace = read_power_trace(measurement, voltage=voltage, window=window)
+            capture_duration = trace.end_s - trace.start_s
+            if window is None and capture_duration + 2 < transfer["transfer_duration_s"]:
+                raise ValueError(f"Power recording is shorter than the logged transfer: {measurement}")
+            result = {
+                "series": f"Anther (lambda={lam})",
+                "lambda": lam,
+                "size_kib": size,
+                "transfer_duration_s": transfer["transfer_duration_s"],
+                "energy_j": float(trace.energy_j[-1]),
+                "energy_scope": "explicit_window" if window else "full_recording",
+                "sensor_start_s": trace.start_s,
+                "sensor_end_s": trace.end_s,
+                "energy_window_duration_s": capture_duration,
+                "samples": trace.samples,
+                "rejected_rows": trace.rejected_rows,
+                "timestamp_wraps": trace.timestamp_wraps,
+                "voltage_v": voltage,
+                "class_sequence": " -> ".join(transfer["class_sequence"]),
+                "log": _relative(log),
+                "measurement": _relative(measurement),
+            }
+            results.append(result)
+            if size == 50:
+                traces[f"lambda_{lam}"] = trace
+            print(f"lambda={lam:<4} {size:2} KiB: log={transfer['transfer_duration_s']:.2f} s, "
+                  f"recording={capture_duration:.2f} s, energy={trace.energy_j[-1]:.3f} J "
+                  f"({result['energy_scope']}; rejected {trace.rejected_rows} rows)", flush=True)
+
+    # These are the existing cropped reference measurements, not the ADR runs in
+    # logs/fixed_class_*. Never pair their energy with those other runs' durations.
+    summary = data_dir / "measurements" / "fixed_classes" / "summary.csv"
+    with summary.open(newline="") as stream:
+        for row in csv.DictReader(stream):
+            name = Path(row["file"]).name
+            parts = name.removesuffix(".csv").split("_")
+            cls, size = parts[1], int(parts[2].removesuffix("KiB"))
+            results.append({
+                "series": f"Class {cls} (reference)", "lambda": "", "size_kib": size,
+                "transfer_duration_s": float(row["duration_s"]),
+                "energy_j": float(row["energy_J"]), "energy_scope": "cropped_reference",
+                "sensor_start_s": float(row["start_time_s"]),
+                "sensor_end_s": float(row["end_time_s"]),
+                "energy_window_duration_s": float(row["duration_s"]),
+                "samples": int(row["samples"]), "rejected_rows": "",
+                "timestamp_wraps": "", "voltage_v": 5.0, "class_sequence": cls,
+                "log": "", "measurement": _relative(summary),
+            })
+            if size == 50:
+                trace_path = summary.parent / name
+                traces[cls] = read_power_trace(trace_path, voltage=5.0)
+                # The original summary uses right-rectangle integration; the
+                # trajectory uses trapezoids. Keep the distinction auditable.
+                results[-1]["trajectory_energy_j"] = float(traces[cls].energy_j[-1])
+    for cls in ("A", "C"):
+        rows = [r for r in results if r["series"] == f"Class {cls} (reference)"]
+        if sorted(r["size_kib"] for r in rows) != list(SIZES_KIB):
+            raise ValueError(f"Incomplete or duplicated Class {cls} reference measurements")
+    return results, traces
+
+
+def _legend(fig, ax):
+    handles, labels = ax.get_legend_handles_labels()
+    fig.legend(handles, labels, loc="upper center", ncol=3, frameon=False,
+               bbox_to_anchor=(0.5, 0))
+
+
+def plot_dynamic_experiments(out_dir=None, data_dir=None, windows_path=None, voltage=5.0):
+    out_dir = Path(out_dir) if out_dir else DEFAULT_FIG_DIR
+    data_dir = Path(data_dir) if data_dir else DEFAULT_DATA_DIR
     out_dir.mkdir(parents=True, exist_ok=True)
+    results, traces = load_hardware_results(data_dir, read_windows(windows_path), voltage)
+    dynamic = [r for r in results if r["lambda"] != ""]
+    cropped = all(r["energy_scope"] == "explicit_window" for r in dynamic)
+    any_cropped = any(r["energy_scope"] == "explicit_window" for r in dynamic)
+    energy_title = (
+        "Windowed measured energy" if cropped else
+        "Measured energy (mixed windows)" if any_cropped else
+        "Full-recording measured energy"
+    )
 
-    sizes_kib = np.array([1, 2, 5, 10, 50])
-    lambdas = [0.1, 0.4, 0.65, 0.7]
-    lam_colors = [tab10(2), tab10(9), tab10(1), tab10(4)]
-    lam_markers = ["^", "v", "D", "P"]
-
-    res_A = [simulate_transfer(s * 1024, mode="A") for s in sizes_kib]
-    res_C = [simulate_transfer(s * 1024, mode="C") for s in sizes_kib]
-    res_lam = {l: [simulate_transfer(s * 1024, mode="dynamic", lam=l) for s in sizes_kib] for l in lambdas}
-
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10.5, 3.6))
-    ax1.loglog(sizes_kib, [r[0] for r in res_A], "o-", color=tab10(3), label="Class A", zorder=3)
-    for l, col, mk in zip(lambdas, lam_colors, lam_markers):
-        ax1.loglog(sizes_kib, [r[0] for r in res_lam[l]], marker=mk, linestyle="--", color=col, label=f"Anther ($\lambda={l}$)", zorder=3)
-    ax1.loglog(sizes_kib, [r[0] for r in res_C], "s-", color=tab10(0), label="Class C", zorder=3)
-    ax1.set_xticks(sizes_kib)
-    ax1.get_xaxis().set_major_formatter(plt.ScalarFormatter())
-    ax1.set_xlabel("File Size (KiB)", fontsize=11)
-    ax1.set_ylabel("Completion Time (s)", fontsize=11)
-    apply_clean_style(ax1, grid_axis="y")
-
-    ax2.loglog(sizes_kib, [r[1] for r in res_A], "o-", color=tab10(3), label="Class A", zorder=3)
-    for l, col, mk in zip(lambdas, lam_colors, lam_markers):
-        ax2.loglog(sizes_kib, [r[1] for r in res_lam[l]], marker=mk, linestyle="--", color=col, label=f"Anther ($\lambda={l}$)", zorder=3)
-    ax2.loglog(sizes_kib, [r[1] for r in res_C], "s-", color=tab10(0), label="Class C", zorder=3)
-    ax2.set_xticks(sizes_kib)
-    ax2.get_xaxis().set_major_formatter(plt.ScalarFormatter())
-    ax2.set_xlabel("File Size (KiB)", fontsize=11)
-    ax2.set_ylabel("Energy Consumption (J)", fontsize=11)
-    apply_clean_style(ax2, grid_axis="y")
-
-    handles, labels = ax2.get_legend_handles_labels()
-    fig.legend(handles, labels, loc="upper center", ncol=3, frameon=False, fontsize=11, bbox_to_anchor=(0.5, -0.22))
-    out_comp = out_dir / "comparison.pdf"
-    save_figure(fig, out_comp)
+    series = [
+        ("Class A (reference)", "Class A (reference)", tab10(3), "o", "-"),
+        *[(f"Anther (lambda={lam})", rf"Anther ($\lambda={lam}$)", col, marker, "--")
+          for lam, col, marker in zip(LAMBDAS, LAMBDA_COLORS, LAMBDA_MARKERS)],
+        ("Class C (reference)", "Class C (reference)", tab10(0), "s", "-"),
+    ]
+    fig, axes = plt.subplots(1, 2, figsize=(11.2, 3.8))
+    for ax, metric, title, ylabel in zip(
+        axes, ("transfer_duration_s", "energy_j"),
+        ("Measured transfer duration", energy_title), ("Completion Time (s)", "Energy (J)"),
+    ):
+        for key, label, color, marker, linestyle in series:
+            rows = sorted((r for r in results if r["series"] == key), key=lambda r: r["size_kib"])
+            ax.loglog([r["size_kib"] for r in rows], [r[metric] for r in rows],
+                      marker=marker, linestyle=linestyle, color=color, label=label, zorder=3)
+        ax.set_xticks(SIZES_KIB)
+        ax.xaxis.set_major_formatter(plt.ScalarFormatter())
+        ax.set_xlabel("File Size (KiB)")
+        ax.set_ylabel(ylabel)
+        ax.set_title(title)
+        apply_clean_style(ax)
+    if not cropped:
+        axes[1].text(0.03, 0.97, "Anther: setup/reset included", transform=axes[1].transAxes,
+                     va="top", fontsize=10, bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.85})
+    _legend(fig, axes[0])
+    save_figure(fig, out_dir / "comparison.pdf")
     plt.close(fig)
-    print(f"wrote {out_comp}")
 
-    avg_t_per_kib = [np.mean([r[0] / s for r, s in zip(res_lam[l], sizes_kib)]) for l in lambdas]
-    avg_e_per_kib = [np.mean([r[1] / s for r, s in zip(res_lam[l], sizes_kib)]) for l in lambdas]
-
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(9.4, 3.2))
-    x_pos = np.arange(len(lambdas))
-    ax1.bar(x_pos, avg_t_per_kib, color=lam_colors, width=0.55, edgecolor="none", zorder=3)
-    ax1.set_xticks(x_pos)
-    ax1.set_xticklabels([str(l) for l in lambdas], fontsize=11)
-    ax1.set_xlabel(r"Sensitivity $\lambda$", fontsize=11)
-    ax1.set_ylabel("Time / File Size (s/KiB)", fontsize=11)
-    apply_clean_style(ax1, grid_axis="y")
-
-    ax2.bar(x_pos, avg_e_per_kib, color=lam_colors, width=0.55, edgecolor="none", zorder=3)
-    ax2.set_xticks(x_pos)
-    ax2.set_xticklabels([str(l) for l in lambdas], fontsize=11)
-    ax2.set_xlabel(r"Sensitivity $\lambda$", fontsize=11)
-    ax2.set_ylabel("Energy / File Size (J/KiB)", fontsize=11)
-    apply_clean_style(ax2, grid_axis="y")
-
-    out_lams = out_dir / "compare_lambdas.pdf"
-    save_figure(fig, out_lams)
+    # Preserve the existing auxiliary output, now based only on hardware data.
+    fig, axes = plt.subplots(1, 2, figsize=(9.4, 3.4))
+    for ax, metric, title, ylabel in zip(
+        axes, ("transfer_duration_s", "energy_j"),
+        ("Measured transfer duration", energy_title),
+        ("Time / File Size (s/KiB)", "Energy / File Size (J/KiB)"),
+    ):
+        means = [np.mean([r[metric] / r["size_kib"] for r in dynamic if r["lambda"] == lam])
+                 for lam in LAMBDAS]
+        ax.bar(np.arange(len(LAMBDAS)), means, color=LAMBDA_COLORS, width=0.55, zorder=3)
+        ax.set_xticks(np.arange(len(LAMBDAS)), labels=[str(lam) for lam in LAMBDAS])
+        ax.set_xlabel(r"Sensitivity $\lambda$")
+        ax.set_ylabel(ylabel)
+        ax.set_title(title)
+        apply_clean_style(ax)
+    save_figure(fig, out_dir / "compare_lambdas.pdf")
     plt.close(fig)
-    print(f"wrote {out_lams}")
 
-    for l_val, fname in [(0.1, "datarate_utility_0_1.pdf"), (0.65, "datarate_utility_0_65.pdf")]:
-        _, _, t_arr, e_arr, _ = res_lam[l_val][-1]
-        _, _, t_a_arr, e_a_arr, _ = res_A[-1]
-        _, _, t_c_arr, e_c_arr, _ = res_C[-1]
-
-        fig, ax = plt.subplots(figsize=(5.8, 3.4))
-        ax.plot(t_a_arr / 60.0, e_a_arr, "--", color=tab10(3), linewidth=1.6, label="Static Class A", zorder=3)
-        ax.plot(t_c_arr / 60.0, e_c_arr, "--", color=tab10(0), linewidth=1.6, label="Static Class C", zorder=3)
-        ax.plot(t_arr / 60.0, e_arr, "-", color=tab10(2), linewidth=2.3, label=f"Anther ($\lambda={l_val}$)", zorder=3)
-        ax.set_xlabel("Elapsed Time (minutes)", fontsize=11)
-        ax.set_ylabel("Cumulative Energy (J)", fontsize=11)
-        ax.set_title(f"50 KiB Transfer Trajectory ($\lambda={l_val}$)", fontsize=11, pad=4)
-        apply_clean_style(ax, grid_axis="y")
-        handles, labels = ax.get_legend_handles_labels()
-        fig.legend(handles, labels, loc="upper center", ncol=3, frameon=False, fontsize=11, bbox_to_anchor=(0.5, -0.18))
-        out_u = out_dir / fname
-        save_figure(fig, out_u)
+    for lam, filename in ((0.1, "datarate_utility_0_1.pdf"), (0.65, "datarate_utility_0_65.pdf")):
+        fig, ax = plt.subplots(figsize=(6.8, 3.8))
+        for key, label, color, linestyle in (
+            ("A", "Class A (reference)", tab10(3), "--"),
+            ("C", "Class C (reference)", tab10(0), "--"),
+            (f"lambda_{lam}", rf"Anther ($\lambda={lam}$)", tab10(2), "-"),
+        ):
+            trace = traces[key]
+            # Integrate every sample, but don't embed tens of thousands of PDF
+            # vertices. Keep the measured endpoint exactly; never rescale it.
+            indices = np.unique(np.linspace(0, len(trace.time_s) - 1, min(4000, len(trace.time_s))).astype(int))
+            ax.plot(trace.time_s[indices] / 60, trace.energy_j[indices], color=color,
+                    linestyle=linestyle, linewidth=2 if key.startswith("lambda") else 1.6,
+                    label=label, zorder=3)
+        ax.set_xlabel("Measurement Time (minutes)")
+        ax.set_ylabel("Cumulative Measured Energy (J)")
+        ax.set_title(rf"50 KiB Hardware Recording ($\lambda={lam}$)")
+        row = next(r for r in dynamic if r["lambda"] == lam and r["size_kib"] == 50)
+        if row["energy_scope"] == "full_recording":
+            ax.text(0.03, 0.97, "Anther: full recording, including setup/reset",
+                    transform=ax.transAxes, va="top", fontsize=10,
+                    bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.85})
+        apply_clean_style(ax)
+        _legend(fig, ax)
+        save_figure(fig, out_dir / filename)
         plt.close(fig)
-        print(f"wrote {out_u}")
+
+    fields = list(dict.fromkeys(key for result in results for key in result))
+    with (out_dir / "hardware_results.csv").open("w", newline="") as stream:
+        writer = csv.DictWriter(stream, fieldnames=fields)
+        writer.writeheader()
+        writer.writerows(results)
+    provenance = {
+        "data_root": _relative(data_dir), "voltage_v": voltage,
+        "windows_file": _relative(Path(windows_path)) if windows_path else None,
+        "dynamic_energy_scope": "explicit_windows" if cropped else "full_recordings_or_mixed",
+        "integration": "Trapezoidal V * abs(current_mA) / 1000 at accepted sample timestamps",
+        "reference_energy": "Existing cropped fixed_classes/summary.csv (right-rectangle integration)",
+        "limitations": [
+            "Raw sensor timestamps have no wall-clock synchronization with server logs.",
+            "Without explicit windows, dynamic recording energy includes setup/reset activity.",
+            "Reference measurements are separate runs, not the ADR runs in logs/fixed_class_*.",
+            "No simulated values, duration normalization, or energy rescaling are used.",
+        ],
+        "results": results,
+    }
+    (out_dir / "hardware_provenance.json").write_text(json.dumps(provenance, indent=2) + "\n")
+    print(f"Wrote hardware figures and provenance to {out_dir}")
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--output-dir", type=Path, default=None)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output-dir", type=Path)
+    parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR)
+    parser.add_argument("--windows", type=Path, help="JSON measurement windows, in unwrapped sensor seconds")
+    parser.add_argument("--voltage", type=float, default=5.0)
     args = parser.parse_args()
-    plot_dynamic_experiments(args.output_dir)
-    return 0
+    plot_dynamic_experiments(args.output_dir, args.data_dir, args.windows, args.voltage)
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    main()
