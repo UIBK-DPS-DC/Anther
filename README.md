@@ -30,7 +30,7 @@ python scripts/plot_fig5_fuota_baseline.py
 python scripts/plot_fig6_model_validation.py
 ```
 
-Shared fonts, colors, and spacing are defined in `scripts/plot_style.py`. PDFs use 7.5-point text at their intended IEEE column widths; see [LaTeX sizing](scripts/figure_layout.md) for placement and exact template dimensions.
+Shared fonts, colors, and spacing are defined in `scripts/plot_style.py`. PDFs use 5.5-point text at their intended IEEE column widths; see [LaTeX sizing](scripts/figure_layout.md) for placement and exact template dimensions.
 
 ## Hardware experiments
 

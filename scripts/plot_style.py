@@ -16,7 +16,7 @@ from matplotlib.transforms import Bbox
 # differently for each figure by \includegraphics.
 IEEE_COLUMN_WIDTH = float(os.environ.get("ANTHER_COLUMN_WIDTH_IN", "3.5"))
 IEEE_TEXT_WIDTH = float(os.environ.get("ANTHER_TEXT_WIDTH_IN", "7.16"))
-FONT_SIZE = 7.5
+FONT_SIZE = 5.5
 LEGEND_GAP_PT = 3
 
 matplotlib.rcParams.update({
@@ -91,11 +91,11 @@ def _style_legend_markers(legend):
 
 
 def save_figure(fig, out_path, *, column_fraction=1.0):
-    """Export exact IEEE widths with 7.5-pt type and compact, wide plot areas.
+    """Export exact IEEE widths with 5.5-pt type and compact, wide plot areas.
 
     One/two-panel figures occupy one column; four-panel figures occupy two.
     column_fraction=0.475 exports each of Figure 9's side-by-side subfigures
-    at its actual final size, retaining the same 7.5-pt print typography.
+    at its actual final size, retaining the same 5.5-pt print typography.
     A fixed-width export box is essential: bbox_inches='tight' would change the
     PDF width, and LaTeX would subsequently scale its fonts by a different ratio.
     """

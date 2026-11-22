@@ -1,6 +1,6 @@
 # IEEE figure sizing
 
-All nine figure PDFs are exported at their intended print width, with **7.5-point
+All nine figure PDFs are exported at their intended print width, with **5.5-point
 labels, ticks, titles, legends, and annotations**:
 
 | Layout | PDF width | LaTeX placement |

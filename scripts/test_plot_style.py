@@ -89,7 +89,7 @@ class PaperLayoutTests(unittest.TestCase):
         fig, axes = plt.subplots(1, 2)
         for ax in axes:
             ax.plot([1, 2], [1, 2])
-            ax.set_ylabel("Overhead vs. Class C (%)")
+            ax.set_ylabel("Relative completion time overhead versus Fixed Class C (%)")
             ax.set_xlabel("File Size (KiB)")
         with patch.object(fig, "savefig") as export:
             save_figure(fig, "unused.pdf")
