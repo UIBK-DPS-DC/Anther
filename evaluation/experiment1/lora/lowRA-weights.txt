@@ -1,3 +1,852 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d80536602b1c814a76f1fb55ea3ee6c69f81a9bf65aca3939c9a6f2f84c47a7f
-size 39902
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/cnn/delta_0_to_1.lrq
+
+delta_0_to_1.lrq
+  size: 2,451 bytes
+  bits: 4
+  tensors: 8
+    features.0.conv.weight.lora_A            (8, 9)
+    features.0.conv.weight.lora_B            (16, 8)
+    features.4.conv.weight.lora_A            (8, 144)
+    features.4.conv.weight.lora_B            (24, 8)
+    features.8.conv.weight.lora_A            (8, 216)
+    features.8.conv.weight.lora_B            (32, 8)
+    classifier.weight.lora_A                 (8, 32)
+    classifier.weight.lora_B                 (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/cnn/delta_1_to_2.lrq
+
+delta_1_to_2.lrq
+  size: 5,325 bytes
+  bits: 4
+  tensors: 24
+    features.0.lora_A.lora_A                 (3, 3)
+    features.0.lora_A.lora_B                 (24, 3)
+    features.0.lora_B.lora_A                 (8, 24)
+    features.0.lora_B.lora_B                 (48, 8)
+    features.0.conv.weight.lora_A            (8, 9)
+    features.0.conv.weight.lora_B            (16, 8)
+    features.4.lora_A.lora_A                 (8, 48)
+    features.4.lora_A.lora_B                 (24, 8)
+    features.4.lora_B.lora_A                 (8, 24)
+    features.4.lora_B.lora_B                 (72, 8)
+    features.4.conv.weight.lora_A            (8, 144)
+    features.4.conv.weight.lora_B            (24, 8)
+    features.8.lora_A.lora_A                 (8, 72)
+    features.8.lora_A.lora_B                 (24, 8)
+    features.8.lora_B.lora_A                 (8, 24)
+    features.8.lora_B.lora_B                 (96, 8)
+    features.8.conv.weight.lora_A            (8, 216)
+    features.8.conv.weight.lora_B            (32, 8)
+    classifier.weight.lora_A                 (8, 32)
+    classifier.weight.lora_B                 (32, 8)
+    classifier.lora_A.lora_A                 (8, 32)
+    classifier.lora_A.lora_B                 (8, 8)
+    classifier.lora_B.lora_A                 (8, 8)
+    classifier.lora_B.lora_B                 (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/cnn/delta_2_to_3.lrq
+
+delta_2_to_3.lrq
+  size: 5,325 bytes
+  bits: 4
+  tensors: 24
+    features.0.lora_A.lora_A                 (3, 3)
+    features.0.lora_A.lora_B                 (24, 3)
+    features.0.lora_B.lora_A                 (8, 24)
+    features.0.lora_B.lora_B                 (48, 8)
+    features.0.conv.weight.lora_A            (8, 9)
+    features.0.conv.weight.lora_B            (16, 8)
+    features.4.lora_A.lora_A                 (8, 48)
+    features.4.lora_A.lora_B                 (24, 8)
+    features.4.lora_B.lora_A                 (8, 24)
+    features.4.lora_B.lora_B                 (72, 8)
+    features.4.conv.weight.lora_A            (8, 144)
+    features.4.conv.weight.lora_B            (24, 8)
+    features.8.lora_A.lora_A                 (8, 72)
+    features.8.lora_A.lora_B                 (24, 8)
+    features.8.lora_B.lora_A                 (8, 24)
+    features.8.lora_B.lora_B                 (96, 8)
+    features.8.conv.weight.lora_A            (8, 216)
+    features.8.conv.weight.lora_B            (32, 8)
+    classifier.weight.lora_A                 (8, 32)
+    classifier.weight.lora_B                 (32, 8)
+    classifier.lora_A.lora_A                 (8, 32)
+    classifier.lora_A.lora_B                 (8, 8)
+    classifier.lora_B.lora_A                 (8, 8)
+    classifier.lora_B.lora_B                 (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/cnn/delta_3_to_4.lrq
+
+delta_3_to_4.lrq
+  size: 5,325 bytes
+  bits: 4
+  tensors: 24
+    features.0.lora_A.lora_A                 (3, 3)
+    features.0.lora_A.lora_B                 (24, 3)
+    features.0.lora_B.lora_A                 (8, 24)
+    features.0.lora_B.lora_B                 (48, 8)
+    features.0.conv.weight.lora_A            (8, 9)
+    features.0.conv.weight.lora_B            (16, 8)
+    features.4.lora_A.lora_A                 (8, 48)
+    features.4.lora_A.lora_B                 (24, 8)
+    features.4.lora_B.lora_A                 (8, 24)
+    features.4.lora_B.lora_B                 (72, 8)
+    features.4.conv.weight.lora_A            (8, 144)
+    features.4.conv.weight.lora_B            (24, 8)
+    features.8.lora_A.lora_A                 (8, 72)
+    features.8.lora_A.lora_B                 (24, 8)
+    features.8.lora_B.lora_A                 (8, 24)
+    features.8.lora_B.lora_B                 (96, 8)
+    features.8.conv.weight.lora_A            (8, 216)
+    features.8.conv.weight.lora_B            (32, 8)
+    classifier.weight.lora_A                 (8, 32)
+    classifier.weight.lora_B                 (32, 8)
+    classifier.lora_A.lora_A                 (8, 32)
+    classifier.lora_A.lora_B                 (8, 8)
+    classifier.lora_B.lora_A                 (8, 8)
+    classifier.lora_B.lora_B                 (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/cnn1d/delta_0_to_1.lrq
+
+delta_0_to_1.lrq
+  size: 7,328 bytes
+  bits: 4
+  tensors: 24
+    features.0.lora_A.lora_A                 (8, 200)
+    features.0.lora_A.lora_B                 (8, 8)
+    features.0.lora_B.lora_A                 (8, 8)
+    features.0.lora_B.lora_B                 (32, 8)
+    features.0.conv.weight.lora_A            (8, 200)
+    features.0.conv.weight.lora_B            (32, 8)
+    features.4.lora_A.lora_A                 (8, 160)
+    features.4.lora_A.lora_B                 (8, 8)
+    features.4.lora_B.lora_A                 (8, 8)
+    features.4.lora_B.lora_B                 (48, 8)
+    features.4.conv.weight.lora_A            (8, 160)
+    features.4.conv.weight.lora_B            (48, 8)
+    features.8.lora_A.lora_A                 (8, 144)
+    features.8.lora_A.lora_B                 (8, 8)
+    features.8.lora_B.lora_A                 (8, 8)
+    features.8.lora_B.lora_B                 (64, 8)
+    features.8.conv.weight.lora_A            (8, 144)
+    features.8.conv.weight.lora_B            (64, 8)
+    classifier.weight.lora_A                 (8, 64)
+    classifier.weight.lora_B                 (32, 8)
+    classifier.lora_A.lora_A                 (8, 64)
+    classifier.lora_A.lora_B                 (8, 8)
+    classifier.lora_B.lora_A                 (8, 8)
+    classifier.lora_B.lora_B                 (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/cnn1d/delta_1_to_2.lrq
+
+delta_1_to_2.lrq
+  size: 7,328 bytes
+  bits: 4
+  tensors: 24
+    features.0.lora_A.lora_A                 (8, 200)
+    features.0.lora_A.lora_B                 (8, 8)
+    features.0.lora_B.lora_A                 (8, 8)
+    features.0.lora_B.lora_B                 (32, 8)
+    features.0.conv.weight.lora_A            (8, 200)
+    features.0.conv.weight.lora_B            (32, 8)
+    features.4.lora_A.lora_A                 (8, 160)
+    features.4.lora_A.lora_B                 (8, 8)
+    features.4.lora_B.lora_A                 (8, 8)
+    features.4.lora_B.lora_B                 (48, 8)
+    features.4.conv.weight.lora_A            (8, 160)
+    features.4.conv.weight.lora_B            (48, 8)
+    features.8.lora_A.lora_A                 (8, 144)
+    features.8.lora_A.lora_B                 (8, 8)
+    features.8.lora_B.lora_A                 (8, 8)
+    features.8.lora_B.lora_B                 (64, 8)
+    features.8.conv.weight.lora_A            (8, 144)
+    features.8.conv.weight.lora_B            (64, 8)
+    classifier.weight.lora_A                 (8, 64)
+    classifier.weight.lora_B                 (32, 8)
+    classifier.lora_A.lora_A                 (8, 64)
+    classifier.lora_A.lora_B                 (8, 8)
+    classifier.lora_B.lora_A                 (8, 8)
+    classifier.lora_B.lora_B                 (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/cnn1d/delta_2_to_3.lrq
+
+delta_2_to_3.lrq
+  size: 7,328 bytes
+  bits: 4
+  tensors: 24
+    features.0.lora_A.lora_A                 (8, 200)
+    features.0.lora_A.lora_B                 (8, 8)
+    features.0.lora_B.lora_A                 (8, 8)
+    features.0.lora_B.lora_B                 (32, 8)
+    features.0.conv.weight.lora_A            (8, 200)
+    features.0.conv.weight.lora_B            (32, 8)
+    features.4.lora_A.lora_A                 (8, 160)
+    features.4.lora_A.lora_B                 (8, 8)
+    features.4.lora_B.lora_A                 (8, 8)
+    features.4.lora_B.lora_B                 (48, 8)
+    features.4.conv.weight.lora_A            (8, 160)
+    features.4.conv.weight.lora_B            (48, 8)
+    features.8.lora_A.lora_A                 (8, 144)
+    features.8.lora_A.lora_B                 (8, 8)
+    features.8.lora_B.lora_A                 (8, 8)
+    features.8.lora_B.lora_B                 (64, 8)
+    features.8.conv.weight.lora_A            (8, 144)
+    features.8.conv.weight.lora_B            (64, 8)
+    classifier.weight.lora_A                 (8, 64)
+    classifier.weight.lora_B                 (32, 8)
+    classifier.lora_A.lora_A                 (8, 64)
+    classifier.lora_A.lora_B                 (8, 8)
+    classifier.lora_B.lora_A                 (8, 8)
+    classifier.lora_B.lora_B                 (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/cnn1d/delta_3_to_4.lrq
+
+delta_3_to_4.lrq
+  size: 7,328 bytes
+  bits: 4
+  tensors: 24
+    features.0.lora_A.lora_A                 (8, 200)
+    features.0.lora_A.lora_B                 (8, 8)
+    features.0.lora_B.lora_A                 (8, 8)
+    features.0.lora_B.lora_B                 (32, 8)
+    features.0.conv.weight.lora_A            (8, 200)
+    features.0.conv.weight.lora_B            (32, 8)
+    features.4.lora_A.lora_A                 (8, 160)
+    features.4.lora_A.lora_B                 (8, 8)
+    features.4.lora_B.lora_A                 (8, 8)
+    features.4.lora_B.lora_B                 (48, 8)
+    features.4.conv.weight.lora_A            (8, 160)
+    features.4.conv.weight.lora_B            (48, 8)
+    features.8.lora_A.lora_A                 (8, 144)
+    features.8.lora_A.lora_B                 (8, 8)
+    features.8.lora_B.lora_A                 (8, 8)
+    features.8.lora_B.lora_B                 (64, 8)
+    features.8.conv.weight.lora_A            (8, 144)
+    features.8.conv.weight.lora_B            (64, 8)
+    classifier.weight.lora_A                 (8, 64)
+    classifier.weight.lora_B                 (32, 8)
+    classifier.lora_A.lora_A                 (8, 64)
+    classifier.lora_A.lora_B                 (8, 8)
+    classifier.lora_B.lora_A                 (8, 8)
+    classifier.lora_B.lora_B                 (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/crnn/delta_0_to_1.lrq
+
+delta_0_to_1.lrq
+  size: 7,333 bytes
+  bits: 4
+  tensors: 30
+    cnn.0.lora_A.lora_A                      (3, 3)
+    cnn.0.lora_A.lora_B                      (24, 3)
+    cnn.0.lora_B.lora_A                      (8, 24)
+    cnn.0.lora_B.lora_B                      (36, 8)
+    cnn.0.conv.weight.lora_A                 (8, 9)
+    cnn.0.conv.weight.lora_B                 (12, 8)
+    cnn.4.lora_A.lora_A                      (8, 36)
+    cnn.4.lora_A.lora_B                      (24, 8)
+    cnn.4.lora_B.lora_A                      (8, 24)
+    cnn.4.lora_B.lora_B                      (60, 8)
+    cnn.4.conv.weight.lora_A                 (8, 108)
+    cnn.4.conv.weight.lora_B                 (20, 8)
+    gru.cell.weight_ih.lora_A                (8, 200)
+    gru.cell.weight_ih.lora_B                (120, 8)
+    gru.cell.weight_hh.lora_A                (8, 40)
+    gru.cell.weight_hh.lora_B                (120, 8)
+    gru.cell.lora_A_ih.lora_A                (8, 200)
+    gru.cell.lora_A_ih.lora_B                (8, 8)
+    gru.cell.lora_B_ih.lora_A                (8, 8)
+    gru.cell.lora_B_ih.lora_B                (120, 8)
+    gru.cell.lora_A_hh.lora_A                (8, 40)
+    gru.cell.lora_A_hh.lora_B                (8, 8)
+    gru.cell.lora_B_hh.lora_A                (8, 8)
+    gru.cell.lora_B_hh.lora_B                (120, 8)
+    fc.weight.lora_A                         (8, 40)
+    fc.weight.lora_B                         (32, 8)
+    fc.lora_A.lora_A                         (8, 40)
+    fc.lora_A.lora_B                         (8, 8)
+    fc.lora_B.lora_A                         (8, 8)
+    fc.lora_B.lora_B                         (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/crnn/delta_1_to_2.lrq
+
+delta_1_to_2.lrq
+  size: 7,333 bytes
+  bits: 4
+  tensors: 30
+    cnn.0.lora_A.lora_A                      (3, 3)
+    cnn.0.lora_A.lora_B                      (24, 3)
+    cnn.0.lora_B.lora_A                      (8, 24)
+    cnn.0.lora_B.lora_B                      (36, 8)
+    cnn.0.conv.weight.lora_A                 (8, 9)
+    cnn.0.conv.weight.lora_B                 (12, 8)
+    cnn.4.lora_A.lora_A                      (8, 36)
+    cnn.4.lora_A.lora_B                      (24, 8)
+    cnn.4.lora_B.lora_A                      (8, 24)
+    cnn.4.lora_B.lora_B                      (60, 8)
+    cnn.4.conv.weight.lora_A                 (8, 108)
+    cnn.4.conv.weight.lora_B                 (20, 8)
+    gru.cell.weight_ih.lora_A                (8, 200)
+    gru.cell.weight_ih.lora_B                (120, 8)
+    gru.cell.weight_hh.lora_A                (8, 40)
+    gru.cell.weight_hh.lora_B                (120, 8)
+    gru.cell.lora_A_ih.lora_A                (8, 200)
+    gru.cell.lora_A_ih.lora_B                (8, 8)
+    gru.cell.lora_B_ih.lora_A                (8, 8)
+    gru.cell.lora_B_ih.lora_B                (120, 8)
+    gru.cell.lora_A_hh.lora_A                (8, 40)
+    gru.cell.lora_A_hh.lora_B                (8, 8)
+    gru.cell.lora_B_hh.lora_A                (8, 8)
+    gru.cell.lora_B_hh.lora_B                (120, 8)
+    fc.weight.lora_A                         (8, 40)
+    fc.weight.lora_B                         (32, 8)
+    fc.lora_A.lora_A                         (8, 40)
+    fc.lora_A.lora_B                         (8, 8)
+    fc.lora_B.lora_A                         (8, 8)
+    fc.lora_B.lora_B                         (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/crnn/delta_2_to_3.lrq
+
+delta_2_to_3.lrq
+  size: 7,333 bytes
+  bits: 4
+  tensors: 30
+    cnn.0.lora_A.lora_A                      (3, 3)
+    cnn.0.lora_A.lora_B                      (24, 3)
+    cnn.0.lora_B.lora_A                      (8, 24)
+    cnn.0.lora_B.lora_B                      (36, 8)
+    cnn.0.conv.weight.lora_A                 (8, 9)
+    cnn.0.conv.weight.lora_B                 (12, 8)
+    cnn.4.lora_A.lora_A                      (8, 36)
+    cnn.4.lora_A.lora_B                      (24, 8)
+    cnn.4.lora_B.lora_A                      (8, 24)
+    cnn.4.lora_B.lora_B                      (60, 8)
+    cnn.4.conv.weight.lora_A                 (8, 108)
+    cnn.4.conv.weight.lora_B                 (20, 8)
+    gru.cell.weight_ih.lora_A                (8, 200)
+    gru.cell.weight_ih.lora_B                (120, 8)
+    gru.cell.weight_hh.lora_A                (8, 40)
+    gru.cell.weight_hh.lora_B                (120, 8)
+    gru.cell.lora_A_ih.lora_A                (8, 200)
+    gru.cell.lora_A_ih.lora_B                (8, 8)
+    gru.cell.lora_B_ih.lora_A                (8, 8)
+    gru.cell.lora_B_ih.lora_B                (120, 8)
+    gru.cell.lora_A_hh.lora_A                (8, 40)
+    gru.cell.lora_A_hh.lora_B                (8, 8)
+    gru.cell.lora_B_hh.lora_A                (8, 8)
+    gru.cell.lora_B_hh.lora_B                (120, 8)
+    fc.weight.lora_A                         (8, 40)
+    fc.weight.lora_B                         (32, 8)
+    fc.lora_A.lora_A                         (8, 40)
+    fc.lora_A.lora_B                         (8, 8)
+    fc.lora_B.lora_A                         (8, 8)
+    fc.lora_B.lora_B                         (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/crnn/delta_3_to_4.lrq
+
+delta_3_to_4.lrq
+  size: 7,333 bytes
+  bits: 4
+  tensors: 30
+    cnn.0.lora_A.lora_A                      (3, 3)
+    cnn.0.lora_A.lora_B                      (24, 3)
+    cnn.0.lora_B.lora_A                      (8, 24)
+    cnn.0.lora_B.lora_B                      (36, 8)
+    cnn.0.conv.weight.lora_A                 (8, 9)
+    cnn.0.conv.weight.lora_B                 (12, 8)
+    cnn.4.lora_A.lora_A                      (8, 36)
+    cnn.4.lora_A.lora_B                      (24, 8)
+    cnn.4.lora_B.lora_A                      (8, 24)
+    cnn.4.lora_B.lora_B                      (60, 8)
+    cnn.4.conv.weight.lora_A                 (8, 108)
+    cnn.4.conv.weight.lora_B                 (20, 8)
+    gru.cell.weight_ih.lora_A                (8, 200)
+    gru.cell.weight_ih.lora_B                (120, 8)
+    gru.cell.weight_hh.lora_A                (8, 40)
+    gru.cell.weight_hh.lora_B                (120, 8)
+    gru.cell.lora_A_ih.lora_A                (8, 200)
+    gru.cell.lora_A_ih.lora_B                (8, 8)
+    gru.cell.lora_B_ih.lora_A                (8, 8)
+    gru.cell.lora_B_ih.lora_B                (120, 8)
+    gru.cell.lora_A_hh.lora_A                (8, 40)
+    gru.cell.lora_A_hh.lora_B                (8, 8)
+    gru.cell.lora_B_hh.lora_A                (8, 8)
+    gru.cell.lora_B_hh.lora_B                (120, 8)
+    fc.weight.lora_A                         (8, 40)
+    fc.weight.lora_B                         (32, 8)
+    fc.lora_A.lora_A                         (8, 40)
+    fc.lora_A.lora_B                         (8, 8)
+    fc.lora_B.lora_A                         (8, 8)
+    fc.lora_B.lora_B                         (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/ds_cnn/delta_0_to_1.lrq
+
+delta_0_to_1.lrq
+  size: 3,940 bytes
+  bits: 4
+  tensors: 20
+    stem.0.conv.weight.lora_A                (8, 9)
+    stem.0.conv.weight.lora_B                (24, 8)
+    blocks.0.depthwise.0.weight.lora_A       (8, 9)
+    blocks.0.depthwise.0.weight.lora_B       (24, 8)
+    blocks.0.pointwise.0.conv.weight.lora_A  (8, 24)
+    blocks.0.pointwise.0.conv.weight.lora_B  (32, 8)
+    blocks.1.depthwise.0.weight.lora_A       (8, 9)
+    blocks.1.depthwise.0.weight.lora_B       (32, 8)
+    blocks.1.pointwise.0.conv.weight.lora_A  (8, 32)
+    blocks.1.pointwise.0.conv.weight.lora_B  (48, 8)
+    blocks.2.depthwise.0.weight.lora_A       (8, 9)
+    blocks.2.depthwise.0.weight.lora_B       (48, 8)
+    blocks.2.pointwise.0.conv.weight.lora_A  (8, 48)
+    blocks.2.pointwise.0.conv.weight.lora_B  (64, 8)
+    blocks.3.depthwise.0.weight.lora_A       (8, 9)
+    blocks.3.depthwise.0.weight.lora_B       (64, 8)
+    blocks.3.pointwise.0.conv.weight.lora_A  (8, 64)
+    blocks.3.pointwise.0.conv.weight.lora_B  (64, 8)
+    fc.weight.lora_A                         (8, 64)
+    fc.weight.lora_B                         (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/ds_cnn/delta_1_to_2.lrq
+
+delta_1_to_2.lrq
+  size: 7,717 bytes
+  bits: 4
+  tensors: 44
+    stem.0.lora_A.lora_A                     (3, 3)
+    stem.0.lora_A.lora_B                     (24, 3)
+    stem.0.lora_B.lora_A                     (8, 24)
+    stem.0.lora_B.lora_B                     (72, 8)
+    stem.0.conv.weight.lora_A                (8, 9)
+    stem.0.conv.weight.lora_B                (24, 8)
+    blocks.0.depthwise.0.weight.lora_A       (8, 9)
+    blocks.0.depthwise.0.weight.lora_B       (24, 8)
+    blocks.0.pointwise.0.lora_A.lora_A       (8, 24)
+    blocks.0.pointwise.0.lora_A.lora_B       (8, 8)
+    blocks.0.pointwise.0.lora_B.lora_A       (8, 8)
+    blocks.0.pointwise.0.lora_B.lora_B       (32, 8)
+    blocks.0.pointwise.0.conv.weight.lora_A  (8, 24)
+    blocks.0.pointwise.0.conv.weight.lora_B  (32, 8)
+    blocks.1.depthwise.0.weight.lora_A       (8, 9)
+    blocks.1.depthwise.0.weight.lora_B       (32, 8)
+    blocks.1.pointwise.0.lora_A.lora_A       (8, 32)
+    blocks.1.pointwise.0.lora_A.lora_B       (8, 8)
+    blocks.1.pointwise.0.lora_B.lora_A       (8, 8)
+    blocks.1.pointwise.0.lora_B.lora_B       (48, 8)
+    blocks.1.pointwise.0.conv.weight.lora_A  (8, 32)
+    blocks.1.pointwise.0.conv.weight.lora_B  (48, 8)
+    blocks.2.depthwise.0.weight.lora_A       (8, 9)
+    blocks.2.depthwise.0.weight.lora_B       (48, 8)
+    blocks.2.pointwise.0.lora_A.lora_A       (8, 48)
+    blocks.2.pointwise.0.lora_A.lora_B       (8, 8)
+    blocks.2.pointwise.0.lora_B.lora_A       (8, 8)
+    blocks.2.pointwise.0.lora_B.lora_B       (64, 8)
+    blocks.2.pointwise.0.conv.weight.lora_A  (8, 48)
+    blocks.2.pointwise.0.conv.weight.lora_B  (64, 8)
+    blocks.3.depthwise.0.weight.lora_A       (8, 9)
+    blocks.3.depthwise.0.weight.lora_B       (64, 8)
+    blocks.3.pointwise.0.lora_A.lora_A       (8, 64)
+    blocks.3.pointwise.0.lora_A.lora_B       (8, 8)
+    blocks.3.pointwise.0.lora_B.lora_A       (8, 8)
+    blocks.3.pointwise.0.lora_B.lora_B       (64, 8)
+    blocks.3.pointwise.0.conv.weight.lora_A  (8, 64)
+    blocks.3.pointwise.0.conv.weight.lora_B  (64, 8)
+    fc.weight.lora_A                         (8, 64)
+    fc.weight.lora_B                         (32, 8)
+    fc.lora_A.lora_A                         (8, 64)
+    fc.lora_A.lora_B                         (8, 8)
+    fc.lora_B.lora_A                         (8, 8)
+    fc.lora_B.lora_B                         (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/ds_cnn/delta_2_to_3.lrq
+
+delta_2_to_3.lrq
+  size: 7,717 bytes
+  bits: 4
+  tensors: 44
+    stem.0.lora_A.lora_A                     (3, 3)
+    stem.0.lora_A.lora_B                     (24, 3)
+    stem.0.lora_B.lora_A                     (8, 24)
+    stem.0.lora_B.lora_B                     (72, 8)
+    stem.0.conv.weight.lora_A                (8, 9)
+    stem.0.conv.weight.lora_B                (24, 8)
+    blocks.0.depthwise.0.weight.lora_A       (8, 9)
+    blocks.0.depthwise.0.weight.lora_B       (24, 8)
+    blocks.0.pointwise.0.lora_A.lora_A       (8, 24)
+    blocks.0.pointwise.0.lora_A.lora_B       (8, 8)
+    blocks.0.pointwise.0.lora_B.lora_A       (8, 8)
+    blocks.0.pointwise.0.lora_B.lora_B       (32, 8)
+    blocks.0.pointwise.0.conv.weight.lora_A  (8, 24)
+    blocks.0.pointwise.0.conv.weight.lora_B  (32, 8)
+    blocks.1.depthwise.0.weight.lora_A       (8, 9)
+    blocks.1.depthwise.0.weight.lora_B       (32, 8)
+    blocks.1.pointwise.0.lora_A.lora_A       (8, 32)
+    blocks.1.pointwise.0.lora_A.lora_B       (8, 8)
+    blocks.1.pointwise.0.lora_B.lora_A       (8, 8)
+    blocks.1.pointwise.0.lora_B.lora_B       (48, 8)
+    blocks.1.pointwise.0.conv.weight.lora_A  (8, 32)
+    blocks.1.pointwise.0.conv.weight.lora_B  (48, 8)
+    blocks.2.depthwise.0.weight.lora_A       (8, 9)
+    blocks.2.depthwise.0.weight.lora_B       (48, 8)
+    blocks.2.pointwise.0.lora_A.lora_A       (8, 48)
+    blocks.2.pointwise.0.lora_A.lora_B       (8, 8)
+    blocks.2.pointwise.0.lora_B.lora_A       (8, 8)
+    blocks.2.pointwise.0.lora_B.lora_B       (64, 8)
+    blocks.2.pointwise.0.conv.weight.lora_A  (8, 48)
+    blocks.2.pointwise.0.conv.weight.lora_B  (64, 8)
+    blocks.3.depthwise.0.weight.lora_A       (8, 9)
+    blocks.3.depthwise.0.weight.lora_B       (64, 8)
+    blocks.3.pointwise.0.lora_A.lora_A       (8, 64)
+    blocks.3.pointwise.0.lora_A.lora_B       (8, 8)
+    blocks.3.pointwise.0.lora_B.lora_A       (8, 8)
+    blocks.3.pointwise.0.lora_B.lora_B       (64, 8)
+    blocks.3.pointwise.0.conv.weight.lora_A  (8, 64)
+    blocks.3.pointwise.0.conv.weight.lora_B  (64, 8)
+    fc.weight.lora_A                         (8, 64)
+    fc.weight.lora_B                         (32, 8)
+    fc.lora_A.lora_A                         (8, 64)
+    fc.lora_A.lora_B                         (8, 8)
+    fc.lora_B.lora_A                         (8, 8)
+    fc.lora_B.lora_B                         (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/ds_cnn/delta_3_to_4.lrq
+
+delta_3_to_4.lrq
+  size: 7,717 bytes
+  bits: 4
+  tensors: 44
+    stem.0.lora_A.lora_A                     (3, 3)
+    stem.0.lora_A.lora_B                     (24, 3)
+    stem.0.lora_B.lora_A                     (8, 24)
+    stem.0.lora_B.lora_B                     (72, 8)
+    stem.0.conv.weight.lora_A                (8, 9)
+    stem.0.conv.weight.lora_B                (24, 8)
+    blocks.0.depthwise.0.weight.lora_A       (8, 9)
+    blocks.0.depthwise.0.weight.lora_B       (24, 8)
+    blocks.0.pointwise.0.lora_A.lora_A       (8, 24)
+    blocks.0.pointwise.0.lora_A.lora_B       (8, 8)
+    blocks.0.pointwise.0.lora_B.lora_A       (8, 8)
+    blocks.0.pointwise.0.lora_B.lora_B       (32, 8)
+    blocks.0.pointwise.0.conv.weight.lora_A  (8, 24)
+    blocks.0.pointwise.0.conv.weight.lora_B  (32, 8)
+    blocks.1.depthwise.0.weight.lora_A       (8, 9)
+    blocks.1.depthwise.0.weight.lora_B       (32, 8)
+    blocks.1.pointwise.0.lora_A.lora_A       (8, 32)
+    blocks.1.pointwise.0.lora_A.lora_B       (8, 8)
+    blocks.1.pointwise.0.lora_B.lora_A       (8, 8)
+    blocks.1.pointwise.0.lora_B.lora_B       (48, 8)
+    blocks.1.pointwise.0.conv.weight.lora_A  (8, 32)
+    blocks.1.pointwise.0.conv.weight.lora_B  (48, 8)
+    blocks.2.depthwise.0.weight.lora_A       (8, 9)
+    blocks.2.depthwise.0.weight.lora_B       (48, 8)
+    blocks.2.pointwise.0.lora_A.lora_A       (8, 48)
+    blocks.2.pointwise.0.lora_A.lora_B       (8, 8)
+    blocks.2.pointwise.0.lora_B.lora_A       (8, 8)
+    blocks.2.pointwise.0.lora_B.lora_B       (64, 8)
+    blocks.2.pointwise.0.conv.weight.lora_A  (8, 48)
+    blocks.2.pointwise.0.conv.weight.lora_B  (64, 8)
+    blocks.3.depthwise.0.weight.lora_A       (8, 9)
+    blocks.3.depthwise.0.weight.lora_B       (64, 8)
+    blocks.3.pointwise.0.lora_A.lora_A       (8, 64)
+    blocks.3.pointwise.0.lora_A.lora_B       (8, 8)
+    blocks.3.pointwise.0.lora_B.lora_A       (8, 8)
+    blocks.3.pointwise.0.lora_B.lora_B       (64, 8)
+    blocks.3.pointwise.0.conv.weight.lora_A  (8, 64)
+    blocks.3.pointwise.0.conv.weight.lora_B  (64, 8)
+    fc.weight.lora_A                         (8, 64)
+    fc.weight.lora_B                         (32, 8)
+    fc.lora_A.lora_A                         (8, 64)
+    fc.lora_A.lora_B                         (8, 8)
+    fc.lora_B.lora_A                         (8, 8)
+    fc.lora_B.lora_B                         (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/gru/delta_0_to_1.lrq
+
+delta_0_to_1.lrq
+  size: 5,690 bytes
+  bits: 4
+  tensors: 24
+    proj.weight.lora_A                       (8, 40)
+    proj.weight.lora_B                       (48, 8)
+    proj.lora_A.lora_A                       (8, 40)
+    proj.lora_A.lora_B                       (8, 8)
+    proj.lora_B.lora_A                       (8, 8)
+    proj.lora_B.lora_B                       (48, 8)
+    gru.cell.weight_ih.lora_A                (8, 48)
+    gru.cell.weight_ih.lora_B                (144, 8)
+    gru.cell.weight_hh.lora_A                (8, 48)
+    gru.cell.weight_hh.lora_B                (144, 8)
+    gru.cell.lora_A_ih.lora_A                (8, 48)
+    gru.cell.lora_A_ih.lora_B                (8, 8)
+    gru.cell.lora_B_ih.lora_A                (8, 8)
+    gru.cell.lora_B_ih.lora_B                (144, 8)
+    gru.cell.lora_A_hh.lora_A                (8, 48)
+    gru.cell.lora_A_hh.lora_B                (8, 8)
+    gru.cell.lora_B_hh.lora_A                (8, 8)
+    gru.cell.lora_B_hh.lora_B                (144, 8)
+    fc.weight.lora_A                         (8, 48)
+    fc.weight.lora_B                         (32, 8)
+    fc.lora_A.lora_A                         (8, 48)
+    fc.lora_A.lora_B                         (8, 8)
+    fc.lora_B.lora_A                         (8, 8)
+    fc.lora_B.lora_B                         (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/gru/delta_1_to_2.lrq
+
+delta_1_to_2.lrq
+  size: 5,690 bytes
+  bits: 4
+  tensors: 24
+    proj.weight.lora_A                       (8, 40)
+    proj.weight.lora_B                       (48, 8)
+    proj.lora_A.lora_A                       (8, 40)
+    proj.lora_A.lora_B                       (8, 8)
+    proj.lora_B.lora_A                       (8, 8)
+    proj.lora_B.lora_B                       (48, 8)
+    gru.cell.weight_ih.lora_A                (8, 48)
+    gru.cell.weight_ih.lora_B                (144, 8)
+    gru.cell.weight_hh.lora_A                (8, 48)
+    gru.cell.weight_hh.lora_B                (144, 8)
+    gru.cell.lora_A_ih.lora_A                (8, 48)
+    gru.cell.lora_A_ih.lora_B                (8, 8)
+    gru.cell.lora_B_ih.lora_A                (8, 8)
+    gru.cell.lora_B_ih.lora_B                (144, 8)
+    gru.cell.lora_A_hh.lora_A                (8, 48)
+    gru.cell.lora_A_hh.lora_B                (8, 8)
+    gru.cell.lora_B_hh.lora_A                (8, 8)
+    gru.cell.lora_B_hh.lora_B                (144, 8)
+    fc.weight.lora_A                         (8, 48)
+    fc.weight.lora_B                         (32, 8)
+    fc.lora_A.lora_A                         (8, 48)
+    fc.lora_A.lora_B                         (8, 8)
+    fc.lora_B.lora_A                         (8, 8)
+    fc.lora_B.lora_B                         (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/gru/delta_2_to_3.lrq
+
+delta_2_to_3.lrq
+  size: 5,690 bytes
+  bits: 4
+  tensors: 24
+    proj.weight.lora_A                       (8, 40)
+    proj.weight.lora_B                       (48, 8)
+    proj.lora_A.lora_A                       (8, 40)
+    proj.lora_A.lora_B                       (8, 8)
+    proj.lora_B.lora_A                       (8, 8)
+    proj.lora_B.lora_B                       (48, 8)
+    gru.cell.weight_ih.lora_A                (8, 48)
+    gru.cell.weight_ih.lora_B                (144, 8)
+    gru.cell.weight_hh.lora_A                (8, 48)
+    gru.cell.weight_hh.lora_B                (144, 8)
+    gru.cell.lora_A_ih.lora_A                (8, 48)
+    gru.cell.lora_A_ih.lora_B                (8, 8)
+    gru.cell.lora_B_ih.lora_A                (8, 8)
+    gru.cell.lora_B_ih.lora_B                (144, 8)
+    gru.cell.lora_A_hh.lora_A                (8, 48)
+    gru.cell.lora_A_hh.lora_B                (8, 8)
+    gru.cell.lora_B_hh.lora_A                (8, 8)
+    gru.cell.lora_B_hh.lora_B                (144, 8)
+    fc.weight.lora_A                         (8, 48)
+    fc.weight.lora_B                         (32, 8)
+    fc.lora_A.lora_A                         (8, 48)
+    fc.lora_A.lora_B                         (8, 8)
+    fc.lora_B.lora_A                         (8, 8)
+    fc.lora_B.lora_B                         (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/gru/delta_3_to_4.lrq
+
+delta_3_to_4.lrq
+  size: 5,690 bytes
+  bits: 4
+  tensors: 24
+    proj.weight.lora_A                       (8, 40)
+    proj.weight.lora_B                       (48, 8)
+    proj.lora_A.lora_A                       (8, 40)
+    proj.lora_A.lora_B                       (8, 8)
+    proj.lora_B.lora_A                       (8, 8)
+    proj.lora_B.lora_B                       (48, 8)
+    gru.cell.weight_ih.lora_A                (8, 48)
+    gru.cell.weight_ih.lora_B                (144, 8)
+    gru.cell.weight_hh.lora_A                (8, 48)
+    gru.cell.weight_hh.lora_B                (144, 8)
+    gru.cell.lora_A_ih.lora_A                (8, 48)
+    gru.cell.lora_A_ih.lora_B                (8, 8)
+    gru.cell.lora_B_ih.lora_A                (8, 8)
+    gru.cell.lora_B_ih.lora_B                (144, 8)
+    gru.cell.lora_A_hh.lora_A                (8, 48)
+    gru.cell.lora_A_hh.lora_B                (8, 8)
+    gru.cell.lora_B_hh.lora_A                (8, 8)
+    gru.cell.lora_B_hh.lora_B                (144, 8)
+    fc.weight.lora_A                         (8, 48)
+    fc.weight.lora_B                         (32, 8)
+    fc.lora_A.lora_A                         (8, 48)
+    fc.lora_A.lora_B                         (8, 8)
+    fc.lora_B.lora_A                         (8, 8)
+    fc.lora_B.lora_B                         (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/mlp/delta_0_to_1.lrq
+
+delta_0_to_1.lrq
+  size: 16,829 bytes
+  bits: 4
+  tensors: 6
+    net.1.weight.lora_A                      (8, 4040)
+    net.1.weight.lora_B                      (16, 8)
+    net.4.weight.lora_A                      (8, 16)
+    net.4.weight.lora_B                      (16, 8)
+    net.6.weight.lora_A                      (8, 16)
+    net.6.weight.lora_B                      (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/mlp/delta_1_to_2.lrq
+
+delta_1_to_2.lrq
+  size: 34,022 bytes
+  bits: 4
+  tensors: 18
+    net.1.weight.lora_A                      (8, 4040)
+    net.1.weight.lora_B                      (16, 8)
+    net.1.lora_A.lora_A                      (8, 4040)
+    net.1.lora_A.lora_B                      (8, 8)
+    net.1.lora_B.lora_A                      (8, 8)
+    net.1.lora_B.lora_B                      (16, 8)
+    net.4.weight.lora_A                      (8, 16)
+    net.4.weight.lora_B                      (16, 8)
+    net.4.lora_A.lora_A                      (8, 16)
+    net.4.lora_A.lora_B                      (8, 8)
+    net.4.lora_B.lora_A                      (8, 8)
+    net.4.lora_B.lora_B                      (16, 8)
+    net.6.weight.lora_A                      (8, 16)
+    net.6.weight.lora_B                      (32, 8)
+    net.6.lora_A.lora_A                      (8, 16)
+    net.6.lora_A.lora_B                      (8, 8)
+    net.6.lora_B.lora_A                      (8, 8)
+    net.6.lora_B.lora_B                      (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/mlp/delta_2_to_3.lrq
+
+delta_2_to_3.lrq
+  size: 34,022 bytes
+  bits: 4
+  tensors: 18
+    net.1.weight.lora_A                      (8, 4040)
+    net.1.weight.lora_B                      (16, 8)
+    net.1.lora_A.lora_A                      (8, 4040)
+    net.1.lora_A.lora_B                      (8, 8)
+    net.1.lora_B.lora_A                      (8, 8)
+    net.1.lora_B.lora_B                      (16, 8)
+    net.4.weight.lora_A                      (8, 16)
+    net.4.weight.lora_B                      (16, 8)
+    net.4.lora_A.lora_A                      (8, 16)
+    net.4.lora_A.lora_B                      (8, 8)
+    net.4.lora_B.lora_A                      (8, 8)
+    net.4.lora_B.lora_B                      (16, 8)
+    net.6.weight.lora_A                      (8, 16)
+    net.6.weight.lora_B                      (32, 8)
+    net.6.lora_A.lora_A                      (8, 16)
+    net.6.lora_A.lora_B                      (8, 8)
+    net.6.lora_B.lora_A                      (8, 8)
+    net.6.lora_B.lora_B                      (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/mlp/delta_3_to_4.lrq
+
+delta_3_to_4.lrq
+  size: 34,022 bytes
+  bits: 4
+  tensors: 18
+    net.1.weight.lora_A                      (8, 4040)
+    net.1.weight.lora_B                      (16, 8)
+    net.1.lora_A.lora_A                      (8, 4040)
+    net.1.lora_A.lora_B                      (8, 8)
+    net.1.lora_B.lora_A                      (8, 8)
+    net.1.lora_B.lora_B                      (16, 8)
+    net.4.weight.lora_A                      (8, 16)
+    net.4.weight.lora_B                      (16, 8)
+    net.4.lora_A.lora_A                      (8, 16)
+    net.4.lora_A.lora_B                      (8, 8)
+    net.4.lora_B.lora_A                      (8, 8)
+    net.4.lora_B.lora_B                      (16, 8)
+    net.6.weight.lora_A                      (8, 16)
+    net.6.weight.lora_B                      (32, 8)
+    net.6.lora_A.lora_A                      (8, 16)
+    net.6.lora_A.lora_B                      (8, 8)
+    net.6.lora_B.lora_A                      (8, 8)
+    net.6.lora_B.lora_B                      (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/svdf/delta_0_to_1.lrq
+
+delta_0_to_1.lrq
+  size: 3,808 bytes
+  bits: 4
+  tensors: 18
+    freq.lora_A                              (8, 80)
+    freq.lora_B                              (32, 8)
+    time.lora_A                              (8, 202)
+    time.lora_B                              (32, 8)
+    freq_A.lora_A                            (8, 40)
+    freq_A.lora_B                            (8, 8)
+    freq_B.lora_A                            (8, 8)
+    freq_B.lora_B                            (64, 8)
+    time_A.lora_A                            (8, 101)
+    time_A.lora_B                            (8, 8)
+    time_B.lora_A                            (8, 8)
+    time_B.lora_B                            (64, 8)
+    fc.weight.lora_A                         (8, 32)
+    fc.weight.lora_B                         (32, 8)
+    fc.lora_A.lora_A                         (8, 32)
+    fc.lora_A.lora_B                         (8, 8)
+    fc.lora_B.lora_A                         (8, 8)
+    fc.lora_B.lora_B                         (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/svdf/delta_1_to_2.lrq
+
+delta_1_to_2.lrq
+  size: 3,808 bytes
+  bits: 4
+  tensors: 18
+    freq.lora_A                              (8, 80)
+    freq.lora_B                              (32, 8)
+    time.lora_A                              (8, 202)
+    time.lora_B                              (32, 8)
+    freq_A.lora_A                            (8, 40)
+    freq_A.lora_B                            (8, 8)
+    freq_B.lora_A                            (8, 8)
+    freq_B.lora_B                            (64, 8)
+    time_A.lora_A                            (8, 101)
+    time_A.lora_B                            (8, 8)
+    time_B.lora_A                            (8, 8)
+    time_B.lora_B                            (64, 8)
+    fc.weight.lora_A                         (8, 32)
+    fc.weight.lora_B                         (32, 8)
+    fc.lora_A.lora_A                         (8, 32)
+    fc.lora_A.lora_B                         (8, 8)
+    fc.lora_B.lora_A                         (8, 8)
+    fc.lora_B.lora_B                         (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/svdf/delta_2_to_3.lrq
+
+delta_2_to_3.lrq
+  size: 3,808 bytes
+  bits: 4
+  tensors: 18
+    freq.lora_A                              (8, 80)
+    freq.lora_B                              (32, 8)
+    time.lora_A                              (8, 202)
+    time.lora_B                              (32, 8)
+    freq_A.lora_A                            (8, 40)
+    freq_A.lora_B                            (8, 8)
+    freq_B.lora_A                            (8, 8)
+    freq_B.lora_B                            (64, 8)
+    time_A.lora_A                            (8, 101)
+    time_A.lora_B                            (8, 8)
+    time_B.lora_A                            (8, 8)
+    time_B.lora_B                            (64, 8)
+    fc.weight.lora_A                         (8, 32)
+    fc.weight.lora_B                         (32, 8)
+    fc.lora_A.lora_A                         (8, 32)
+    fc.lora_A.lora_B                         (8, 8)
+    fc.lora_B.lora_A                         (8, 8)
+    fc.lora_B.lora_B                         (32, 8)
+/home/eschoepf/deltafuota/evaluation/deltas_rank_8/svdf/delta_3_to_4.lrq
+
+delta_3_to_4.lrq
+  size: 3,808 bytes
+  bits: 4
+  tensors: 18
+    freq.lora_A                              (8, 80)
+    freq.lora_B                              (32, 8)
+    time.lora_A                              (8, 202)
+    time.lora_B                              (32, 8)
+    freq_A.lora_A                            (8, 40)
+    freq_A.lora_B                            (8, 8)
+    freq_B.lora_A                            (8, 8)
+    freq_B.lora_B                            (64, 8)
+    time_A.lora_A                            (8, 101)
+    time_A.lora_B                            (8, 8)
+    time_B.lora_A                            (8, 8)
+    time_B.lora_B                            (64, 8)
+    fc.weight.lora_A                         (8, 32)
+    fc.weight.lora_B                         (32, 8)
+    fc.lora_A.lora_A                         (8, 32)
+    fc.lora_A.lora_B                         (8, 8)
+    fc.lora_B.lora_A                         (8, 8)
+    fc.lora_B.lora_B                         (32, 8)
+Extracted 6 LoRA tensors from 'trained_models_LowRA_rank_4/mlp/version_1_65333.pt'
+  net.1.lora_A                        (4, 4040)
+  net.1.lora_B                        (16, 4)
+  net.4.lora_A                        (4, 16)
+  net.4.lora_B                        (16, 4)
+  net.6.lora_A                        (4, 16)
+  net.6.lora_B                        (32, 4)
+Wrote test.lrq  (16,833 bytes, INT8)

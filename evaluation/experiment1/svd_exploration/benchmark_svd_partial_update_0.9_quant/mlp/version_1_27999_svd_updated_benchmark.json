@@ -1,3 +1,377 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2cdebfda07d10491d78a0203de332929bae69d340b9975146e33c81db11b2cb3
-size 7331
+{
+  "checkpoint": "benchmark_svd_partial_update_0.9_quant/mlp/version_1_27999_svd_updated.pt",
+  "architecture": "mlp",
+  "parameters": 65472,
+  "classes": [
+    "yes",
+    "no",
+    "up",
+    "down",
+    "left",
+    "right",
+    "on",
+    "off",
+    "stop",
+    "go",
+    "zero",
+    "one",
+    "two",
+    "three",
+    "four",
+    "five",
+    "six",
+    "seven",
+    "eight",
+    "nine",
+    "bed",
+    "bird",
+    "cat",
+    "dog",
+    "happy",
+    "house",
+    "marvin",
+    "sheila",
+    "tree",
+    "wow",
+    "unknown",
+    "silence"
+  ],
+  "metadata": {
+    "type": "version",
+    "version_index": 1,
+    "previous_checkpoint": "runs2/mlp/version_0_9333.pt",
+    "seed": 29336,
+    "samples": 27999,
+    "epochs": 8,
+    "learning_rate": 0.0002,
+    "val_accuracy": 0.4819200291465525,
+    "test_accuracy": 0.46749277158199093,
+    "parameter_count": 65472
+  },
+  "validation_accuracy": 0.4975863011203206,
+  "test_accuracy": 0.4710450227178852,
+  "validation_per_class": {
+    "yes": {
+      "correct": 299,
+      "total": 397,
+      "accuracy": 0.7531486146095718
+    },
+    "no": {
+      "correct": 186,
+      "total": 406,
+      "accuracy": 0.458128078817734
+    },
+    "up": {
+      "correct": 141,
+      "total": 350,
+      "accuracy": 0.40285714285714286
+    },
+    "down": {
+      "correct": 142,
+      "total": 377,
+      "accuracy": 0.376657824933687
+    },
+    "left": {
+      "correct": 148,
+      "total": 352,
+      "accuracy": 0.42045454545454547
+    },
+    "right": {
+      "correct": 175,
+      "total": 363,
+      "accuracy": 0.4820936639118457
+    },
+    "on": {
+      "correct": 80,
+      "total": 363,
+      "accuracy": 0.22038567493112948
+    },
+    "off": {
+      "correct": 263,
+      "total": 373,
+      "accuracy": 0.7050938337801609
+    },
+    "stop": {
+      "correct": 270,
+      "total": 350,
+      "accuracy": 0.7714285714285715
+    },
+    "go": {
+      "correct": 98,
+      "total": 372,
+      "accuracy": 0.26344086021505375
+    },
+    "zero": {
+      "correct": 231,
+      "total": 384,
+      "accuracy": 0.6015625
+    },
+    "one": {
+      "correct": 124,
+      "total": 351,
+      "accuracy": 0.35327635327635326
+    },
+    "two": {
+      "correct": 124,
+      "total": 345,
+      "accuracy": 0.35942028985507246
+    },
+    "three": {
+      "correct": 58,
+      "total": 356,
+      "accuracy": 0.16292134831460675
+    },
+    "four": {
+      "correct": 158,
+      "total": 373,
+      "accuracy": 0.42359249329758714
+    },
+    "five": {
+      "correct": 110,
+      "total": 367,
+      "accuracy": 0.2997275204359673
+    },
+    "six": {
+      "correct": 279,
+      "total": 378,
+      "accuracy": 0.7380952380952381
+    },
+    "seven": {
+      "correct": 204,
+      "total": 387,
+      "accuracy": 0.5271317829457365
+    },
+    "eight": {
+      "correct": 225,
+      "total": 346,
+      "accuracy": 0.6502890173410405
+    },
+    "nine": {
+      "correct": 105,
+      "total": 356,
+      "accuracy": 0.2949438202247191
+    },
+    "bed": {
+      "correct": 108,
+      "total": 213,
+      "accuracy": 0.5070422535211268
+    },
+    "bird": {
+      "correct": 99,
+      "total": 182,
+      "accuracy": 0.5439560439560439
+    },
+    "cat": {
+      "correct": 119,
+      "total": 180,
+      "accuracy": 0.6611111111111111
+    },
+    "dog": {
+      "correct": 25,
+      "total": 197,
+      "accuracy": 0.12690355329949238
+    },
+    "happy": {
+      "correct": 129,
+      "total": 219,
+      "accuracy": 0.589041095890411
+    },
+    "house": {
+      "correct": 123,
+      "total": 195,
+      "accuracy": 0.6307692307692307
+    },
+    "marvin": {
+      "correct": 91,
+      "total": 195,
+      "accuracy": 0.4666666666666667
+    },
+    "sheila": {
+      "correct": 157,
+      "total": 204,
+      "accuracy": 0.7696078431372549
+    },
+    "tree": {
+      "correct": 113,
+      "total": 159,
+      "accuracy": 0.710691823899371
+    },
+    "wow": {
+      "correct": 54,
+      "total": 193,
+      "accuracy": 0.27979274611398963
+    },
+    "unknown": {
+      "correct": 27,
+      "total": 698,
+      "accuracy": 0.03868194842406877
+    },
+    "silence": {
+      "correct": 998,
+      "total": 998,
+      "accuracy": 1.0
+    }
+  },
+  "test_per_class": {
+    "yes": {
+      "correct": 325,
+      "total": 419,
+      "accuracy": 0.7756563245823389
+    },
+    "no": {
+      "correct": 167,
+      "total": 405,
+      "accuracy": 0.4123456790123457
+    },
+    "up": {
+      "correct": 150,
+      "total": 425,
+      "accuracy": 0.35294117647058826
+    },
+    "down": {
+      "correct": 136,
+      "total": 406,
+      "accuracy": 0.33497536945812806
+    },
+    "left": {
+      "correct": 175,
+      "total": 412,
+      "accuracy": 0.42475728155339804
+    },
+    "right": {
+      "correct": 167,
+      "total": 396,
+      "accuracy": 0.4217171717171717
+    },
+    "on": {
+      "correct": 96,
+      "total": 396,
+      "accuracy": 0.24242424242424243
+    },
+    "off": {
+      "correct": 249,
+      "total": 402,
+      "accuracy": 0.6194029850746269
+    },
+    "stop": {
+      "correct": 292,
+      "total": 411,
+      "accuracy": 0.7104622871046229
+    },
+    "go": {
+      "correct": 87,
+      "total": 402,
+      "accuracy": 0.21641791044776118
+    },
+    "zero": {
+      "correct": 231,
+      "total": 418,
+      "accuracy": 0.5526315789473685
+    },
+    "one": {
+      "correct": 123,
+      "total": 399,
+      "accuracy": 0.3082706766917293
+    },
+    "two": {
+      "correct": 167,
+      "total": 424,
+      "accuracy": 0.3938679245283019
+    },
+    "three": {
+      "correct": 67,
+      "total": 405,
+      "accuracy": 0.1654320987654321
+    },
+    "four": {
+      "correct": 151,
+      "total": 400,
+      "accuracy": 0.3775
+    },
+    "five": {
+      "correct": 96,
+      "total": 445,
+      "accuracy": 0.2157303370786517
+    },
+    "six": {
+      "correct": 310,
+      "total": 394,
+      "accuracy": 0.7868020304568528
+    },
+    "seven": {
+      "correct": 210,
+      "total": 406,
+      "accuracy": 0.5172413793103449
+    },
+    "eight": {
+      "correct": 255,
+      "total": 408,
+      "accuracy": 0.625
+    },
+    "nine": {
+      "correct": 108,
+      "total": 408,
+      "accuracy": 0.2647058823529412
+    },
+    "bed": {
+      "correct": 105,
+      "total": 207,
+      "accuracy": 0.5072463768115942
+    },
+    "bird": {
+      "correct": 88,
+      "total": 185,
+      "accuracy": 0.4756756756756757
+    },
+    "cat": {
+      "correct": 109,
+      "total": 194,
+      "accuracy": 0.5618556701030928
+    },
+    "dog": {
+      "correct": 33,
+      "total": 220,
+      "accuracy": 0.15
+    },
+    "happy": {
+      "correct": 115,
+      "total": 203,
+      "accuracy": 0.5665024630541872
+    },
+    "house": {
+      "correct": 125,
+      "total": 191,
+      "accuracy": 0.6544502617801047
+    },
+    "marvin": {
+      "correct": 77,
+      "total": 195,
+      "accuracy": 0.39487179487179486
+    },
+    "sheila": {
+      "correct": 155,
+      "total": 212,
+      "accuracy": 0.7311320754716981
+    },
+    "tree": {
+      "correct": 130,
+      "total": 193,
+      "accuracy": 0.6735751295336787
+    },
+    "wow": {
+      "correct": 59,
+      "total": 206,
+      "accuracy": 0.28640776699029125
+    },
+    "unknown": {
+      "correct": 44,
+      "total": 818,
+      "accuracy": 0.05378973105134474
+    },
+    "silence": {
+      "correct": 1100,
+      "total": 1100,
+      "accuracy": 1.0
+    }
+  }
+}

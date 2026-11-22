@@ -1,3 +1,122 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:254e93018eeaf5df38a89a7c32a342f02c18abe4c0cebd4e0d180439dc3d0257
-size 2613
+[
+    {
+        "class": "A",
+        "file_size": 1024,
+        "time": {
+            "measured": 309.82,
+            "estimate": 373.947248
+        },
+        "energy": {
+            "measured": 4.016709641,
+            "estimate": 5.3039504
+        }
+    },
+    {
+        "class": "A",
+        "file_size": 2048,
+        "time": {
+            "measured": 617.49,
+            "estimate": 683.909568
+        },
+        "energy": {
+            "measured": 7.426012425,
+            "estimate": 9.0924864
+        }
+    },
+    {
+        "class": "A",
+        "file_size": 5120,
+        "time": {
+            "measured": 1482.87,
+            "estimate": 1551.804064
+        },
+        "energy": {
+            "measured": 18.05252989,
+            "estimate": 19.7003872
+        }
+    },
+    {
+        "class": "A",
+        "file_size": 10240,
+        "time": {
+            "measured": 2904.99,
+            "estimate": 2977.630736
+        },
+        "energy": {
+            "measured": 35.5771621,
+            "estimate": 37.1276528
+        }
+    },
+    {
+        "class": "A",
+        "file_size": 51200,
+        "time": {
+            "measured": 14655.0,
+            "estimate": 14508.22904
+        },
+        "energy": {
+            "measured": 181.4574755,
+            "estimate": 178.061192
+        }
+    },
+    {
+        "class": "C",
+        "file_size": 1024,
+        "time": {
+            "measured": 98.87,
+            "estimate": 104.994256
+        },
+        "energy": {
+            "measured": 38.71234424,
+            "estimate": 42.2287456
+        }
+    },
+    {
+        "class": "C",
+        "file_size": 2048,
+        "time": {
+            "measured": 207.4,
+            "estimate": 209.214256
+        },
+        "energy": {
+            "measured": 82.50513541,
+            "estimate": 84.1477888
+        }
+    },
+    {
+        "class": "C",
+        "file_size": 5120,
+        "time": {
+            "measured": 515.34,
+            "estimate": 524.994256
+        },
+        "energy": {
+            "measured": 206.5834148,
+            "estimate": 211.0373968
+        }
+    },
+    {
+        "class": "C",
+        "file_size": 10240,
+        "time": {
+            "measured": 1033.8,
+            "estimate": 1043.954256
+        },
+        "energy": {
+            "measured": 415.0584933,
+            "estimate": 419.6610912
+        }
+    },
+    {
+        "class": "C",
+        "file_size": 51200,
+        "time": {
+            "measured": 5194.99,
+            "estimate": 5222.914256
+        },
+        "energy": {
+            "measured": 2075.993615,
+            "estimate": 2099.331603
+        }
+    }
+]

@@ -1,3 +1,66 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ddde758ecfebc0948496db6b9c5e31bdeaea759bf918f615ca67e4ff1202f54e
-size 4828
+[TXACK] Connected, subscribed to application/+/device/e21ca312cb69528a/event/txack
+[FILE] 2048B  CRC32=0xD09224D3  lambda=0.600  confirmed=False
+{'sf': 7, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 5, 'fcnt': 25754, 'rssi': -43, 'snr': 14.2, 'device_time': '2026-09-08T21:06:04.993202919+00:00', 'device_class': 'A'}
+[CTRL] Switched to Class A
+Sending Class A downlink
+Uplink:  {'sf': 7, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 5, 'fcnt': 25758, 'rssi': -42, 'snr': 13.5, 'device_time': '2026-09-08T21:06:11.501569507+00:00', 'device_class': 'A'}
+Hour: 21, minute: 6, second: 11
+Sent Class A downlink — waiting for TXACK: 18197b08-a4c5-4b5d-9b68-cfa72f6f8ba3
+[FILE] Chunk 1  220B  class=A  DR5  1828B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class A downlink
+Uplink:  {'sf': 7, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 5, 'fcnt': 25759, 'rssi': -43, 'snr': 13.8, 'device_time': '2026-09-08T21:07:13.208354961+00:00', 'device_class': 'A'}
+Hour: 21, minute: 7, second: 13
+Sent Class A downlink — waiting for TXACK: c39fe43c-047a-4ff2-bd05-ecfde920b6d8
+[FILE] Chunk 2  220B  class=A  DR5  1608B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class A downlink
+Uplink:  {'sf': 7, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 5, 'fcnt': 25760, 'rssi': -43, 'snr': 13.8, 'device_time': '2026-09-08T21:08:15.005111636+00:00', 'device_class': 'A'}
+Hour: 21, minute: 8, second: 15
+Sent Class A downlink — waiting for TXACK: 983fed61-b97d-4a59-9bc0-388d5e3581a0
+[FILE] Chunk 3  220B  class=A  DR5  1388B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class A downlink
+Uplink:  {'sf': 7, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 5, 'fcnt': 25761, 'rssi': -43, 'snr': 9.8, 'device_time': '2026-09-08T21:09:16.814578925+00:00', 'device_class': 'A'}
+Hour: 21, minute: 9, second: 16
+Sent Class A downlink — waiting for TXACK: bfa213c3-20b3-440e-9330-69d08c1b75f4
+[FILE] Chunk 4  220B  class=A  DR5  1168B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class A downlink
+Uplink:  {'sf': 7, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 5, 'fcnt': 25762, 'rssi': -43, 'snr': 13.5, 'device_time': '2026-09-08T21:10:18.603937125+00:00', 'device_class': 'A'}
+Hour: 21, minute: 10, second: 18
+Sent Class A downlink — waiting for TXACK: fa22713c-59b2-4d6e-9679-03e65e0a880a
+[FILE] Chunk 5  220B  class=A  DR5  948B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class A downlink
+Uplink:  {'sf': 7, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 5, 'fcnt': 25763, 'rssi': -42, 'snr': 13.5, 'device_time': '2026-09-08T21:11:20.376912563+00:00', 'device_class': 'A'}
+Hour: 21, minute: 11, second: 20
+Sent Class A downlink — waiting for TXACK: 9e1450bb-0671-415a-ab24-58b9959688df
+[FILE] Chunk 6  220B  class=A  DR4  728B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class A downlink
+Uplink:  {'sf': 8, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 4, 'fcnt': 25764, 'rssi': -42, 'snr': 14.8, 'device_time': '2026-09-08T21:12:22.264524725+00:00', 'device_class': 'A'}
+Hour: 21, minute: 12, second: 22
+Sent Class A downlink — waiting for TXACK: eaa2b2a5-6a6f-48e9-bd43-f4054ea6ee71
+[FILE] Chunk 7  220B  class=A  DR4  508B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class A downlink
+Uplink:  {'sf': 8, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 4, 'fcnt': 25765, 'rssi': -43, 'snr': 11.0, 'device_time': '2026-09-08T21:13:24.430889984+00:00', 'device_class': 'A'}
+Hour: 21, minute: 13, second: 24
+Sent Class A downlink — waiting for TXACK: 92eddc6d-2bf0-4d03-b7b8-3ba7bda05352
+[FILE] Chunk 8  220B  class=A  DR4  288B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class A downlink
+Uplink:  {'sf': 8, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 4, 'fcnt': 25766, 'rssi': -42, 'snr': 14.5, 'device_time': '2026-09-08T21:14:26.541240003+00:00', 'device_class': 'A'}
+Hour: 21, minute: 14, second: 26
+Sent Class A downlink — waiting for TXACK: 8e26e5be-ca43-495d-bbc8-79ab11080830
+[FILE] Chunk 9  220B  class=A  DR4  68B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class A downlink
+Uplink:  {'sf': 8, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 4, 'fcnt': 25767, 'rssi': -42, 'snr': 14.5, 'device_time': '2026-09-08T21:15:28.638616273+00:00', 'device_class': 'A'}
+Hour: 21, minute: 15, second: 28
+Sent Class A downlink — waiting for TXACK: 780056d2-9598-46fd-a0ea-1994b9cc9c28
+[FILE] Chunk 10  68B  class=A  DR4  0B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+[FILE] Done: 9 chunks, 615.26s, class=A, CRC32=0xD09224D3
+Total time: 617.11 seconds

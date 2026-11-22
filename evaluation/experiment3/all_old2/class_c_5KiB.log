@@ -1,3 +1,531 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:02cfe0506bd12f7f0fc7780d9693de0018a88d4a1aae7226a7df2cfe474367ba
-size 27341
+[TXACK] Connected, subscribed to application/+/device/e21ca312cb69528a/event/txack
+[FILE] 5120B  CRC32=0xDC00EC01  lambda=0.600  confirmed=False
+{'sf': 7, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 5, 'fcnt': 25629, 'rssi': -42, 'snr': 13.5, 'device_time': '2026-09-08T19:07:15.323744349+00:00', 'device_class': 'C'}
+[CTRL] Switched to Class C
+Sending Class C downlink
+Hour: 19, minute: 7, second: 15
+Sent Class C downlink — waiting for TXACK: c6ed0813-eab9-4e79-9469-f1751c8ddab8
+[FILE] Chunk 1  49B  class=C  DR0  5071B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 7, second: 17
+Sent Class C downlink — waiting for TXACK: 0ac7725a-7b4a-4d22-b0c0-80c4ea14512f
+[FILE] Chunk 2  49B  class=C  DR0  5022B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 7, second: 22
+Sent Class C downlink — waiting for TXACK: e6bb02ee-53b5-4685-bed2-f4d330dad50f
+[FILE] Chunk 3  49B  class=C  DR0  4973B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 7, second: 27
+Sent Class C downlink — waiting for TXACK: 78cc1782-6a88-4bdc-8b9c-d89c813e970c
+[FILE] Chunk 4  49B  class=C  DR0  4924B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 7, second: 32
+Sent Class C downlink — waiting for TXACK: ca56bb30-3665-4ed2-aee8-22326f16e4ac
+[FILE] Chunk 5  49B  class=C  DR0  4875B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 7, second: 37
+Sent Class C downlink — waiting for TXACK: 84702443-f139-45d0-8b46-e3a597e370fc
+[FILE] Chunk 6  49B  class=C  DR0  4826B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 7, second: 42
+Sent Class C downlink — waiting for TXACK: 15de639a-9de6-497d-8ef5-3923394604a9
+[FILE] Chunk 7  49B  class=C  DR0  4777B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 7, second: 47
+Sent Class C downlink — waiting for TXACK: 7fcaf303-dcd6-4642-bfbb-ababc157f512
+[FILE] Chunk 8  49B  class=C  DR0  4728B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 7, second: 52
+Sent Class C downlink — waiting for TXACK: d03d92b8-5a1e-48dc-b16b-19f202909a3b
+[FILE] Chunk 9  49B  class=C  DR0  4679B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 7, second: 57
+Sent Class C downlink — waiting for TXACK: 8c47c54a-8433-4ca8-a713-246f392ca21c
+[FILE] Chunk 10  49B  class=C  DR0  4630B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 8, second: 2
+Sent Class C downlink — waiting for TXACK: 0051e889-6445-430e-a5f5-450ee2ba2ba9
+[FILE] Chunk 11  49B  class=C  DR0  4581B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 8, second: 7
+Sent Class C downlink — waiting for TXACK: e5291ce3-3734-4440-aa78-24d1431827a9
+[FILE] Chunk 12  49B  class=C  DR0  4532B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 8, second: 12
+Sent Class C downlink — waiting for TXACK: 31633a24-0190-4977-ac18-5b41425174cb
+[FILE] Chunk 13  49B  class=C  DR0  4483B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 8, second: 17
+Sent Class C downlink — waiting for TXACK: 4f09fbfe-54cc-4e06-8404-46101ea21c07
+[FILE] Chunk 14  49B  class=C  DR0  4434B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 8, second: 22
+Sent Class C downlink — waiting for TXACK: 631b1710-c543-4328-a6bf-854353098bc9
+[FILE] Chunk 15  49B  class=C  DR0  4385B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 8, second: 27
+Sent Class C downlink — waiting for TXACK: a1b9b5c8-b5cf-4ea7-8560-ce6f09b040c5
+[FILE] Chunk 16  49B  class=C  DR0  4336B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 8, second: 32
+Sent Class C downlink — waiting for TXACK: e676e9c9-5017-4c47-9a04-d75827d51a7f
+[FILE] Chunk 17  49B  class=C  DR0  4287B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 8, second: 38
+Sent Class C downlink — waiting for TXACK: 7908c185-2084-4973-8440-efa4226b4b30
+[FILE] Chunk 18  49B  class=C  DR0  4238B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 8, second: 43
+Sent Class C downlink — waiting for TXACK: 9ab4ad25-5ff6-4a9c-8b66-13f9a73093ff
+[FILE] Chunk 19  49B  class=C  DR0  4189B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 8, second: 48
+Sent Class C downlink — waiting for TXACK: e8cc3973-22a6-4214-9509-08ea7d183183
+[FILE] Chunk 20  49B  class=C  DR0  4140B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 8, second: 53
+Sent Class C downlink — waiting for TXACK: f914ac74-7927-4c19-8540-09ab1d8174c4
+[FILE] Chunk 21  49B  class=C  DR0  4091B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 8, second: 58
+Sent Class C downlink — waiting for TXACK: e1a43905-e558-4747-84b9-405a7404fac9
+[FILE] Chunk 22  49B  class=C  DR0  4042B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 9, second: 3
+Sent Class C downlink — waiting for TXACK: 43dd4ae4-8f50-41fe-acb5-5bc84005a8d0
+[FILE] Chunk 23  49B  class=C  DR0  3993B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 9, second: 8
+Sent Class C downlink — waiting for TXACK: 6e7e5e62-e359-4ef8-89ec-55f8cf63cde9
+[FILE] Chunk 24  49B  class=C  DR0  3944B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 9, second: 13
+Sent Class C downlink — waiting for TXACK: 86dc8d97-51e0-45e6-97e1-cf9832803559
+[FILE] Chunk 25  49B  class=C  DR0  3895B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 9, second: 18
+Sent Class C downlink — waiting for TXACK: 31b38363-3965-48ec-ab1b-02ebfa852470
+[FILE] Chunk 26  49B  class=C  DR0  3846B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 9, second: 23
+Sent Class C downlink — waiting for TXACK: cb75894b-bb88-4465-84c5-6a2dfada86a1
+[FILE] Chunk 27  49B  class=C  DR0  3797B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 9, second: 28
+Sent Class C downlink — waiting for TXACK: 5793e95f-4afd-4d37-8b37-8dfeb30bc9ba
+[FILE] Chunk 28  49B  class=C  DR0  3748B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 9, second: 33
+Sent Class C downlink — waiting for TXACK: c12ddb13-8ecf-4eda-b1ab-aed1bb7ebf53
+[FILE] Chunk 29  49B  class=C  DR0  3699B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 9, second: 38
+Sent Class C downlink — waiting for TXACK: 51d3dfc3-6a33-4030-8f99-29bfe45dbd5e
+[FILE] Chunk 30  49B  class=C  DR0  3650B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 9, second: 43
+Sent Class C downlink — waiting for TXACK: b49b651e-f363-439f-85d1-5d8d5a3c64ea
+[FILE] Chunk 31  49B  class=C  DR0  3601B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 9, second: 48
+Sent Class C downlink — waiting for TXACK: 25bdbbf0-b617-4a62-8ed1-45a36176eb64
+[FILE] Chunk 32  49B  class=C  DR0  3552B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 9, second: 53
+Sent Class C downlink — waiting for TXACK: a5fcadfe-af0e-4756-bc95-c23b8ef43f0d
+[FILE] Chunk 33  49B  class=C  DR0  3503B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 9, second: 58
+Sent Class C downlink — waiting for TXACK: 646554c6-6e17-4c98-bf00-12e21fe1a1bd
+[FILE] Chunk 34  49B  class=C  DR0  3454B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 10, second: 4
+Sent Class C downlink — waiting for TXACK: 4269277b-839a-4bdd-a901-7121250ff89a
+[FILE] Chunk 35  49B  class=C  DR0  3405B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 10, second: 9
+Sent Class C downlink — waiting for TXACK: ae39e5bc-0793-424f-bf4e-1904fa6e806c
+[FILE] Chunk 36  49B  class=C  DR0  3356B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 10, second: 14
+Sent Class C downlink — waiting for TXACK: fc94420a-1cf8-49ee-9dce-119204f66fb7
+[FILE] Chunk 37  49B  class=C  DR0  3307B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 10, second: 19
+Sent Class C downlink — waiting for TXACK: d2fe0c4d-31b4-4095-bf11-22888004c0f3
+[FILE] Chunk 38  49B  class=C  DR0  3258B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 10, second: 24
+Sent Class C downlink — waiting for TXACK: eda192eb-9476-49de-a9a1-f5fe58330d59
+[FILE] Chunk 39  49B  class=C  DR0  3209B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 10, second: 29
+Sent Class C downlink — waiting for TXACK: c1b31443-5878-42e7-8821-d6a1e4a1b839
+[FILE] Chunk 40  49B  class=C  DR0  3160B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 10, second: 34
+Sent Class C downlink — waiting for TXACK: ddd98155-731c-49eb-8193-8c33c691a834
+[FILE] Chunk 41  49B  class=C  DR0  3111B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 10, second: 39
+Sent Class C downlink — waiting for TXACK: ae60dc18-1898-4c48-aacc-3b45a4eed708
+[FILE] Chunk 42  49B  class=C  DR0  3062B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 10, second: 44
+Sent Class C downlink — waiting for TXACK: 3bee22e7-073f-4969-9cb5-64e165d6a6b7
+[FILE] Chunk 43  49B  class=C  DR0  3013B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 10, second: 49
+Sent Class C downlink — waiting for TXACK: d89cedca-705a-4851-9a22-63edcb564437
+[FILE] Chunk 44  49B  class=C  DR0  2964B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 10, second: 54
+Sent Class C downlink — waiting for TXACK: 8cdc29fa-f900-4276-91e3-98cd937786ae
+[FILE] Chunk 45  49B  class=C  DR0  2915B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 10, second: 59
+Sent Class C downlink — waiting for TXACK: b2c8f6fb-623b-4df0-9aca-f80fb1341184
+[FILE] Chunk 46  49B  class=C  DR0  2866B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 11, second: 4
+Sent Class C downlink — waiting for TXACK: 9145fa4a-828d-4e4e-be25-2edd21beb9ce
+[FILE] Chunk 47  49B  class=C  DR0  2817B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 11, second: 9
+Sent Class C downlink — waiting for TXACK: 01800920-1aae-42d3-a98f-638daa434bad
+[FILE] Chunk 48  49B  class=C  DR0  2768B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 11, second: 14
+Sent Class C downlink — waiting for TXACK: 295ebdc9-d0ad-4461-8c51-29c52e7e58dd
+[FILE] Chunk 49  49B  class=C  DR0  2719B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 11, second: 19
+Sent Class C downlink — waiting for TXACK: 144778e3-84e4-45e0-aaac-9f8676e356d1
+[FILE] Chunk 50  49B  class=C  DR0  2670B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 11, second: 25
+Sent Class C downlink — waiting for TXACK: 700ab5be-6070-49d2-ad1f-0056ce0d0d35
+[FILE] Chunk 51  49B  class=C  DR0  2621B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 11, second: 30
+Sent Class C downlink — waiting for TXACK: 3fd21256-c6c0-4bb4-8431-65fe81b3cc57
+[FILE] Chunk 52  49B  class=C  DR0  2572B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 11, second: 35
+Sent Class C downlink — waiting for TXACK: 6680b8f7-43b9-43a1-8bb1-d4c01f4e9157
+[FILE] Chunk 53  49B  class=C  DR0  2523B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 11, second: 40
+Sent Class C downlink — waiting for TXACK: 959e1f53-f45c-4bb8-b3da-583b9550862a
+[FILE] Chunk 54  49B  class=C  DR0  2474B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 11, second: 45
+Sent Class C downlink — waiting for TXACK: b2a655db-d79e-40c7-b69e-f51a747b3134
+[FILE] Chunk 55  49B  class=C  DR0  2425B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 11, second: 50
+Sent Class C downlink — waiting for TXACK: f86309b9-a87e-4138-a2e8-f3994bed45fb
+[FILE] Chunk 56  49B  class=C  DR0  2376B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 11, second: 55
+Sent Class C downlink — waiting for TXACK: ce720fc9-9ccf-4b9b-bac6-2791093fd459
+[FILE] Chunk 57  49B  class=C  DR0  2327B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 12, second: 0
+Sent Class C downlink — waiting for TXACK: e7e730e2-ebd5-4581-a39a-a8090920f180
+[FILE] Chunk 58  49B  class=C  DR0  2278B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 12, second: 5
+Sent Class C downlink — waiting for TXACK: 40c0f47d-8cf3-444b-9102-b009438eff59
+[FILE] Chunk 59  49B  class=C  DR0  2229B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 12, second: 10
+Sent Class C downlink — waiting for TXACK: 760362e4-07bb-4567-a0c6-0f43777d688c
+[FILE] Chunk 60  49B  class=C  DR0  2180B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 12, second: 15
+Sent Class C downlink — waiting for TXACK: dd1faccd-809d-4da7-9555-1e51c34da3d8
+[FILE] Chunk 61  49B  class=C  DR0  2131B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 12, second: 20
+Sent Class C downlink — waiting for TXACK: 4fd15333-0573-4ab2-be63-e56cb68b98d2
+[FILE] Chunk 62  49B  class=C  DR0  2082B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 12, second: 25
+Sent Class C downlink — waiting for TXACK: 40ad6e36-360d-449a-a895-506ab04c11ab
+[FILE] Chunk 63  49B  class=C  DR0  2033B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 12, second: 30
+Sent Class C downlink — waiting for TXACK: 8e0930bc-4923-4fdd-adb0-61e468be7b4f
+[FILE] Chunk 64  49B  class=C  DR0  1984B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 12, second: 35
+Sent Class C downlink — waiting for TXACK: 0284fc7d-65c3-461a-b686-514dd38043c1
+[FILE] Chunk 65  49B  class=C  DR0  1935B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 12, second: 40
+Sent Class C downlink — waiting for TXACK: 3d407cf0-eabb-4f49-87cd-ef6b695c4d30
+[FILE] Chunk 66  49B  class=C  DR0  1886B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 12, second: 46
+Sent Class C downlink — waiting for TXACK: 73e61fae-ac85-4e79-84e0-60d1b9a299f3
+[FILE] Chunk 67  49B  class=C  DR0  1837B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 12, second: 51
+Sent Class C downlink — waiting for TXACK: 556d97fc-57f1-4e38-bcf2-b5cb4b59c665
+[FILE] Chunk 68  49B  class=C  DR0  1788B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 12, second: 56
+Sent Class C downlink — waiting for TXACK: 00ba9df6-bdec-483b-829d-fa68e738b10b
+[FILE] Chunk 69  49B  class=C  DR0  1739B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 13, second: 1
+Sent Class C downlink — waiting for TXACK: 14e9829a-b1dd-4e23-ba6f-961ae7be4811
+[FILE] Chunk 70  49B  class=C  DR0  1690B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 13, second: 6
+Sent Class C downlink — waiting for TXACK: 8bd8ac7b-6f7e-4220-971e-2a828fcd19a2
+[FILE] Chunk 71  49B  class=C  DR0  1641B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 13, second: 11
+Sent Class C downlink — waiting for TXACK: de558554-ea49-4cdf-a9e3-d651c3f151e9
+[FILE] Chunk 72  49B  class=C  DR0  1592B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 13, second: 16
+Sent Class C downlink — waiting for TXACK: a2a02270-5a62-497f-80b0-ad67eeec4e63
+[FILE] Chunk 73  49B  class=C  DR0  1543B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 13, second: 21
+Sent Class C downlink — waiting for TXACK: 4f3d0037-996d-4391-b996-4f80d46a324c
+[FILE] Chunk 74  49B  class=C  DR0  1494B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 13, second: 26
+Sent Class C downlink — waiting for TXACK: 62dd5c36-6ae6-44e4-a769-b781da63ac0b
+[FILE] Chunk 75  49B  class=C  DR0  1445B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 13, second: 31
+Sent Class C downlink — waiting for TXACK: 98aef946-d7a5-4058-a80b-9cbdab72693e
+[FILE] Chunk 76  49B  class=C  DR0  1396B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 13, second: 36
+Sent Class C downlink — waiting for TXACK: e605c331-d607-4e3d-a572-ca616333959c
+[FILE] Chunk 77  49B  class=C  DR0  1347B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 13, second: 41
+Sent Class C downlink — waiting for TXACK: 40ba4840-3fec-4b6a-9a43-c5bf89700908
+[FILE] Chunk 78  49B  class=C  DR0  1298B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 13, second: 46
+Sent Class C downlink — waiting for TXACK: 46491b64-8c3b-4b88-8ba6-ffc9e4d960c4
+[FILE] Chunk 79  49B  class=C  DR0  1249B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 13, second: 51
+Sent Class C downlink — waiting for TXACK: 491272e2-eee8-4cfa-98d4-51779f52826b
+[FILE] Chunk 80  49B  class=C  DR0  1200B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 13, second: 56
+Sent Class C downlink — waiting for TXACK: 0e99f350-84db-4812-ac42-db94e6b714df
+[FILE] Chunk 81  49B  class=C  DR0  1151B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 14, second: 1
+Sent Class C downlink — waiting for TXACK: df3991cf-efa3-4baf-a811-37699316a082
+[FILE] Chunk 82  49B  class=C  DR0  1102B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 14, second: 6
+Sent Class C downlink — waiting for TXACK: 7a1e3894-ef19-4ae9-b074-b2c1654f9e8d
+[FILE] Chunk 83  49B  class=C  DR0  1053B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 14, second: 11
+Sent Class C downlink — waiting for TXACK: ab4e0478-b409-4f26-be53-bfa64052d123
+[FILE] Chunk 84  49B  class=C  DR0  1004B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 14, second: 17
+Sent Class C downlink — waiting for TXACK: 4466a109-5a98-45bd-9fa3-9e08ed0da4f4
+[FILE] Chunk 85  49B  class=C  DR0  955B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 14, second: 22
+Sent Class C downlink — waiting for TXACK: 032cdd32-7a2b-4335-9d31-a17bae3794a9
+[FILE] Chunk 86  49B  class=C  DR0  906B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 14, second: 27
+Sent Class C downlink — waiting for TXACK: 28e80201-6f5e-47e1-be4f-d64822e7ac3c
+[FILE] Chunk 87  49B  class=C  DR0  857B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 14, second: 32
+Sent Class C downlink — waiting for TXACK: 9b028fca-557b-47c4-be01-c7a2387e4a2d
+[FILE] Chunk 88  49B  class=C  DR0  808B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 14, second: 37
+Sent Class C downlink — waiting for TXACK: 2e58f835-75af-4bfc-8d93-66cb87cedaec
+[FILE] Chunk 89  49B  class=C  DR0  759B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 14, second: 42
+Sent Class C downlink — waiting for TXACK: 2af9f23e-d652-44e9-86bf-a8ac181d3753
+[FILE] Chunk 90  49B  class=C  DR0  710B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 14, second: 47
+Sent Class C downlink — waiting for TXACK: 7bafab7c-cc2d-466b-9f1c-146bcc573464
+[FILE] Chunk 91  49B  class=C  DR0  661B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 14, second: 52
+Sent Class C downlink — waiting for TXACK: 34427755-a281-4b23-9bb9-749e7f3544af
+[FILE] Chunk 92  49B  class=C  DR0  612B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 14, second: 57
+Sent Class C downlink — waiting for TXACK: f78e5f2a-181c-484c-aeb1-8bf92eb00d6c
+[FILE] Chunk 93  49B  class=C  DR0  563B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 15, second: 2
+Sent Class C downlink — waiting for TXACK: 95a3db74-a2c6-490a-94bf-c9cf1996e785
+[FILE] Chunk 94  49B  class=C  DR0  514B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 15, second: 7
+Sent Class C downlink — waiting for TXACK: 586aaba4-f8ca-40f1-a157-cc929e5f245e
+[FILE] Chunk 95  49B  class=C  DR0  465B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 15, second: 12
+Sent Class C downlink — waiting for TXACK: 74067d16-7d98-4e67-a7be-21f4791c27d4
+[FILE] Chunk 96  49B  class=C  DR0  416B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 15, second: 17
+Sent Class C downlink — waiting for TXACK: 2fb2cba6-9ab1-4148-b75b-c31d39dfbfed
+[FILE] Chunk 97  49B  class=C  DR0  367B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 15, second: 22
+Sent Class C downlink — waiting for TXACK: 4c81c8a4-3f2b-4910-9e65-c36f233c06cf
+[FILE] Chunk 98  49B  class=C  DR0  318B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 15, second: 27
+Sent Class C downlink — waiting for TXACK: a5976183-e9d7-4c14-b6e6-6e8b55a8d50d
+[FILE] Chunk 99  49B  class=C  DR0  269B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 15, second: 32
+Sent Class C downlink — waiting for TXACK: d041f460-6a4d-4162-ae1e-df7c0c51c793
+[FILE] Chunk 100  49B  class=C  DR0  220B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 15, second: 37
+Sent Class C downlink — waiting for TXACK: 1b04d332-8966-4cf5-93af-a424523b8210
+[FILE] Chunk 101  49B  class=C  DR0  171B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 15, second: 42
+Sent Class C downlink — waiting for TXACK: dc7c287f-02ed-4077-9ff9-d57cb7e71517
+[FILE] Chunk 102  49B  class=C  DR0  122B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 15, second: 47
+Sent Class C downlink — waiting for TXACK: c01ce4f9-749b-427b-8113-69162b3ad141
+[FILE] Chunk 103  49B  class=C  DR0  73B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 15, second: 52
+Sent Class C downlink — waiting for TXACK: 3454563a-e324-4cbc-95e7-01829aabae6f
+[FILE] Chunk 104  49B  class=C  DR0  24B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+Sending Class C downlink
+Hour: 19, minute: 15, second: 58
+Sent Class C downlink — waiting for TXACK: ad723331-60e8-4412-bffb-777cc43a0db4
+[FILE] Chunk 105  24B  class=C  DR0  0B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+[FILE] Done: 104 chunks, 528.43s, class=C, CRC32=0xDC00EC01
+Total time: 529.53 seconds

@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a02c7e43b15ad902106cafd8d78f9474c6198e76cbe62708b0f8f1fbc9ebe81f
-size 740
+import serial
+import sys
+
+# This small script was generated using Gemini on the 30.08.2026 in a quick google search. It was then slightly modified.
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python3 measure.py <output_file>")
+    output_file = sys.argv[1]
+    ser = serial.Serial('/dev/ttyACM0', 921600, timeout=1)
+    # ser = serial.Serial('/dev/ttyUSB0', 115200, timeout=1)
+
+    with open(output_file, 'w', buffering=1) as f:
+        f.write("timestamp (us),current (mA)\n")
+
+        while True:
+            raw = ser.readline()
+
+            if not raw:
+                continue
+
+            line = raw.decode('utf-8', errors='replace').strip()
+
+            f.write(line + '\n')
+            # print(line)

@@ -1,3 +1,59 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2cb1b65fdb9d7fa2ede0ef325dc89e563c5d96e147befd040c01d46ce3656bee
-size 3277
+============================================================
+SVD Pipeline Timing Log
+Started: 2026-08-17 14:25:32
+Input directory: ./runs
+Output directory: ./svd_out_pi_svd_energy_1
+SVD script: ../networkserver/svd.py
+SVD energy: 1
+============================================================
+
+=== cnn (5 versions) ===
+2026-08-17 14:25:38 | cnn | version_0_9333 -> version_1_27999 | 5.688 seconds | SUCCESS
+2026-08-17 14:25:43 | cnn | version_1_27999 -> version_2_46666 | 5.441 seconds | SUCCESS
+2026-08-17 14:25:49 | cnn | version_2_46666 -> version_3_65333 | 5.440 seconds | SUCCESS
+2026-08-17 14:25:54 | cnn | version_3_65333 -> version_4_93333 | 5.459 seconds | SUCCESS
+
+=== cnn1d (5 versions) ===
+2026-08-17 14:26:00 | cnn1d | version_0_9333 -> version_1_27999 | 5.510 seconds | SUCCESS
+2026-08-17 14:26:05 | cnn1d | version_1_27999 -> version_2_46666 | 5.568 seconds | SUCCESS
+2026-08-17 14:26:11 | cnn1d | version_2_46666 -> version_3_65333 | 5.510 seconds | SUCCESS
+2026-08-17 14:26:16 | cnn1d | version_3_65333 -> version_4_93333 | 5.479 seconds | SUCCESS
+
+=== crnn (5 versions) ===
+2026-08-17 14:26:22 | crnn | version_0_9333 -> version_1_27999 | 5.602 seconds | SUCCESS
+2026-08-17 14:26:28 | crnn | version_1_27999 -> version_2_46666 | 5.569 seconds | SUCCESS
+2026-08-17 14:26:33 | crnn | version_2_46666 -> version_3_65333 | 5.548 seconds | SUCCESS
+2026-08-17 14:26:39 | crnn | version_3_65333 -> version_4_93333 | 5.559 seconds | SUCCESS
+
+=== ds_cnn (5 versions) ===
+2026-08-17 14:26:44 | ds_cnn | version_0_9333 -> version_1_27999 | 5.518 seconds | SUCCESS
+2026-08-17 14:26:50 | ds_cnn | version_1_27999 -> version_2_46666 | 5.477 seconds | SUCCESS
+2026-08-17 14:26:55 | ds_cnn | version_2_46666 -> version_3_65333 | 5.495 seconds | SUCCESS
+2026-08-17 14:27:01 | ds_cnn | version_3_65333 -> version_4_93333 | 5.467 seconds | SUCCESS
+
+=== gru (5 versions) ===
+2026-08-17 14:27:06 | gru | version_0_9333 -> version_1_27999 | 5.425 seconds | SUCCESS
+2026-08-17 14:27:12 | gru | version_1_27999 -> version_2_46666 | 5.418 seconds | SUCCESS
+2026-08-17 14:27:17 | gru | version_2_46666 -> version_3_65333 | 5.439 seconds | SUCCESS
+2026-08-17 14:27:23 | gru | version_3_65333 -> version_4_93333 | 5.714 seconds | SUCCESS
+
+=== mlp (5 versions) ===
+2026-08-17 14:27:28 | mlp | version_0_9333 -> version_1_27999 | 5.607 seconds | SUCCESS
+2026-08-17 14:27:34 | mlp | version_1_27999 -> version_2_46666 | 5.585 seconds | SUCCESS
+2026-08-17 14:27:40 | mlp | version_2_46666 -> version_3_65333 | 5.584 seconds | SUCCESS
+2026-08-17 14:27:45 | mlp | version_3_65333 -> version_4_93333 | 5.598 seconds | SUCCESS
+
+=== svdf (5 versions) ===
+2026-08-17 14:27:51 | svdf | version_0_9333 -> version_1_27999 | 5.353 seconds | SUCCESS
+2026-08-17 14:27:56 | svdf | version_1_27999 -> version_2_46666 | 5.368 seconds | SUCCESS
+2026-08-17 14:28:01 | svdf | version_2_46666 -> version_3_65333 | 5.403 seconds | SUCCESS
+2026-08-17 14:28:07 | svdf | version_3_65333 -> version_4_93333 | 5.373 seconds | SUCCESS
+
+============================================================
+Pipeline Summary
+Finished: 2026-08-17 14:28:07
+Models processed: 7
+Successful SVD operations: 28
+Failed SVD operations: 0
+Total pipeline time: 154.763 seconds
+============================================================

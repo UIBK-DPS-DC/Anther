@@ -1,3 +1,439 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d73a1d00c1938d7c41b166246cbeac37d2e5784adefcfdbcee518521cead329d
-size 15453
+Total time: 0.03 seconds
+[TXACK] Connected, subscribed to application/+/device/e21ca312cb69528a/event/txack
+[FILE] 1024B  CRC32=0x89B11196  lambda=0.400  confirmed=False
+{'sf': 7, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 5, 'fcnt': 31557, 'rssi': -45, 'snr': 13.8, 'device_time': '2026-09-19T08:58:00.289680322+00:00', 'device_class': 'A'}
+
+===================================================
+Energy Model
+===================================================
+Remaining bytes     : 1024 B
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+P-TX/P-RX/P-Idle/P-Sleep : 700.0/400.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1
+
+Class A  (RX1 — DR tracks the uplink)
+-------------------------------------------
+DL DR / SF          : 5 / 7
+Fragment size       : 220 B (DR5 cap: 222 B)
+Fragments           : 7
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.347392 s
+Latency             : 373.947 s
+Energy              : 5.303950 J
+  TX                : 0.171853 J
+  Idle              : 1.540000 J
+  RX                : 0.972698 J
+  Sleep             : 1.680000 J
+  UL interval       : 60.000 s
+  Legal Config      : True
+
+Class C  (RX2 — fixed regional DR, independent of the uplink)
+-------------------------------------------
+DL DR / SF          : 0 / 12
+Fragment size       : 49 B (DR0 cap: 51 B)
+Fragments           : 21
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 2.269184 s
+Latency             : 104.994 s
+Energy              : 42.228746 J
+  TX                : 0.539101 J
+  Idle              : 0.000000 J
+  RX                : 41.689645 J
+  Fragment interval : 5.000 s
+  Legal Config      : True
+
+Recommendation (relative utility, lambda=0.40)
+-------------------------------------------
+Energy ratio  A / best : 1.000
+Energy ratio  C / best : 7.962
+Latency ratio A / best : 3.562
+Latency ratio C / best : 1.000
+Utility A              : 0.601647
+Utility C              : 0.288002
+Best class             : A
+
+[CTRL] Switched to Class A
+Sending Class A downlink
+Uplink: {'sf': 7, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 5, 'fcnt': 31561, 'rssi': -44, 'snr': 13.2, 'device_time': '2026-09-19T08:58:06.796571699+00:00', 'device_class': 'A'}
+Hour: 8, minute: 58, second: 6
+Sent Class A downlink — waiting for TXACK: 93085c4d-ab43-4f46-973d-7d86841e8c08
+Timing summary:
+waiting for uplink: 1518.96 ms
+from uplink to enqueue: 0.11 ms
+enqueue: 15.44 ms
+From before uplink to after enqueue: 1534.51 ms
+[FILE] Chunk 1  220B  class=A  DR5  804B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+
+===================================================
+Energy Model
+===================================================
+Remaining bytes     : 804 B
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+P-TX/P-RX/P-Idle/P-Sleep : 700.0/400.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1
+
+Class A  (RX1 — DR tracks the uplink)
+-------------------------------------------
+DL DR / SF          : 5 / 7
+Fragment size       : 220 B (DR5 cap: 222 B)
+Fragments           : 6
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.347392 s
+Latency             : 311.955 s
+Energy              : 4.546243 J
+  TX                : 0.147302 J
+  Idle              : 1.320000 J
+  RX                : 0.833741 J
+  Sleep             : 1.440000 J
+  UL interval       : 60.000 s
+  Legal Config      : True
+
+Class C  (RX2 — fixed regional DR, independent of the uplink)
+-------------------------------------------
+DL DR / SF          : 0 / 12
+Fragment size       : 49 B (DR0 cap: 51 B)
+Fragments           : 17
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 2.269184 s
+Latency             : 83.954 s
+Energy              : 33.812746 J
+  TX                : 0.539101 J
+  Idle              : 0.000000 J
+  RX                : 33.273645 J
+  Fragment interval : 5.000 s
+  Legal Config      : True
+
+Recommendation (relative utility, lambda=0.40)
+-------------------------------------------
+Energy ratio  A / best : 1.000
+Energy ratio  C / best : 7.438
+Latency ratio A / best : 3.716
+Latency ratio C / best : 1.000
+Utility A              : 0.591535
+Utility C              : 0.300015
+Best class             : A
+
+Sending Class A downlink
+Uplink: {'sf': 7, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 5, 'fcnt': 31562, 'rssi': -45, 'snr': 10.5, 'device_time': '2026-09-19T08:59:08.489318348+00:00', 'device_class': 'A'}
+Hour: 8, minute: 59, second: 8
+Sent Class A downlink — waiting for TXACK: fe7cc470-b245-4dfb-b8a6-376c9a67a0d2
+Timing summary:
+waiting for uplink: 61529.19 ms
+from uplink to enqueue: 0.10 ms
+enqueue: 13.08 ms
+From before uplink to after enqueue: 61542.36 ms
+[FILE] Chunk 2  220B  class=A  DR5  584B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+
+===================================================
+Energy Model
+===================================================
+Remaining bytes     : 584 B
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+P-TX/P-RX/P-Idle/P-Sleep : 700.0/400.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1
+
+Class A  (RX1 — DR tracks the uplink)
+-------------------------------------------
+DL DR / SF          : 5 / 7
+Fragment size       : 220 B (DR5 cap: 222 B)
+Fragments           : 5
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.347392 s
+Latency             : 249.962 s
+Energy              : 3.788536 J
+  TX                : 0.122752 J
+  Idle              : 1.100000 J
+  RX                : 0.694784 J
+  Sleep             : 1.200000 J
+  UL interval       : 60.000 s
+  Legal Config      : True
+
+Class C  (RX2 — fixed regional DR, independent of the uplink)
+-------------------------------------------
+DL DR / SF          : 0 / 12
+Fragment size       : 49 B (DR0 cap: 51 B)
+Fragments           : 12
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 2.269184 s
+Latency             : 60.774 s
+Energy              : 24.425224 J
+  TX                : 0.269550 J
+  Idle              : 0.000000 J
+  RX                : 24.155674 J
+  Fragment interval : 5.000 s
+  Legal Config      : True
+
+Recommendation (relative utility, lambda=0.40)
+-------------------------------------------
+Energy ratio  A / best : 1.000
+Energy ratio  C / best : 6.447
+Latency ratio A / best : 4.113
+Latency ratio C / best : 1.000
+Utility A              : 0.567987
+Utility C              : 0.326874
+Best class             : A
+
+Sending Class A downlink
+Uplink: {'sf': 7, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 5, 'fcnt': 31563, 'rssi': -44, 'snr': 13.8, 'device_time': '2026-09-19T09:00:10.248053142+00:00', 'device_class': 'A'}
+Hour: 9, minute: 0, second: 10
+Sent Class A downlink — waiting for TXACK: e1f54039-5871-4364-b427-65625e570094
+Timing summary:
+waiting for uplink: 61597.85 ms
+from uplink to enqueue: 0.09 ms
+enqueue: 13.29 ms
+From before uplink to after enqueue: 61611.23 ms
+[FILE] Chunk 3  220B  class=A  DR5  364B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+
+===================================================
+Energy Model
+===================================================
+Remaining bytes     : 364 B
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+P-TX/P-RX/P-Idle/P-Sleep : 700.0/400.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1
+
+Class A  (RX1 — DR tracks the uplink)
+-------------------------------------------
+DL DR / SF          : 5 / 7
+Fragment size       : 220 B (DR5 cap: 222 B)
+Fragments           : 4
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.347392 s
+Latency             : 187.970 s
+Energy              : 3.030829 J
+  TX                : 0.098202 J
+  Idle              : 0.880000 J
+  RX                : 0.555827 J
+  Sleep             : 0.960000 J
+  UL interval       : 60.000 s
+  Legal Config      : True
+
+Class C  (RX2 — fixed regional DR, independent of the uplink)
+-------------------------------------------
+DL DR / SF          : 0 / 12
+Fragment size       : 49 B (DR0 cap: 51 B)
+Fragments           : 8
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 2.269184 s
+Latency             : 39.734 s
+Energy              : 16.009224 J
+  TX                : 0.269550 J
+  Idle              : 0.000000 J
+  RX                : 15.739674 J
+  Fragment interval : 5.000 s
+  Legal Config      : True
+
+Recommendation (relative utility, lambda=0.40)
+-------------------------------------------
+Energy ratio  A / best : 1.000
+Energy ratio  C / best : 5.282
+Latency ratio A / best : 4.731
+Latency ratio C / best : 1.000
+Utility A              : 0.537070
+Utility C              : 0.368396
+Best class             : A
+
+Sending Class A downlink
+Uplink: {'sf': 7, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 5, 'fcnt': 31564, 'rssi': -45, 'snr': 12.8, 'device_time': '2026-09-19T09:01:12.058713805+00:00', 'device_class': 'A'}
+Hour: 9, minute: 1, second: 12
+Sent Class A downlink — waiting for TXACK: 14624439-9041-411c-908e-36c80f0b82f5
+Timing summary:
+waiting for uplink: 61652.53 ms
+from uplink to enqueue: 0.07 ms
+enqueue: 11.81 ms
+From before uplink to after enqueue: 61664.42 ms
+[FILE] Chunk 4  220B  class=A  DR5  144B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+
+===================================================
+Energy Model
+===================================================
+Remaining bytes     : 144 B
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+P-TX/P-RX/P-Idle/P-Sleep : 700.0/400.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1
+
+Class A  (RX1 — DR tracks the uplink)
+-------------------------------------------
+DL DR / SF          : 5 / 7
+Fragment size       : 220 B (DR5 cap: 222 B)
+Fragments           : 3
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.347392 s
+Latency             : 125.977 s
+Energy              : 2.273122 J
+  TX                : 0.073651 J
+  Idle              : 0.660000 J
+  RX                : 0.416870 J
+  Sleep             : 0.720000 J
+  UL interval       : 60.000 s
+  Legal Config      : True
+
+Class C  (RX2 — fixed regional DR, independent of the uplink)
+-------------------------------------------
+DL DR / SF          : 0 / 12
+Fragment size       : 49 B (DR0 cap: 51 B)
+Fragments           : 3
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 2.269184 s
+Latency             : 13.434 s
+Energy              : 5.489224 J
+  TX                : 0.269550 J
+  Idle              : 0.000000 J
+  RX                : 5.219674 J
+  Fragment interval : 5.000 s
+  Legal Config      : True
+
+Recommendation (relative utility, lambda=0.40)
+-------------------------------------------
+Energy ratio  A / best : 1.000
+Energy ratio  C / best : 2.415
+Latency ratio A / best : 9.377
+Latency ratio C / best : 1.000
+Utility A              : 0.408478
+Utility C              : 0.589206
+Best class             : C
+
+[CTRL] Switched to Class C
+Sending Class C downlink
+Hour: 9, minute: 2, second: 14
+Sent Class C downlink — waiting for TXACK: 41d16f48-9dfd-4df2-83b6-3121e17631e9
+[FILE] Chunk 5  49B  class=C  DR0  95B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+
+===================================================
+Energy Model
+===================================================
+Remaining bytes     : 95 B
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+P-TX/P-RX/P-Idle/P-Sleep : 700.0/400.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1
+
+Class A  (RX1 — DR tracks the uplink)
+-------------------------------------------
+DL DR / SF          : 5 / 7
+Fragment size       : 220 B (DR5 cap: 222 B)
+Fragments           : 3
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.347392 s
+Latency             : 125.977 s
+Energy              : 2.273122 J
+  TX                : 0.073651 J
+  Idle              : 0.660000 J
+  RX                : 0.416870 J
+  Sleep             : 0.720000 J
+  UL interval       : 60.000 s
+  Legal Config      : True
+
+Class C  (RX2 — fixed regional DR, independent of the uplink)
+-------------------------------------------
+DL DR / SF          : 0 / 12
+Fragment size       : 49 B (DR0 cap: 51 B)
+Fragments           : 2
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 2.269184 s
+Latency             : 8.174 s
+Energy              : 3.385224 J
+  TX                : 0.269550 J
+  Idle              : 0.000000 J
+  RX                : 3.115674 J
+  Fragment interval : 5.000 s
+  Legal Config      : True
+
+Recommendation (relative utility, lambda=0.40)
+-------------------------------------------
+Energy ratio  A / best : 1.000
+Energy ratio  C / best : 1.489
+Latency ratio A / best : 15.411
+Latency ratio C / best : 1.000
+Utility A              : 0.334859
+Utility C              : 0.787447
+Best class             : C
+
+Sending Class C downlink
+Hour: 9, minute: 2, second: 15
+Sent Class C downlink — waiting for TXACK: ecede6c8-c8d2-4e78-addb-19c4e248273c
+[FILE] Chunk 6  49B  class=C  DR0  46B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+
+===================================================
+Energy Model
+===================================================
+Remaining bytes     : 46 B
+Uplink Payload      : 5 B (DR4 cap: 222 B)
+UL DR / SF          : 4 / 8
+UL Time On Air      : 0.059904 s
+P-TX/P-RX/P-Idle/P-Sleep : 700.0/400.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 5.990 s)
+DL Duty-Cycle       : 0.1
+
+Class A  (RX1 — DR tracks the uplink)
+-------------------------------------------
+DL DR / SF          : 4 / 8
+Fragment size       : 220 B (DR4 cap: 222 B)
+Fragments           : 3
+UL Time On Air      : 0.059904 s
+DL Time On Air      : 0.612864 s
+Latency             : 126.848 s
+Energy              : 2.643835 J
+  TX                : 0.125798 J
+  Idle              : 0.660000 J
+  RX                : 0.735437 J
+  Sleep             : 0.720000 J
+  UL interval       : 60.000 s
+  Legal Config      : True
+
+Class C  (RX2 — fixed regional DR, independent of the uplink)
+-------------------------------------------
+DL DR / SF          : 0 / 12
+Fragment size       : 49 B (DR0 cap: 51 B)
+Fragments           : 1
+UL Time On Air      : 0.059904 s
+DL Time On Air      : 2.269184 s
+Latency             : 2.939 s
+Energy              : 1.298606 J
+  TX                : 0.286933 J
+  Idle              : 0.000000 J
+  RX                : 1.011674 J
+  Fragment interval : 5.000 s
+  Legal Config      : True
+
+Recommendation (relative utility, lambda=0.40)
+-------------------------------------------
+Energy ratio  A / best : 2.036
+Energy ratio  C / best : 1.000
+Latency ratio A / best : 43.159
+Latency ratio C / best : 1.000
+Utility A              : 0.144783
+Utility C              : 1.000000
+Best class             : C
+
+Sending Class C downlink
+Hour: 9, minute: 2, second: 20
+Sent Class C downlink — waiting for TXACK: fbe66e5a-60c6-4a42-b6b2-013ae3bbe7a1
+[FILE] Chunk 7  46B  class=C  DR0  0B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+[FILE] Done: 6 chunks, 316.31s, class=C, CRC32=0x89B11196
+Total time: 317.88 seconds
+Total time: 0.03 seconds

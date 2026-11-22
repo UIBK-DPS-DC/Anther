@@ -1,3 +1,539 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a6db0b7b3a0a9f1a106e85b139979fff05275202400f8cbd887d0a92e6b39a7
-size 23269
+Total time: 0.03 seconds
+[TXACK] Connected, subscribed to application/+/device/e21ca312cb69528a/event/txack
+[FILE] 1024B  CRC32=0x89B11196  lambda=0.100  confirmed=False
+{'sf': 7, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 5, 'fcnt': 30971, 'rssi': -45, 'snr': 14.0, 'device_time': '2026-09-18T23:28:53.509494522+00:00', 'device_class': 'A'}
+
+===================================================
+Energy Model
+===================================================
+Remaining bytes     : 1024 B
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+P-TX/P-RX/P-Idle/P-Sleep : 700.0/400.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1
+
+Class A  (RX1 — DR tracks the uplink)
+-------------------------------------------
+DL DR / SF          : 5 / 7
+Fragment size       : 220 B (DR5 cap: 222 B)
+Fragments           : 7
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.347392 s
+Latency             : 373.947 s
+Energy              : 5.303950 J
+  TX                : 0.171853 J
+  Idle              : 1.540000 J
+  RX                : 0.972698 J
+  Sleep             : 1.680000 J
+  UL interval       : 60.000 s
+  Legal Config      : True
+
+Class C  (RX2 — fixed regional DR, independent of the uplink)
+-------------------------------------------
+DL DR / SF          : 0 / 12
+Fragment size       : 49 B (DR0 cap: 51 B)
+Fragments           : 21
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 2.269184 s
+Latency             : 104.994 s
+Energy              : 42.228746 J
+  TX                : 0.539101 J
+  Idle              : 0.000000 J
+  RX                : 41.689645 J
+  Fragment interval : 5.000 s
+  Legal Config      : True
+
+Recommendation (relative utility, lambda=0.10)
+-------------------------------------------
+Energy ratio  A / best : 1.000
+Energy ratio  C / best : 7.962
+Latency ratio A / best : 3.562
+Latency ratio C / best : 1.000
+Utility A              : 0.880715
+Utility C              : 0.154558
+Best class             : A
+
+[CTRL] Switched to Class A
+Sending Class A downlink
+Uplink: {'sf': 7, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 5, 'fcnt': 30975, 'rssi': -47, 'snr': 11.5, 'device_time': '2026-09-18T23:29:00.009522688+00:00', 'device_class': 'A'}
+Hour: 23, minute: 29, second: 0
+Sent Class A downlink — waiting for TXACK: fb4b38e7-d27c-4140-b578-74a6c342f648
+Timing summary:
+waiting for uplink: 1454.38 ms
+from uplink to enqueue: 0.05 ms
+enqueue: 7.97 ms
+From before uplink to after enqueue: 1462.40 ms
+[FILE] Chunk 1  220B  class=A  DR5  804B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+
+===================================================
+Energy Model
+===================================================
+Remaining bytes     : 804 B
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+P-TX/P-RX/P-Idle/P-Sleep : 700.0/400.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1
+
+Class A  (RX1 — DR tracks the uplink)
+-------------------------------------------
+DL DR / SF          : 5 / 7
+Fragment size       : 220 B (DR5 cap: 222 B)
+Fragments           : 6
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.347392 s
+Latency             : 311.955 s
+Energy              : 4.546243 J
+  TX                : 0.147302 J
+  Idle              : 1.320000 J
+  RX                : 0.833741 J
+  Sleep             : 1.440000 J
+  UL interval       : 60.000 s
+  Legal Config      : True
+
+Class C  (RX2 — fixed regional DR, independent of the uplink)
+-------------------------------------------
+DL DR / SF          : 0 / 12
+Fragment size       : 49 B (DR0 cap: 51 B)
+Fragments           : 17
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 2.269184 s
+Latency             : 83.954 s
+Energy              : 33.812746 J
+  TX                : 0.539101 J
+  Idle              : 0.000000 J
+  RX                : 33.273645 J
+  Fragment interval : 5.000 s
+  Legal Config      : True
+
+Recommendation (relative utility, lambda=0.10)
+-------------------------------------------
+Energy ratio  A / best : 1.000
+Energy ratio  C / best : 7.438
+Latency ratio A / best : 3.716
+Latency ratio C / best : 1.000
+Utility A              : 0.876991
+Utility C              : 0.164329
+Best class             : A
+
+Sending Class A downlink
+Uplink: {'sf': 7, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 5, 'fcnt': 30976, 'rssi': -47, 'snr': 12.5, 'device_time': '2026-09-18T23:30:01.694975163+00:00', 'device_class': 'A'}
+Hour: 23, minute: 30, second: 1
+Sent Class A downlink — waiting for TXACK: 5e073079-d878-490b-90c2-74c8b8023feb
+Timing summary:
+waiting for uplink: 61557.43 ms
+from uplink to enqueue: 0.10 ms
+enqueue: 11.25 ms
+From before uplink to after enqueue: 61568.78 ms
+[FILE] Chunk 2  220B  class=A  DR5  584B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+
+===================================================
+Energy Model
+===================================================
+Remaining bytes     : 584 B
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+P-TX/P-RX/P-Idle/P-Sleep : 700.0/400.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1
+
+Class A  (RX1 — DR tracks the uplink)
+-------------------------------------------
+DL DR / SF          : 5 / 7
+Fragment size       : 220 B (DR5 cap: 222 B)
+Fragments           : 5
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.347392 s
+Latency             : 249.962 s
+Energy              : 3.788536 J
+  TX                : 0.122752 J
+  Idle              : 1.100000 J
+  RX                : 0.694784 J
+  Sleep             : 1.200000 J
+  UL interval       : 60.000 s
+  Legal Config      : True
+
+Class C  (RX2 — fixed regional DR, independent of the uplink)
+-------------------------------------------
+DL DR / SF          : 0 / 12
+Fragment size       : 49 B (DR0 cap: 51 B)
+Fragments           : 12
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 2.269184 s
+Latency             : 60.774 s
+Energy              : 24.425224 J
+  TX                : 0.269550 J
+  Idle              : 0.000000 J
+  RX                : 24.155674 J
+  Fragment interval : 5.000 s
+  Legal Config      : True
+
+Recommendation (relative utility, lambda=0.10)
+-------------------------------------------
+Energy ratio  A / best : 1.000
+Energy ratio  C / best : 6.447
+Latency ratio A / best : 4.113
+Latency ratio C / best : 1.000
+Utility A              : 0.868129
+Utility C              : 0.186883
+Best class             : A
+
+Sending Class A downlink
+Uplink: {'sf': 7, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 5, 'fcnt': 30977, 'rssi': -46, 'snr': 13.8, 'device_time': '2026-09-18T23:31:03.454925954+00:00', 'device_class': 'A'}
+Hour: 23, minute: 31, second: 3
+Sent Class A downlink — waiting for TXACK: 321cf635-7a7b-4c2a-9d4e-3223b2592982
+Timing summary:
+waiting for uplink: 61595.39 ms
+from uplink to enqueue: 0.08 ms
+enqueue: 13.64 ms
+From before uplink to after enqueue: 61609.11 ms
+[FILE] Chunk 3  220B  class=A  DR5  364B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+
+===================================================
+Energy Model
+===================================================
+Remaining bytes     : 364 B
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+P-TX/P-RX/P-Idle/P-Sleep : 700.0/400.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1
+
+Class A  (RX1 — DR tracks the uplink)
+-------------------------------------------
+DL DR / SF          : 5 / 7
+Fragment size       : 220 B (DR5 cap: 222 B)
+Fragments           : 4
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.347392 s
+Latency             : 187.970 s
+Energy              : 3.030829 J
+  TX                : 0.098202 J
+  Idle              : 0.880000 J
+  RX                : 0.555827 J
+  Sleep             : 0.960000 J
+  UL interval       : 60.000 s
+  Legal Config      : True
+
+Class C  (RX2 — fixed regional DR, independent of the uplink)
+-------------------------------------------
+DL DR / SF          : 0 / 12
+Fragment size       : 49 B (DR0 cap: 51 B)
+Fragments           : 8
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 2.269184 s
+Latency             : 39.734 s
+Energy              : 16.009224 J
+  TX                : 0.269550 J
+  Idle              : 0.000000 J
+  RX                : 15.739674 J
+  Fragment interval : 5.000 s
+  Legal Config      : True
+
+Recommendation (relative utility, lambda=0.10)
+-------------------------------------------
+Energy ratio  A / best : 1.000
+Energy ratio  C / best : 5.282
+Latency ratio A / best : 4.731
+Latency ratio C / best : 1.000
+Utility A              : 0.856067
+Utility C              : 0.223600
+Best class             : A
+
+Sending Class A downlink
+Uplink: {'sf': 7, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 5, 'fcnt': 30978, 'rssi': -46, 'snr': 11.8, 'device_time': '2026-09-18T23:32:05.181970666+00:00', 'device_class': 'A'}
+Hour: 23, minute: 32, second: 5
+Sent Class A downlink — waiting for TXACK: 082db217-5941-4d26-a110-eb4d417a7d7f
+Timing summary:
+waiting for uplink: 61565.05 ms
+from uplink to enqueue: 0.07 ms
+enqueue: 11.32 ms
+From before uplink to after enqueue: 61576.44 ms
+[FILE] Chunk 4  220B  class=A  DR5  144B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=5 on e21ca312cb69528a
+
+===================================================
+Energy Model
+===================================================
+Remaining bytes     : 144 B
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+P-TX/P-RX/P-Idle/P-Sleep : 700.0/400.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1
+
+Class A  (RX1 — DR tracks the uplink)
+-------------------------------------------
+DL DR / SF          : 5 / 7
+Fragment size       : 220 B (DR5 cap: 222 B)
+Fragments           : 3
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.347392 s
+Latency             : 125.977 s
+Energy              : 2.273122 J
+  TX                : 0.073651 J
+  Idle              : 0.660000 J
+  RX                : 0.416870 J
+  Sleep             : 0.720000 J
+  UL interval       : 60.000 s
+  Legal Config      : True
+
+Class C  (RX2 — fixed regional DR, independent of the uplink)
+-------------------------------------------
+DL DR / SF          : 0 / 12
+Fragment size       : 49 B (DR0 cap: 51 B)
+Fragments           : 3
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 2.269184 s
+Latency             : 13.434 s
+Energy              : 5.489224 J
+  TX                : 0.269550 J
+  Idle              : 0.000000 J
+  RX                : 5.219674 J
+  Fragment interval : 5.000 s
+  Legal Config      : True
+
+Recommendation (relative utility, lambda=0.10)
+-------------------------------------------
+Energy ratio  A / best : 1.000
+Energy ratio  C / best : 2.415
+Latency ratio A / best : 9.377
+Latency ratio C / best : 1.000
+Utility A              : 0.799451
+Utility C              : 0.452273
+Best class             : A
+
+Sending Class A downlink
+Uplink: {'sf': 7, 'bw_hz': 125000, 'code_rate': 'CR_4_5', 'dr': 5, 'fcnt': 30979, 'rssi': -45, 'snr': 14.2, 'device_time': '2026-09-18T23:33:07.068711376+00:00', 'device_class': 'A'}
+Hour: 23, minute: 33, second: 7
+Sent Class A downlink — waiting for TXACK: e852ae53-1815-43f1-ba6f-dabef5ae486a
+Timing summary:
+waiting for uplink: 61698.01 ms
+from uplink to enqueue: 0.06 ms
+enqueue: 9.40 ms
+From before uplink to after enqueue: 61707.46 ms
+[FILE] Chunk 5  144B  class=A  DR5  0B remaining
+[ADR-OVERRIDE] Set experiment_adr_override=4 on e21ca312cb69528a
+[FILE] Done: 4 chunks, 304.30s, class=A, CRC32=0x89B11196
+Total time: 306.14 seconds
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (3 item(s) remain)
+[QUEUE] Waiting for queue to empty (2 item(s) remain)
+[QUEUE] Waiting for queue to empty (2 item(s) remain)
+[QUEUE] Waiting for queue to empty (2 item(s) remain)
+[QUEUE] Waiting for queue to empty (2 item(s) remain)
+[QUEUE] Waiting for queue to empty (2 item(s) remain)
+[QUEUE] Waiting for queue to empty (2 item(s) remain)
+[QUEUE] Waiting for queue to empty (1 item(s) remain)
+[QUEUE] Waiting for queue to empty (1 item(s) remain)
+[QUEUE] Waiting for queue to empty (1 item(s) remain)
+[QUEUE] Waiting for queue to empty (1 item(s) remain)
+[QUEUE] Waiting for queue to empty (1 item(s) remain)
+[QUEUE] Waiting for queue to empty (1 item(s) remain)
+Total time: 54.51 seconds

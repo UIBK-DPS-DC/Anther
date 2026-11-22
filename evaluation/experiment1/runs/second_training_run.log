@@ -1,3 +1,880 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3d5bb7a6d17116891274a0a7e2c890ca250503b134ac4928084f504959852aa6
-size 43944
+Using device: cuda
+Files: train=84849, val=9981, test=11005
+KWS classes: ['yes', 'no', 'up', 'down', 'left', 'right', 'on', 'off', 'stop', 'go', 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'bed', 'bird', 'cat', 'dog', 'happy', 'house', 'marvin', 'sheila', 'tree', 'wow', 'unknown', 'silence']
+Dataset sizes: train=93333, validation=10979, test=12105
+
+========================================================================
+MODEL: mlp
+========================================================================
+Parameters: 65,472
+Using finetune fractions: [0.1, 0.3, 0.5, 0.7, 1.0]
+Corresponding cumulative sample counts: [9333, 27999, 46666, 65333, 93333]
+
+========================================
+Version 0: training with 9333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:778: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:838.)
+  running_loss += float(loss) * y.size(0)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=3.3041 val_acc=20.93%
+    epoch 02/8 loss=2.8498 val_acc=28.14%
+    epoch 03/8 loss=2.5611 val_acc=32.08%
+    epoch 04/8 loss=2.4163 val_acc=34.39%
+    epoch 05/8 loss=2.3228 val_acc=38.63%
+    epoch 06/8 loss=2.2384 val_acc=38.26%
+    epoch 07/8 loss=2.1721 val_acc=40.90%
+    epoch 08/8 loss=2.1252 val_acc=43.42%
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+Saved: runs2/mlp/version_0_9333.pt
+  validation accuracy: 43.42%
+  test accuracy:       40.88%
+
+========================================
+Version 1: training with 27999 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=2.1405 val_acc=44.97%
+    epoch 02/8 loss=2.1090 val_acc=45.90%
+    epoch 03/8 loss=2.0770 val_acc=46.48%
+    epoch 04/8 loss=2.0571 val_acc=46.92%
+    epoch 05/8 loss=2.0367 val_acc=47.57%
+    epoch 06/8 loss=2.0202 val_acc=47.14%
+    epoch 07/8 loss=2.0048 val_acc=47.88%
+    epoch 08/8 loss=1.9911 val_acc=48.19%
+Saved: runs2/mlp/version_1_27999.pt
+  validation accuracy: 48.19%
+  test accuracy:       46.75%
+
+========================================
+Version 2: training with 46666 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=2.0117 val_acc=49.12%
+    epoch 02/8 loss=1.9901 val_acc=49.77%
+    epoch 03/8 loss=1.9681 val_acc=50.85%
+    epoch 04/8 loss=1.9583 val_acc=50.89%
+    epoch 05/8 loss=1.9337 val_acc=51.12%
+    epoch 06/8 loss=1.9210 val_acc=51.93%
+    epoch 07/8 loss=1.9140 val_acc=51.50%
+    epoch 08/8 loss=1.9005 val_acc=51.91%
+Saved: runs2/mlp/version_2_46666.pt
+  validation accuracy: 51.93%
+  test accuracy:       49.01%
+
+========================================
+Version 3: training with 65333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=1.9200 val_acc=52.30%
+    epoch 02/8 loss=1.9007 val_acc=52.19%
+    epoch 03/8 loss=1.8869 val_acc=52.79%
+    epoch 04/8 loss=1.8721 val_acc=54.09%
+    epoch 05/8 loss=1.8634 val_acc=53.73%
+    epoch 06/8 loss=1.8532 val_acc=53.64%
+    epoch 07/8 loss=1.8384 val_acc=54.61%
+    epoch 08/8 loss=1.8293 val_acc=54.50%
+Saved: runs2/mlp/version_3_65333.pt
+  validation accuracy: 54.61%
+  test accuracy:       51.16%
+
+========================================
+Version 4: training with 93333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=1.8508 val_acc=54.09%
+    epoch 02/8 loss=1.8360 val_acc=54.67%
+    epoch 03/8 loss=1.8215 val_acc=55.18%
+    epoch 04/8 loss=1.8105 val_acc=55.43%
+    epoch 05/8 loss=1.8028 val_acc=55.76%
+    epoch 06/8 loss=1.7919 val_acc=56.42%
+    epoch 07/8 loss=1.7803 val_acc=55.67%
+    epoch 08/8 loss=1.7745 val_acc=56.25%
+Saved: runs2/mlp/version_4_93333.pt
+  validation accuracy: 56.42%
+  test accuracy:       52.57%
+
+========================================================================
+MODEL: cnn
+========================================================================
+Parameters: 11,784
+Using finetune fractions: [0.1, 0.3, 0.5, 0.7, 1.0]
+Corresponding cumulative sample counts: [9333, 27999, 46666, 65333, 93333]
+
+========================================
+Version 0: training with 9333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=3.3264 val_acc=17.00%
+    epoch 02/8 loss=3.1405 val_acc=23.56%
+    epoch 03/8 loss=2.9665 val_acc=23.50%
+    epoch 04/8 loss=2.8117 val_acc=30.29%
+    epoch 05/8 loss=2.6614 val_acc=36.69%
+    epoch 06/8 loss=2.5237 val_acc=36.53%
+    epoch 07/8 loss=2.4037 val_acc=31.02%
+    epoch 08/8 loss=2.2839 val_acc=24.57%
+Saved: runs2/cnn/version_0_9333.pt
+  validation accuracy: 36.69%
+  test accuracy:       35.11%
+
+========================================
+Version 1: training with 27999 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=2.5399 val_acc=37.84%
+    epoch 02/8 loss=2.4635 val_acc=42.28%
+    epoch 03/8 loss=2.3934 val_acc=43.96%
+    epoch 04/8 loss=2.3234 val_acc=44.95%
+    epoch 05/8 loss=2.2574 val_acc=46.41%
+    epoch 06/8 loss=2.1994 val_acc=46.74%
+    epoch 07/8 loss=2.1405 val_acc=45.51%
+    epoch 08/8 loss=2.0836 val_acc=47.94%
+Saved: runs2/cnn/version_1_27999.pt
+  validation accuracy: 47.94%
+  test accuracy:       46.25%
+
+========================================
+Version 2: training with 46666 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=2.0249 val_acc=48.74%
+    epoch 02/8 loss=1.9527 val_acc=46.81%
+    epoch 03/8 loss=1.8863 val_acc=52.57%
+    epoch 04/8 loss=1.8265 val_acc=48.66%
+    epoch 05/8 loss=1.7741 val_acc=55.32%
+    epoch 06/8 loss=1.7254 val_acc=55.33%
+    epoch 07/8 loss=1.6799 val_acc=58.24%
+    epoch 08/8 loss=1.6371 val_acc=58.85%
+Saved: runs2/cnn/version_2_46666.pt
+  validation accuracy: 58.85%
+  test accuracy:       56.75%
+
+========================================
+Version 3: training with 65333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=1.5967 val_acc=60.53%
+    epoch 02/8 loss=1.5456 val_acc=58.67%
+    epoch 03/8 loss=1.5005 val_acc=60.95%
+    epoch 04/8 loss=1.4564 val_acc=63.85%
+    epoch 05/8 loss=1.4160 val_acc=63.25%
+    epoch 06/8 loss=1.3808 val_acc=63.13%
+    epoch 07/8 loss=1.3418 val_acc=64.90%
+    epoch 08/8 loss=1.3058 val_acc=65.98%
+Saved: runs2/cnn/version_3_65333.pt
+  validation accuracy: 65.98%
+  test accuracy:       63.73%
+
+========================================
+Version 4: training with 93333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=1.2677 val_acc=65.29%
+    epoch 02/8 loss=1.2212 val_acc=67.62%
+    epoch 03/8 loss=1.1794 val_acc=69.10%
+    epoch 04/8 loss=1.1413 val_acc=69.66%
+    epoch 05/8 loss=1.1036 val_acc=71.77%
+    epoch 06/8 loss=1.0717 val_acc=70.22%
+    epoch 07/8 loss=1.0434 val_acc=72.75%
+    epoch 08/8 loss=1.0138 val_acc=73.35%
+Saved: runs2/cnn/version_4_93333.pt
+  validation accuracy: 73.35%
+  test accuracy:       71.85%
+
+========================================================================
+MODEL: cnn1d
+========================================================================
+Parameters: 25,664
+Using finetune fractions: [0.1, 0.3, 0.5, 0.7, 1.0]
+Corresponding cumulative sample counts: [9333, 27999, 46666, 65333, 93333]
+
+========================================
+Version 0: training with 9333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=2.8946 val_acc=45.01%
+    epoch 02/8 loss=2.1046 val_acc=64.42%
+    epoch 03/8 loss=1.5214 val_acc=71.31%
+    epoch 04/8 loss=1.1583 val_acc=77.02%
+    epoch 05/8 loss=0.9371 val_acc=76.86%
+    epoch 06/8 loss=0.7988 val_acc=79.72%
+    epoch 07/8 loss=0.7035 val_acc=81.11%
+    epoch 08/8 loss=0.6297 val_acc=82.17%
+Saved: runs2/cnn1d/version_0_9333.pt
+  validation accuracy: 82.17%
+  test accuracy:       80.00%
+
+========================================
+Version 1: training with 27999 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.5915 val_acc=85.66%
+    epoch 02/8 loss=0.5485 val_acc=86.87%
+    epoch 03/8 loss=0.5209 val_acc=86.90%
+    epoch 04/8 loss=0.4968 val_acc=87.42%
+    epoch 05/8 loss=0.4801 val_acc=87.97%
+    epoch 06/8 loss=0.4617 val_acc=88.10%
+    epoch 07/8 loss=0.4445 val_acc=87.87%
+    epoch 08/8 loss=0.4314 val_acc=88.40%
+Saved: runs2/cnn1d/version_1_27999.pt
+  validation accuracy: 88.40%
+  test accuracy:       87.10%
+
+========================================
+Version 2: training with 46666 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.4447 val_acc=88.81%
+    epoch 02/8 loss=0.4247 val_acc=89.39%
+    epoch 03/8 loss=0.4072 val_acc=89.43%
+    epoch 04/8 loss=0.3941 val_acc=89.40%
+    epoch 05/8 loss=0.3828 val_acc=89.63%
+    epoch 06/8 loss=0.3722 val_acc=89.70%
+    epoch 07/8 loss=0.3637 val_acc=90.07%
+    epoch 08/8 loss=0.3537 val_acc=90.30%
+Saved: runs2/cnn1d/version_2_46666.pt
+  validation accuracy: 90.30%
+  test accuracy:       89.66%
+
+========================================
+Version 3: training with 65333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.3502 val_acc=90.35%
+    epoch 02/8 loss=0.3366 val_acc=90.55%
+    epoch 03/8 loss=0.3232 val_acc=90.98%
+    epoch 04/8 loss=0.3137 val_acc=91.15%
+    epoch 05/8 loss=0.3057 val_acc=90.92%
+    epoch 06/8 loss=0.2975 val_acc=91.06%
+    epoch 07/8 loss=0.2903 val_acc=90.93%
+    epoch 08/8 loss=0.2814 val_acc=91.18%
+Saved: runs2/cnn1d/version_3_65333.pt
+  validation accuracy: 91.18%
+  test accuracy:       90.64%
+
+========================================
+Version 4: training with 93333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.2941 val_acc=91.63%
+    epoch 02/8 loss=0.2843 val_acc=91.29%
+    epoch 03/8 loss=0.2757 val_acc=91.73%
+    epoch 04/8 loss=0.2687 val_acc=92.00%
+    epoch 05/8 loss=0.2623 val_acc=92.15%
+    epoch 06/8 loss=0.2562 val_acc=91.88%
+    epoch 07/8 loss=0.2513 val_acc=92.21%
+    epoch 08/8 loss=0.2452 val_acc=92.10%
+Saved: runs2/cnn1d/version_4_93333.pt
+  validation accuracy: 92.21%
+  test accuracy:       91.72%
+
+========================================================================
+MODEL: ds_cnn
+========================================================================
+Parameters: 14,080
+Using finetune fractions: [0.1, 0.3, 0.5, 0.7, 1.0]
+Corresponding cumulative sample counts: [9333, 27999, 46666, 65333, 93333]
+
+========================================
+Version 0: training with 9333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=3.3318 val_acc=20.85%
+    epoch 02/8 loss=2.9611 val_acc=30.82%
+    epoch 03/8 loss=2.5016 val_acc=46.97%
+    epoch 04/8 loss=2.0997 val_acc=55.29%
+    epoch 05/8 loss=1.7511 val_acc=61.75%
+    epoch 06/8 loss=1.4631 val_acc=67.40%
+    epoch 07/8 loss=1.2357 val_acc=71.12%
+    epoch 08/8 loss=1.0732 val_acc=72.84%
+Saved: runs2/ds_cnn/version_0_9333.pt
+  validation accuracy: 72.84%
+  test accuracy:       72.42%
+
+========================================
+Version 1: training with 27999 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.9943 val_acc=77.22%
+    epoch 02/8 loss=0.9192 val_acc=78.17%
+    epoch 03/8 loss=0.8610 val_acc=79.21%
+    epoch 04/8 loss=0.8119 val_acc=80.38%
+    epoch 05/8 loss=0.7697 val_acc=80.75%
+    epoch 06/8 loss=0.7345 val_acc=81.56%
+    epoch 07/8 loss=0.6988 val_acc=81.47%
+    epoch 08/8 loss=0.6710 val_acc=82.69%
+Saved: runs2/ds_cnn/version_1_27999.pt
+  validation accuracy: 82.69%
+  test accuracy:       81.84%
+
+========================================
+Version 2: training with 46666 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.6748 val_acc=83.19%
+    epoch 02/8 loss=0.6344 val_acc=84.46%
+    epoch 03/8 loss=0.6048 val_acc=84.38%
+    epoch 04/8 loss=0.5776 val_acc=85.22%
+    epoch 05/8 loss=0.5558 val_acc=85.29%
+    epoch 06/8 loss=0.5329 val_acc=85.79%
+    epoch 07/8 loss=0.5153 val_acc=86.03%
+    epoch 08/8 loss=0.4983 val_acc=86.63%
+Saved: runs2/ds_cnn/version_2_46666.pt
+  validation accuracy: 86.63%
+  test accuracy:       85.95%
+
+========================================
+Version 3: training with 65333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.4863 val_acc=86.93%
+    epoch 02/8 loss=0.4662 val_acc=86.96%
+    epoch 03/8 loss=0.4468 val_acc=87.24%
+    epoch 04/8 loss=0.4313 val_acc=87.65%
+    epoch 05/8 loss=0.4146 val_acc=88.10%
+    epoch 06/8 loss=0.4023 val_acc=88.20%
+    epoch 07/8 loss=0.3893 val_acc=88.20%
+    epoch 08/8 loss=0.3793 val_acc=88.54%
+Saved: runs2/ds_cnn/version_3_65333.pt
+  validation accuracy: 88.54%
+  test accuracy:       87.62%
+
+========================================
+Version 4: training with 93333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.3871 val_acc=88.93%
+    epoch 02/8 loss=0.3734 val_acc=88.80%
+    epoch 03/8 loss=0.3603 val_acc=88.93%
+    epoch 04/8 loss=0.3488 val_acc=89.26%
+    epoch 05/8 loss=0.3394 val_acc=89.46%
+    epoch 06/8 loss=0.3301 val_acc=89.47%
+    epoch 07/8 loss=0.3227 val_acc=89.63%
+    epoch 08/8 loss=0.3156 val_acc=90.13%
+Saved: runs2/ds_cnn/version_4_93333.pt
+  validation accuracy: 90.13%
+  test accuracy:       89.29%
+
+========================================================================
+MODEL: svdf
+========================================================================
+Parameters: 10,144
+Using finetune fractions: [0.1, 0.3, 0.5, 0.7, 1.0]
+Corresponding cumulative sample counts: [9333, 27999, 46666, 65333, 93333]
+
+========================================
+Version 0: training with 9333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=3.1369 val_acc=27.29%
+    epoch 02/8 loss=2.6694 val_acc=34.08%
+    epoch 03/8 loss=2.4076 val_acc=36.48%
+    epoch 04/8 loss=2.2328 val_acc=39.76%
+    epoch 05/8 loss=2.1130 val_acc=41.72%
+    epoch 06/8 loss=2.0061 val_acc=43.70%
+    epoch 07/8 loss=1.9352 val_acc=45.67%
+    epoch 08/8 loss=1.8679 val_acc=47.51%
+Saved: runs2/svdf/version_0_9333.pt
+  validation accuracy: 47.51%
+  test accuracy:       45.34%
+
+========================================
+Version 1: training with 27999 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=1.8915 val_acc=50.35%
+    epoch 02/8 loss=1.8406 val_acc=51.99%
+    epoch 03/8 loss=1.8042 val_acc=52.50%
+    epoch 04/8 loss=1.7752 val_acc=53.17%
+    epoch 05/8 loss=1.7446 val_acc=53.30%
+    epoch 06/8 loss=1.7235 val_acc=54.18%
+    epoch 07/8 loss=1.7018 val_acc=54.56%
+    epoch 08/8 loss=1.6792 val_acc=54.83%
+Saved: runs2/svdf/version_1_27999.pt
+  validation accuracy: 54.83%
+  test accuracy:       51.57%
+
+========================================
+Version 2: training with 46666 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=1.6998 val_acc=55.97%
+    epoch 02/8 loss=1.6668 val_acc=56.85%
+    epoch 03/8 loss=1.6391 val_acc=57.31%
+    epoch 04/8 loss=1.6161 val_acc=57.57%
+    epoch 05/8 loss=1.5930 val_acc=57.86%
+    epoch 06/8 loss=1.5723 val_acc=58.24%
+    epoch 07/8 loss=1.5557 val_acc=59.25%
+    epoch 08/8 loss=1.5395 val_acc=59.16%
+Saved: runs2/svdf/version_2_46666.pt
+  validation accuracy: 59.25%
+  test accuracy:       55.21%
+
+========================================
+Version 3: training with 65333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=1.5356 val_acc=59.40%
+    epoch 02/8 loss=1.5084 val_acc=59.92%
+    epoch 03/8 loss=1.4854 val_acc=60.07%
+    epoch 04/8 loss=1.4647 val_acc=60.32%
+    epoch 05/8 loss=1.4484 val_acc=61.24%
+    epoch 06/8 loss=1.4314 val_acc=61.54%
+    epoch 07/8 loss=1.4162 val_acc=61.70%
+    epoch 08/8 loss=1.4027 val_acc=61.81%
+Saved: runs2/svdf/version_3_65333.pt
+  validation accuracy: 61.81%
+  test accuracy:       58.44%
+
+========================================
+Version 4: training with 93333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=1.4099 val_acc=62.42%
+    epoch 02/8 loss=1.3912 val_acc=62.42%
+    epoch 03/8 loss=1.3768 val_acc=63.06%
+    epoch 04/8 loss=1.3608 val_acc=62.90%
+    epoch 05/8 loss=1.3497 val_acc=63.26%
+    epoch 06/8 loss=1.3393 val_acc=63.35%
+    epoch 07/8 loss=1.3288 val_acc=64.04%
+    epoch 08/8 loss=1.3188 val_acc=64.05%
+Saved: runs2/svdf/version_4_93333.pt
+  validation accuracy: 64.05%
+  test accuracy:       60.20%
+
+========================================================================
+MODEL: gru
+========================================================================
+Parameters: 17,648
+Using finetune fractions: [0.1, 0.3, 0.5, 0.7, 1.0]
+Corresponding cumulative sample counts: [9333, 27999, 46666, 65333, 93333]
+
+========================================
+Version 0: training with 9333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=3.3731 val_acc=14.20%
+    epoch 02/8 loss=3.0667 val_acc=19.02%
+    epoch 03/8 loss=2.7502 val_acc=30.36%
+    epoch 04/8 loss=2.3465 val_acc=39.94%
+    epoch 05/8 loss=2.0275 val_acc=47.06%
+    epoch 06/8 loss=1.8055 val_acc=54.75%
+    epoch 07/8 loss=1.6153 val_acc=59.48%
+    epoch 08/8 loss=1.4349 val_acc=62.41%
+Saved: runs2/gru/version_0_9333.pt
+  validation accuracy: 62.41%
+  test accuracy:       61.14%
+
+========================================
+Version 1: training with 27999 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=1.3129 val_acc=67.48%
+    epoch 02/8 loss=1.2263 val_acc=69.00%
+    epoch 03/8 loss=1.1577 val_acc=70.19%
+    epoch 04/8 loss=1.0967 val_acc=71.28%
+    epoch 05/8 loss=1.0423 val_acc=72.78%
+    epoch 06/8 loss=0.9959 val_acc=73.06%
+    epoch 07/8 loss=0.9529 val_acc=74.05%
+    epoch 08/8 loss=0.9134 val_acc=74.78%
+Saved: runs2/gru/version_1_27999.pt
+  validation accuracy: 74.78%
+  test accuracy:       72.15%
+
+========================================
+Version 2: training with 46666 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.8982 val_acc=76.23%
+    epoch 02/8 loss=0.8487 val_acc=77.17%
+    epoch 03/8 loss=0.8051 val_acc=77.81%
+    epoch 04/8 loss=0.7674 val_acc=78.63%
+    epoch 05/8 loss=0.7334 val_acc=79.52%
+    epoch 06/8 loss=0.7032 val_acc=80.28%
+    epoch 07/8 loss=0.6767 val_acc=81.11%
+    epoch 08/8 loss=0.6526 val_acc=81.85%
+Saved: runs2/gru/version_2_46666.pt
+  validation accuracy: 81.85%
+  test accuracy:       80.09%
+
+========================================
+Version 3: training with 65333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.6325 val_acc=82.48%
+    epoch 02/8 loss=0.6024 val_acc=83.33%
+    epoch 03/8 loss=0.5768 val_acc=83.46%
+    epoch 04/8 loss=0.5535 val_acc=83.32%
+    epoch 05/8 loss=0.5325 val_acc=84.76%
+    epoch 06/8 loss=0.5150 val_acc=84.85%
+    epoch 07/8 loss=0.4971 val_acc=85.67%
+    epoch 08/8 loss=0.4815 val_acc=85.75%
+Saved: runs2/gru/version_3_65333.pt
+  validation accuracy: 85.75%
+  test accuracy:       84.46%
+
+========================================
+Version 4: training with 93333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.4832 val_acc=86.59%
+    epoch 02/8 loss=0.4627 val_acc=86.81%
+    epoch 03/8 loss=0.4450 val_acc=87.14%
+    epoch 04/8 loss=0.4301 val_acc=87.14%
+    epoch 05/8 loss=0.4169 val_acc=87.69%
+    epoch 06/8 loss=0.4036 val_acc=88.16%
+    epoch 07/8 loss=0.3928 val_acc=88.51%
+    epoch 08/8 loss=0.3820 val_acc=88.32%
+Saved: runs2/gru/version_4_93333.pt
+  validation accuracy: 88.51%
+  test accuracy:       86.91%
+
+========================================================================
+MODEL: crnn
+========================================================================
+Parameters: 32,716
+Using finetune fractions: [0.1, 0.3, 0.5, 0.7, 1.0]
+Corresponding cumulative sample counts: [9333, 27999, 46666, 65333, 93333]
+
+========================================
+Version 0: training with 9333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=3.1427 val_acc=25.12%
+    epoch 02/8 loss=2.2876 val_acc=50.18%
+    epoch 03/8 loss=1.7166 val_acc=59.97%
+    epoch 04/8 loss=1.3486 val_acc=69.26%
+    epoch 05/8 loss=1.0948 val_acc=72.95%
+    epoch 06/8 loss=0.9306 val_acc=76.46%
+    epoch 07/8 loss=0.8097 val_acc=78.00%
+    epoch 08/8 loss=0.7156 val_acc=79.44%
+Saved: runs2/crnn/version_0_9333.pt
+  validation accuracy: 79.44%
+  test accuracy:       78.35%
+
+========================================
+Version 1: training with 27999 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.7203 val_acc=81.57%
+    epoch 02/8 loss=0.6675 val_acc=81.88%
+    epoch 03/8 loss=0.6288 val_acc=82.82%
+    epoch 04/8 loss=0.5942 val_acc=83.31%
+    epoch 05/8 loss=0.5641 val_acc=83.72%
+    epoch 06/8 loss=0.5392 val_acc=84.59%
+    epoch 07/8 loss=0.5147 val_acc=84.78%
+    epoch 08/8 loss=0.4946 val_acc=85.24%
+Saved: runs2/crnn/version_1_27999.pt
+  validation accuracy: 85.24%
+  test accuracy:       84.56%
+
+========================================
+Version 2: training with 46666 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.5152 val_acc=86.23%
+    epoch 02/8 loss=0.4844 val_acc=86.77%
+    epoch 03/8 loss=0.4604 val_acc=86.84%
+    epoch 04/8 loss=0.4380 val_acc=87.75%
+    epoch 05/8 loss=0.4187 val_acc=87.70%
+    epoch 06/8 loss=0.4024 val_acc=87.85%
+    epoch 07/8 loss=0.3867 val_acc=88.63%
+    epoch 08/8 loss=0.3726 val_acc=88.24%
+Saved: runs2/crnn/version_2_46666.pt
+  validation accuracy: 88.63%
+  test accuracy:       88.11%
+
+========================================
+Version 3: training with 65333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.3863 val_acc=88.54%
+    epoch 02/8 loss=0.3648 val_acc=88.84%
+    epoch 03/8 loss=0.3464 val_acc=89.51%
+    epoch 04/8 loss=0.3301 val_acc=89.00%
+    epoch 05/8 loss=0.3170 val_acc=89.63%
+    epoch 06/8 loss=0.3037 val_acc=89.94%
+    epoch 07/8 loss=0.2916 val_acc=90.02%
+    epoch 08/8 loss=0.2810 val_acc=90.17%
+Saved: runs2/crnn/version_3_65333.pt
+  validation accuracy: 90.17%
+  test accuracy:       89.76%
+
+========================================
+Version 4: training with 93333 samples
+========================================
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/deltafuota/evaluation/train.py:174: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.2974 val_acc=90.28%
+    epoch 02/8 loss=0.2826 val_acc=90.52%
+    epoch 03/8 loss=0.2697 val_acc=90.68%
+    epoch 04/8 loss=0.2591 val_acc=91.00%
+    epoch 05/8 loss=0.2497 val_acc=91.13%
+    epoch 06/8 loss=0.2404 val_acc=90.83%
+    epoch 07/8 loss=0.2321 val_acc=91.13%
+    epoch 08/8 loss=0.2242 val_acc=91.26%
+Saved: runs2/crnn/version_4_93333.pt
+  validation accuracy: 91.26%
+  test accuracy:       91.05%
+
+Experiment finished.
+Results: /home/eschoepf/deltafuota/evaluation/runs2

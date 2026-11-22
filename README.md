@@ -36,7 +36,7 @@ Shared fonts, colors, and spacing are defined in `scripts/plot_style.py`.
 
 Firmware lives in `node/`; experiment-specific scripts and data are under `evaluation/experiment1/`, `experiment2/`, and `experiment3/`. Check the relevant scripts and device configuration before running a hardware experiment. The plotting dependencies above are not a full server or firmware setup.
 
-Many source and data files are stored with Git LFS. If a file contains an LFS pointer instead of its contents, install [Git LFS](https://git-lfs.com/) and run:
+Large measurement CSVs (10 MB or more) are stored with Git LFS; code, documentation, figures, and smaller files use regular Git. You do not need the large datasets to regenerate the figures. To download them, install [Git LFS](https://git-lfs.com/) and run:
 
 ```sh
 git lfs install

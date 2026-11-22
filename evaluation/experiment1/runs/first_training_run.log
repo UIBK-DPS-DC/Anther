@@ -1,3 +1,485 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fbb234ae30704b932ea427e97a6396d43700f05dddd0d38858b4f016b2f70d80
-size 29362
+Using device: cpu
+Downloading Speech Commands v0.02 to data/speech_commands_v0.02.tar.gz ...
+Extracting data/speech_commands_v0.02.tar.gz ...
+Files: train=84849, val=9981, test=11005
+KWS classes: ['yes', 'no', 'up', 'down', 'left', 'right', 'on', 'off', 'stop', 'go', 'unknown', 'silence']
+Dataset sizes: train=67691, validation=8146, test=8962
+
+========================================================================
+MODEL: mlp
+========================================================================
+Parameters: 526,284
+Training base model on the full training split...
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:643: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /builddir/build/BUILD/python-torch-2.9.1-build/pytorch-v2.9.1/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  running_loss += float(loss) * y.size(0)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/12 loss=0.9643 val_acc=77.46%
+    epoch 02/12 loss=0.6723 val_acc=80.71%
+    epoch 03/12 loss=0.5819 val_acc=82.13%
+    epoch 04/12 loss=0.5314 val_acc=83.43%
+    epoch 05/12 loss=0.4967 val_acc=83.84%
+    epoch 06/12 loss=0.4660 val_acc=83.19%
+    epoch 07/12 loss=0.4460 val_acc=83.46%
+    epoch 08/12 loss=0.4219 val_acc=85.39%
+    epoch 09/12 loss=0.4065 val_acc=84.89%
+    epoch 10/12 loss=0.3897 val_acc=83.76%
+    epoch 11/12 loss=0.3751 val_acc=84.53%
+    epoch 12/12 loss=0.3623 val_acc=85.28%
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+Base result: val=85.39% test=82.58%
+
+------------------------------------------------------------------------
+mlp: fine-tuning with 100 samples
+------------------------------------------------------------------------
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.6496 val_acc=85.43%
+    epoch 02/8 loss=0.4551 val_acc=85.18%
+    epoch 03/8 loss=0.3895 val_acc=85.13%
+    epoch 04/8 loss=0.3343 val_acc=84.81%
+    epoch 05/8 loss=0.2897 val_acc=84.37%
+    epoch 06/8 loss=0.3841 val_acc=84.25%
+    epoch 07/8 loss=0.2581 val_acc=83.81%
+    epoch 08/8 loss=0.2434 val_acc=83.65%
+Saved: runs/mlp/finetune_100.pt
+  validation accuracy: 85.43%
+  test accuracy:       82.88%
+
+------------------------------------------------------------------------
+mlp: fine-tuning with 500 samples
+------------------------------------------------------------------------
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.4706 val_acc=84.81%
+    epoch 02/8 loss=0.3690 val_acc=83.83%
+    epoch 03/8 loss=0.3697 val_acc=83.03%
+    epoch 04/8 loss=0.2835 val_acc=82.59%
+    epoch 05/8 loss=0.2862 val_acc=82.21%
+    epoch 06/8 loss=0.2243 val_acc=81.87%
+    epoch 07/8 loss=0.2067 val_acc=81.68%
+    epoch 08/8 loss=0.2068 val_acc=81.57%
+Saved: runs/mlp/finetune_500.pt
+  validation accuracy: 84.81%
+  test accuracy:       83.41%
+
+------------------------------------------------------------------------
+mlp: fine-tuning with 1000 samples
+------------------------------------------------------------------------
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.4722 val_acc=83.28%
+    epoch 02/8 loss=0.3723 val_acc=81.76%
+    epoch 03/8 loss=0.3382 val_acc=81.86%
+    epoch 04/8 loss=0.2937 val_acc=81.11%
+    epoch 05/8 loss=0.2929 val_acc=81.23%
+    epoch 06/8 loss=0.2634 val_acc=81.08%
+    epoch 07/8 loss=0.2554 val_acc=81.16%
+    epoch 08/8 loss=0.2188 val_acc=81.18%
+Saved: runs/mlp/finetune_1000.pt
+  validation accuracy: 83.28%
+  test accuracy:       82.09%
+
+------------------------------------------------------------------------
+mlp: fine-tuning with 5000 samples
+------------------------------------------------------------------------
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.4225 val_acc=81.23%
+    epoch 02/8 loss=0.3709 val_acc=81.67%
+    epoch 03/8 loss=0.3302 val_acc=80.70%
+    epoch 04/8 loss=0.3201 val_acc=80.60%
+    epoch 05/8 loss=0.3098 val_acc=80.85%
+    epoch 06/8 loss=0.2878 val_acc=80.73%
+    epoch 07/8 loss=0.2672 val_acc=80.13%
+    epoch 08/8 loss=0.2634 val_acc=80.48%
+Saved: runs/mlp/finetune_5000.pt
+  validation accuracy: 81.67%
+  test accuracy:       80.69%
+
+========================================================================
+MODEL: cnn
+========================================================================
+Parameters: 11,124
+Training base model on the full training split...
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/12 loss=1.4617 val_acc=56.97%
+    epoch 02/12 loss=1.0315 val_acc=68.14%
+    epoch 03/12 loss=0.8280 val_acc=74.23%
+    epoch 04/12 loss=0.6899 val_acc=78.74%
+    epoch 05/12 loss=0.6047 val_acc=81.54%
+    epoch 06/12 loss=0.5457 val_acc=79.94%
+    epoch 07/12 loss=0.5007 val_acc=77.68%
+    epoch 08/12 loss=0.4667 val_acc=80.97%
+    epoch 09/12 loss=0.4390 val_acc=82.29%
+    epoch 10/12 loss=0.4168 val_acc=85.04%
+    epoch 11/12 loss=0.3940 val_acc=82.25%
+    epoch 12/12 loss=0.3787 val_acc=85.04%
+Base result: val=85.04% test=84.59%
+
+------------------------------------------------------------------------
+cnn: fine-tuning with 100 samples
+------------------------------------------------------------------------
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.6445 val_acc=87.07%
+    epoch 02/8 loss=0.6272 val_acc=87.43%
+    epoch 03/8 loss=0.5203 val_acc=87.83%
+    epoch 04/8 loss=0.5082 val_acc=87.70%
+    epoch 05/8 loss=0.4715 val_acc=87.75%
+    epoch 06/8 loss=0.4993 val_acc=87.67%
+    epoch 07/8 loss=0.4334 val_acc=87.52%
+    epoch 08/8 loss=0.4053 val_acc=87.60%
+Saved: runs/cnn/finetune_100.pt
+  validation accuracy: 87.83%
+  test accuracy:       86.70%
+
+------------------------------------------------------------------------
+cnn: fine-tuning with 500 samples
+------------------------------------------------------------------------
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.6396 val_acc=88.66%
+    epoch 02/8 loss=0.5476 val_acc=88.10%
+    epoch 03/8 loss=0.4761 val_acc=88.50%
+    epoch 04/8 loss=0.4331 val_acc=88.46%
+    epoch 05/8 loss=0.4230 val_acc=87.90%
+    epoch 06/8 loss=0.3987 val_acc=87.36%
+    epoch 07/8 loss=0.3850 val_acc=86.26%
+    epoch 08/8 loss=0.3909 val_acc=85.47%
+Saved: runs/cnn/finetune_500.pt
+  validation accuracy: 88.66%
+  test accuracy:       87.80%
+
+------------------------------------------------------------------------
+cnn: fine-tuning with 1000 samples
+------------------------------------------------------------------------
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.6283 val_acc=87.47%
+    epoch 02/8 loss=0.5190 val_acc=87.44%
+    epoch 03/8 loss=0.4759 val_acc=87.42%
+    epoch 04/8 loss=0.4373 val_acc=86.23%
+    epoch 05/8 loss=0.4347 val_acc=86.24%
+    epoch 06/8 loss=0.4232 val_acc=84.74%
+    epoch 07/8 loss=0.4159 val_acc=84.42%
+    epoch 08/8 loss=0.4062 val_acc=84.50%
+Saved: runs/cnn/finetune_1000.pt
+  validation accuracy: 87.47%
+  test accuracy:       87.27%
+
+------------------------------------------------------------------------
+cnn: fine-tuning with 5000 samples
+------------------------------------------------------------------------
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.5171 val_acc=84.93%
+    epoch 02/8 loss=0.4444 val_acc=84.30%
+    epoch 03/8 loss=0.4284 val_acc=83.81%
+    epoch 04/8 loss=0.4172 val_acc=81.46%
+    epoch 05/8 loss=0.4077 val_acc=84.26%
+    epoch 06/8 loss=0.4112 val_acc=81.06%
+    epoch 07/8 loss=0.4071 val_acc=83.48%
+    epoch 08/8 loss=0.3947 val_acc=79.36%
+Saved: runs/cnn/finetune_5000.pt
+  validation accuracy: 84.93%
+  test accuracy:       84.70%
+
+========================================================================
+MODEL: ds_cnn
+========================================================================
+Parameters: 12,780
+Training base model on the full training split...
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/12 loss=1.0404 val_acc=83.51%
+    epoch 02/12 loss=0.3977 val_acc=90.20%
+    epoch 03/12 loss=0.2873 val_acc=92.16%
+    epoch 04/12 loss=0.2393 val_acc=93.10%
+    epoch 05/12 loss=0.2090 val_acc=93.11%
+    epoch 06/12 loss=0.1915 val_acc=93.75%
+    epoch 07/12 loss=0.1771 val_acc=93.81%
+    epoch 08/12 loss=0.1657 val_acc=94.29%
+    epoch 09/12 loss=0.1554 val_acc=93.54%
+    epoch 10/12 loss=0.1472 val_acc=94.57%
+    epoch 11/12 loss=0.1407 val_acc=94.28%
+    epoch 12/12 loss=0.1351 val_acc=94.46%
+Base result: val=94.57% test=94.34%
+
+------------------------------------------------------------------------
+ds_cnn: fine-tuning with 100 samples
+------------------------------------------------------------------------
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.2490 val_acc=94.57%
+    epoch 02/8 loss=0.2141 val_acc=94.67%
+    epoch 03/8 loss=0.1437 val_acc=94.70%
+    epoch 04/8 loss=0.1256 val_acc=94.64%
+    epoch 05/8 loss=0.1230 val_acc=94.61%
+    epoch 06/8 loss=0.0950 val_acc=94.57%
+    epoch 07/8 loss=0.0762 val_acc=94.48%
+    epoch 08/8 loss=0.0788 val_acc=94.48%
+Saved: runs/ds_cnn/finetune_100.pt
+  validation accuracy: 94.70%
+  test accuracy:       94.45%
+
+------------------------------------------------------------------------
+ds_cnn: fine-tuning with 500 samples
+------------------------------------------------------------------------
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.2720 val_acc=94.82%
+    epoch 02/8 loss=0.1969 val_acc=94.78%
+    epoch 03/8 loss=0.1591 val_acc=94.76%
+    epoch 04/8 loss=0.1284 val_acc=94.77%
+    epoch 05/8 loss=0.1097 val_acc=94.75%
+    epoch 06/8 loss=0.1082 val_acc=94.78%
+    epoch 07/8 loss=0.0851 val_acc=94.73%
+    epoch 08/8 loss=0.0807 val_acc=94.65%
+Saved: runs/ds_cnn/finetune_500.pt
+  validation accuracy: 94.82%
+  test accuracy:       94.38%
+
+------------------------------------------------------------------------
+ds_cnn: fine-tuning with 1000 samples
+------------------------------------------------------------------------
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.3182 val_acc=94.81%
+    epoch 02/8 loss=0.2117 val_acc=94.60%
+    epoch 03/8 loss=0.1702 val_acc=94.59%
+    epoch 04/8 loss=0.1475 val_acc=94.48%
+    epoch 05/8 loss=0.1294 val_acc=94.49%
+    epoch 06/8 loss=0.1182 val_acc=94.39%
+    epoch 07/8 loss=0.1138 val_acc=94.29%
+    epoch 08/8 loss=0.1071 val_acc=94.08%
+Saved: runs/ds_cnn/finetune_1000.pt
+  validation accuracy: 94.81%
+  test accuracy:       94.33%
+
+------------------------------------------------------------------------
+ds_cnn: fine-tuning with 5000 samples
+------------------------------------------------------------------------
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.2037 val_acc=94.39%
+    epoch 02/8 loss=0.1487 val_acc=93.85%
+    epoch 03/8 loss=0.1310 val_acc=93.03%
+    epoch 04/8 loss=0.1191 val_acc=93.49%
+    epoch 05/8 loss=0.1119 val_acc=92.93%
+    epoch 06/8 loss=0.1064 val_acc=93.42%
+    epoch 07/8 loss=0.1018 val_acc=92.55%
+    epoch 08/8 loss=0.0973 val_acc=92.93%
+Saved: runs/ds_cnn/finetune_5000.pt
+  validation accuracy: 94.39%
+  test accuracy:       94.35%
+
+========================================================================
+MODEL: gru
+========================================================================
+Parameters: 16,668
+Training base model on the full training split...
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/12 loss=1.0938 val_acc=82.38%
+    epoch 02/12 loss=0.4879 val_acc=89.03%
+    epoch 03/12 loss=0.3515 val_acc=91.04%
+    epoch 04/12 loss=0.2964 val_acc=92.14%
+    epoch 05/12 loss=0.2601 val_acc=92.11%
+    epoch 06/12 loss=0.2346 val_acc=93.17%
+    epoch 07/12 loss=0.2133 val_acc=93.19%
+    epoch 08/12 loss=0.1988 val_acc=94.25%
+    epoch 09/12 loss=0.1854 val_acc=93.98%
+    epoch 10/12 loss=0.1749 val_acc=94.27%
+    epoch 11/12 loss=0.1646 val_acc=94.30%
+    epoch 12/12 loss=0.1560 val_acc=94.39%
+Base result: val=94.39% test=93.72%
+
+------------------------------------------------------------------------
+gru: fine-tuning with 100 samples
+------------------------------------------------------------------------
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.2609 val_acc=94.52%
+    epoch 02/8 loss=0.2079 val_acc=94.48%
+    epoch 03/8 loss=0.1507 val_acc=94.43%
+    epoch 04/8 loss=0.1292 val_acc=94.34%
+    epoch 05/8 loss=0.1098 val_acc=94.35%
+    epoch 06/8 loss=0.0925 val_acc=94.14%
+    epoch 07/8 loss=0.0782 val_acc=94.00%
+    epoch 08/8 loss=0.0674 val_acc=93.89%
+Saved: runs/gru/finetune_100.pt
+  validation accuracy: 94.52%
+  test accuracy:       93.90%
+
+------------------------------------------------------------------------
+gru: fine-tuning with 500 samples
+------------------------------------------------------------------------
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.1705 val_acc=94.54%
+    epoch 02/8 loss=0.1296 val_acc=94.40%
+    epoch 03/8 loss=0.1085 val_acc=94.16%
+    epoch 04/8 loss=0.0987 val_acc=93.91%
+    epoch 05/8 loss=0.0895 val_acc=93.67%
+    epoch 06/8 loss=0.0830 val_acc=93.56%
+    epoch 07/8 loss=0.0779 val_acc=93.31%
+    epoch 08/8 loss=0.0725 val_acc=93.36%
+Saved: runs/gru/finetune_500.pt
+  validation accuracy: 94.54%
+  test accuracy:       93.95%
+
+------------------------------------------------------------------------
+gru: fine-tuning with 1000 samples
+------------------------------------------------------------------------
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.2112 val_acc=94.21%
+    epoch 02/8 loss=0.1745 val_acc=93.92%
+    epoch 03/8 loss=0.1583 val_acc=93.96%
+    epoch 04/8 loss=0.1483 val_acc=93.78%
+    epoch 05/8 loss=0.1387 val_acc=93.62%
+    epoch 06/8 loss=0.1301 val_acc=93.71%
+    epoch 07/8 loss=0.1239 val_acc=93.49%
+    epoch 08/8 loss=0.1183 val_acc=93.49%
+Saved: runs/gru/finetune_1000.pt
+  validation accuracy: 94.21%
+  test accuracy:       93.70%
+
+------------------------------------------------------------------------
+gru: fine-tuning with 5000 samples
+------------------------------------------------------------------------
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+/home/eschoepf/Schreibtisch/Nextcloud/Uni/Bachelorarbeit/LoRaWAN/deltafuota/evaluation/train.py:168: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, audio = wavfile.read(path)
+    epoch 01/8 loss=0.1770 val_acc=93.13%
+    epoch 02/8 loss=0.1539 val_acc=93.00%
+    epoch 03/8 loss=0.1428 val_acc=93.05%
+    epoch 04/8 loss=0.1361 val_acc=92.68%
+    epoch 05/8 loss=0.1304 val_acc=92.52%
+    epoch 06/8 loss=0.1249 val_acc=92.32%
+    epoch 07/8 loss=0.1193 val_acc=92.43%
+    epoch 08/8 loss=0.1149 val_acc=91.89%
+Saved: runs/gru/finetune_5000.pt
+  validation accuracy: 93.13%
+  test accuracy:       92.94%

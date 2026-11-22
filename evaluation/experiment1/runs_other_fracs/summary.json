@@ -1,3 +1,212 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:88ad2232feef09aea4685156084ba2477585408170c2bc6a95d57b5beb8de69f
-size 6375
+{
+  "mlp": {
+    "parameters": 16608,
+    "versions": {
+      "46666": {
+        "checkpoint": "runs2/mlp/version_0_46666.pt",
+        "val_accuracy": 0.31150377994352857,
+        "test_accuracy": 0.2987195373812474
+      },
+      "65333": {
+        "checkpoint": "runs2/mlp/version_1_65333.pt",
+        "val_accuracy": 0.3228891520174879,
+        "test_accuracy": 0.31061544816191655
+      },
+      "74666": {
+        "checkpoint": "runs2/mlp/version_2_74666.pt",
+        "val_accuracy": 0.3248929775025048,
+        "test_accuracy": 0.31730689797604295
+      },
+      "83999": {
+        "checkpoint": "runs2/mlp/version_3_83999.pt",
+        "val_accuracy": 0.32680572001092995,
+        "test_accuracy": 0.3182156133828996
+      },
+      "93333": {
+        "checkpoint": "runs2/mlp/version_4_93333.pt",
+        "val_accuracy": 0.3303579560980053,
+        "test_accuracy": 0.32127220156959935
+      }
+    }
+  },
+  "cnn": {
+    "parameters": 4572,
+    "versions": {
+      "46666": {
+        "checkpoint": "runs2/cnn/version_0_46666.pt",
+        "val_accuracy": 0.4036797522543037,
+        "test_accuracy": 0.3944650970673276
+      },
+      "65333": {
+        "checkpoint": "runs2/cnn/version_1_65333.pt",
+        "val_accuracy": 0.49549139265871206,
+        "test_accuracy": 0.4794712928541925
+      },
+      "74666": {
+        "checkpoint": "runs2/cnn/version_2_74666.pt",
+        "val_accuracy": 0.5241825302850898,
+        "test_accuracy": 0.5139198678232135
+      },
+      "83999": {
+        "checkpoint": "runs2/cnn/version_3_83999.pt",
+        "val_accuracy": 0.563074961289735,
+        "test_accuracy": 0.5472945064023131
+      },
+      "93333": {
+        "checkpoint": "runs2/cnn/version_4_93333.pt",
+        "val_accuracy": 0.5932234265415793,
+        "test_accuracy": 0.5767038413878562
+      }
+    }
+  },
+  "cnn1d": {
+    "parameters": 3296,
+    "versions": {
+      "46666": {
+        "checkpoint": "runs2/cnn1d/version_0_46666.pt",
+        "val_accuracy": 0.6408598232990255,
+        "test_accuracy": 0.6172655927302767
+      },
+      "65333": {
+        "checkpoint": "runs2/cnn1d/version_1_65333.pt",
+        "val_accuracy": 0.6860369796884962,
+        "test_accuracy": 0.6578273440726973
+      },
+      "74666": {
+        "checkpoint": "runs2/cnn1d/version_2_74666.pt",
+        "val_accuracy": 0.7070771472811731,
+        "test_accuracy": 0.6764973151590252
+      },
+      "83999": {
+        "checkpoint": "runs2/cnn1d/version_3_83999.pt",
+        "val_accuracy": 0.7192822661444576,
+        "test_accuracy": 0.6929368029739778
+      },
+      "93333": {
+        "checkpoint": "runs2/cnn1d/version_4_93333.pt",
+        "val_accuracy": 0.7311230531013754,
+        "test_accuracy": 0.7087980173482032
+      }
+    }
+  },
+  "ds_cnn": {
+    "parameters": 5132,
+    "versions": {
+      "46666": {
+        "checkpoint": "runs2/ds_cnn/version_0_46666.pt",
+        "val_accuracy": 0.567811276072502,
+        "test_accuracy": 0.5434944237918216
+      },
+      "65333": {
+        "checkpoint": "runs2/ds_cnn/version_1_65333.pt",
+        "val_accuracy": 0.6294744512250661,
+        "test_accuracy": 0.6022304832713755
+      },
+      "74666": {
+        "checkpoint": "runs2/ds_cnn/version_2_74666.pt",
+        "val_accuracy": 0.6489662082156845,
+        "test_accuracy": 0.6248657579512598
+      },
+      "83999": {
+        "checkpoint": "runs2/ds_cnn/version_3_83999.pt",
+        "val_accuracy": 0.676837599052737,
+        "test_accuracy": 0.6506402313093763
+      },
+      "93333": {
+        "checkpoint": "runs2/ds_cnn/version_4_93333.pt",
+        "val_accuracy": 0.6932325348392385,
+        "test_accuracy": 0.6653448988021479
+      }
+    }
+  },
+  "svdf": {
+    "parameters": 1428,
+    "versions": {
+      "46666": {
+        "checkpoint": "runs2/svdf/version_0_46666.pt",
+        "val_accuracy": 0.47208306767465164,
+        "test_accuracy": 0.45146633622470056
+      },
+      "65333": {
+        "checkpoint": "runs2/svdf/version_1_65333.pt",
+        "val_accuracy": 0.48574551416340284,
+        "test_accuracy": 0.4596447748864106
+      },
+      "74666": {
+        "checkpoint": "runs2/svdf/version_2_74666.pt",
+        "val_accuracy": 0.49749521814372893,
+        "test_accuracy": 0.46691449814126396
+      },
+      "83999": {
+        "checkpoint": "runs2/svdf/version_3_83999.pt",
+        "val_accuracy": 0.5051461881774296,
+        "test_accuracy": 0.47666253614209003
+      },
+      "93333": {
+        "checkpoint": "runs2/svdf/version_4_93333.pt",
+        "val_accuracy": 0.5107022497495218,
+        "test_accuracy": 0.4789756299049979
+      }
+    }
+  },
+  "gru": {
+    "parameters": 2288,
+    "versions": {
+      "46666": {
+        "checkpoint": "runs2/gru/version_0_46666.pt",
+        "val_accuracy": 0.5944985882138628,
+        "test_accuracy": 0.5814952498967368
+      },
+      "65333": {
+        "checkpoint": "runs2/gru/version_1_65333.pt",
+        "val_accuracy": 0.6403133254394754,
+        "test_accuracy": 0.6277571251548947
+      },
+      "74666": {
+        "checkpoint": "runs2/gru/version_2_74666.pt",
+        "val_accuracy": 0.6728299480827034,
+        "test_accuracy": 0.6578273440726973
+      },
+      "83999": {
+        "checkpoint": "runs2/gru/version_3_83999.pt",
+        "val_accuracy": 0.6968758539029055,
+        "test_accuracy": 0.6768277571251549
+      },
+      "93333": {
+        "checkpoint": "runs2/gru/version_4_93333.pt",
+        "val_accuracy": 0.7136351215957738,
+        "test_accuracy": 0.6936802973977695
+      }
+    }
+  },
+  "crnn": {
+    "parameters": 3956,
+    "versions": {
+      "46666": {
+        "checkpoint": "runs2/crnn/version_0_46666.pt",
+        "val_accuracy": 0.7179160214955824,
+        "test_accuracy": 0.7041718298223875
+      },
+      "65333": {
+        "checkpoint": "runs2/crnn/version_1_65333.pt",
+        "val_accuracy": 0.7378631933691593,
+        "test_accuracy": 0.7201156546881454
+      },
+      "74666": {
+        "checkpoint": "runs2/crnn/version_2_74666.pt",
+        "val_accuracy": 0.7506148100919938,
+        "test_accuracy": 0.7343246592317224
+      },
+      "83999": {
+        "checkpoint": "runs2/crnn/version_3_83999.pt",
+        "val_accuracy": 0.7611804353766282,
+        "test_accuracy": 0.7460553490293267
+      },
+      "93333": {
+        "checkpoint": "runs2/crnn/version_4_93333.pt",
+        "val_accuracy": 0.7726568904271791,
+        "test_accuracy": 0.7555555555555555
+      }
+    }
+  }
+}

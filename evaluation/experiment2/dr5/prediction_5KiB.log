@@ -1,3 +1,665 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4678e24954cf35366ee5d171c6e16e8e4d2b1cdbdd69f4397563c3429e8807ca
-size 38463
+[RADIO] Using cached Uplink DR5 and Downlink DR5
+[FILE] 5120 bytes  │  24 chunks  │  218 B/chunk  │  CRC32=0x3460566A
+[FILE] confirmed=False  enqueue_delay=0.0s
+[FILE] Chunk    1/24  218 B  (id=89f027ac-7ec6-4f90-810b-1097cf4df56c)
+[FILE] Chunk    2/24  218 B  (id=5dcbd975-e246-4381-99df-2ca6aaa8419b)
+[FILE] Chunk    3/24  218 B  (id=0a622607-a390-4c47-a8ef-ddbea1525e3b)
+[FILE] Chunk    4/24  218 B  (id=6550f2e1-3fcf-4bff-9839-798fdf4cee80)
+[FILE] Chunk    5/24  218 B  (id=dde41058-b8b5-4e2c-a63e-428b36c41697)
+[FILE] Chunk    6/24  218 B  (id=02cccede-c9c2-403a-8956-f11fe461ab21)
+[FILE] Chunk    7/24  218 B  (id=a6c3a14f-2f44-43c8-af29-feaf2e128350)
+[FILE] Chunk    8/24  218 B  (id=9ea10a7f-c5fb-469f-aa75-dbba05747672)
+[FILE] Chunk    9/24  218 B  (id=79ca6725-9e6a-4b6f-8d43-25ccd7950d4d)
+[FILE] Chunk   10/24  218 B  (id=0ece8ac5-f58d-44fa-97a4-5d555ee33b7f)
+[FILE] Chunk   11/24  218 B  (id=88588572-4474-4657-b6dd-8bb4001b6098)
+[FILE] Chunk   12/24  218 B  (id=67518cf7-2ab9-433e-ac94-8c7d9fc46ee3)
+[FILE] Chunk   13/24  218 B  (id=7ef0eb15-4885-460e-b0f7-144941528522)
+[FILE] Chunk   14/24  218 B  (id=749afb1d-deed-4f12-9880-387f9fc2d499)
+[FILE] Chunk   15/24  218 B  (id=eee16aca-c306-4a49-8bf3-526f454d2c0b)
+[FILE] Chunk   16/24  218 B  (id=e0ef9524-21c4-4c00-a4b7-4d579e5a60d0)
+[FILE] Chunk   17/24  218 B  (id=14f12813-01a4-4b2f-86c5-a24982628f5e)
+[FILE] Chunk   18/24  218 B  (id=ef99f201-636b-4bbe-ac9d-9bb94ddf5b83)
+[FILE] Chunk   19/24  218 B  (id=6193d3a2-9a6c-4e87-b5be-7dfa96581b77)
+[FILE] Chunk   20/24  218 B  (id=fe7842d0-984c-45dc-a538-f218c84032c5)
+[FILE] Chunk   21/24  218 B  (id=1421a9a5-d5af-4cd1-9f55-d9a8ec9adc41)
+[FILE] Chunk   22/24  218 B  (id=22f3f8a5-b1cb-466d-a133-7da92a2e4aef)
+[FILE] Chunk   23/24  218 B  (id=2186724b-9c62-47a1-b930-c589aab7ef93)
+[FILE] Chunk   24/24  106 B  (id=13ddc125-951d-4b9a-821a-5963ac2ffaa3)
+
+[FILE] 24 frames enqueued.
+[FILE] Queue depth now: 59
+
+  Class A estimate:
+    ~120.0s at 5.0s uplink interval  (use `set-interval` to speed up)
+  Class C estimate:
+    Depends on gateway duty cycle; typically seconds to low minutes
+
+===================================================
+Energy Model
+===================================================
+Fragments           : 24
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+Downlink Payload    : 218 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+DL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.342272 s
+P-TX/P-RX/P-Idle/P-Sleep : 1000.0/450.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1  (min legal interval: 3.423 s)
+
+Class A
+-------------------------------------------
+Latency             : 148.442 s
+Energy              : 11.029728 J
+  TX                : 4.441728 J
+  Idle              : 4.488000 J
+  RX                : 1.620000 J
+  Sleep             : 0.480000 J
+  UL interval       : 5.000 s
+  Legal w/ duty cyc : True
+
+Class C
+-------------------------------------------
+Latency             : 81.685 s
+Energy              : 36.664572 J
+  TX                : 0.185072 J
+  Idle              : 0.187000 J
+  RX                : 36.292500 J
+  Fragment interval : 3.500 s
+  Legal w/ duty cyc : True
+
+Total time: 0.21 seconds
+[RADIO] Using cached Uplink DR2 and Downlink DR2
+[FILE] 5120 bytes  │  112 chunks  │  46 B/chunk  │  CRC32=0x8F633E8D
+[FILE] confirmed=False  enqueue_delay=0.0s
+[FILE] Chunk    1/112  46 B  (id=fbdfaa79-9fbd-4c5c-ae73-bcb448116070)
+[FILE] Chunk    2/112  46 B  (id=4e0a3afe-fa05-4c2a-b0e8-d1004a01dbba)
+[FILE] Chunk    3/112  46 B  (id=297282da-d6c4-4f48-ae5c-82efe83f46d2)
+[FILE] Chunk    4/112  46 B  (id=00497869-aee3-461a-a40b-a26bc714e660)
+[FILE] Chunk    5/112  46 B  (id=14c5de81-f3c4-4d80-a050-f957f678c5e0)
+[FILE] Chunk    6/112  46 B  (id=2cbc033a-7026-471e-a9d5-e84908fdc342)
+[FILE] Chunk    7/112  46 B  (id=aaf9bc28-15dc-4646-bbf9-d303807ea7ea)
+[FILE] Chunk    8/112  46 B  (id=072f55fd-d4f2-4c81-b223-d8382e7965ed)
+[FILE] Chunk    9/112  46 B  (id=a55a0c87-016b-496e-9629-21a5959c1a42)
+[FILE] Chunk   10/112  46 B  (id=26e46675-9f1d-44cd-be9a-c5e74684232c)
+[FILE] Chunk   11/112  46 B  (id=aa27a709-b8dc-49be-910a-4a3ec5477875)
+[FILE] Chunk   12/112  46 B  (id=43ca1102-cc46-4b54-a756-7b4d74a4f6f7)
+[FILE] Chunk   13/112  46 B  (id=6cb465a4-532b-4624-8c23-066b5d26046c)
+[FILE] Chunk   14/112  46 B  (id=d8a3a7f4-7f93-4ffc-bf33-7ab059528116)
+[FILE] Chunk   15/112  46 B  (id=464973ed-47b3-4296-8427-9089c72c7103)
+[FILE] Chunk   16/112  46 B  (id=c615d9a1-eee0-45f3-9e78-26bde758705b)
+[FILE] Chunk   17/112  46 B  (id=36af266f-0548-4e9e-b394-5ffd29233fac)
+[FILE] Chunk   18/112  46 B  (id=58fd061a-981d-4445-aaea-a728e2771f4f)
+[FILE] Chunk   19/112  46 B  (id=87d59d15-1806-496c-9637-25d61a8e6ba6)
+[FILE] Chunk   20/112  46 B  (id=24b74b44-6dd5-4488-881d-f0129bb89f3f)
+[FILE] Chunk   21/112  46 B  (id=a0a2da9d-245d-4eb0-8a04-71c0188a3433)
+[FILE] Chunk   22/112  46 B  (id=22469770-6aa0-4222-b825-6aaa0a27df47)
+[FILE] Chunk   23/112  46 B  (id=a79f52ae-ca31-4ef1-9509-cdbdc8ad1078)
+[FILE] Chunk   24/112  46 B  (id=a7fe1631-d22d-4e35-ae8b-fad7bba72fb6)
+[FILE] Chunk   25/112  46 B  (id=7a5362e3-187f-4fb1-9431-2f1843a40593)
+[FILE] Chunk   26/112  46 B  (id=c1c5d229-c05f-46e5-939e-1c8f21b2a602)
+[FILE] Chunk   27/112  46 B  (id=f3626b4a-3d8f-4b24-b459-5ba8c4cdca6e)
+[FILE] Chunk   28/112  46 B  (id=1d671f65-b904-493e-b3c4-4ba93ccc7015)
+[FILE] Chunk   29/112  46 B  (id=7e8558ff-287a-4874-a4d1-28002e684901)
+[FILE] Chunk   30/112  46 B  (id=b3670b09-9d47-4fe8-bd2d-864071bc9468)
+[FILE] Chunk   31/112  46 B  (id=6d1b3a12-4e1a-4080-b68d-4a7f32292ba4)
+[FILE] Chunk   32/112  46 B  (id=67919482-264a-4d4f-8d2d-f97e5eafcba1)
+[FILE] Chunk   33/112  46 B  (id=32b4bf3b-33b6-450b-886b-68d15dfa0805)
+[FILE] Chunk   34/112  46 B  (id=57055115-ebcb-4167-b637-764203c3327b)
+[FILE] Chunk   35/112  46 B  (id=392a04e9-cb35-453e-8a6f-80d7270ec12f)
+[FILE] Chunk   36/112  46 B  (id=25364c77-cebd-48b5-a4ac-ceb0d13c6112)
+[FILE] Chunk   37/112  46 B  (id=46b88f4f-4df1-4f48-9947-905747a2f5cf)
+[FILE] Chunk   38/112  46 B  (id=29cff24c-f5d2-4c5a-9925-7362dad955f8)
+[FILE] Chunk   39/112  46 B  (id=a751d150-0c86-4427-b8a5-dbc5aa0459de)
+[FILE] Chunk   40/112  46 B  (id=13ba6e27-e3c0-4091-8c42-15d58feeda27)
+[FILE] Chunk   41/112  46 B  (id=f1af1155-55aa-42a8-a907-820cbe859012)
+[FILE] Chunk   42/112  46 B  (id=bf72cfea-1381-4eab-95eb-f9af37e18346)
+[FILE] Chunk   43/112  46 B  (id=27de92a7-e2b4-473a-8c4f-095151a50e57)
+[FILE] Chunk   44/112  46 B  (id=9906dc1a-601c-4a70-ab43-e55b7a43c3b1)
+[FILE] Chunk   45/112  46 B  (id=f5843206-a741-43d1-b03e-d0519a9e73e9)
+[FILE] Chunk   46/112  46 B  (id=ab988910-eae9-4028-9469-96efdefb237e)
+[FILE] Chunk   47/112  46 B  (id=d8d8bd19-7fe8-4c81-b745-c466adab33f8)
+[FILE] Chunk   48/112  46 B  (id=f87ae839-b7c6-4676-b340-d695077dcf1f)
+[FILE] Chunk   49/112  46 B  (id=ed921343-77c4-465b-8465-2b7c8386f92e)
+[FILE] Chunk   50/112  46 B  (id=ebfab122-f904-405d-bcb0-181f1e884dda)
+[FILE] Chunk   51/112  46 B  (id=4ddba6d0-eec6-4e7c-b745-ed37eecd008b)
+[FILE] Chunk   52/112  46 B  (id=704374d4-8c7e-4a37-abf1-7f13a145cc25)
+[FILE] Chunk   53/112  46 B  (id=d9838c7c-a402-4dea-a13c-7cae3658fafe)
+[FILE] Chunk   54/112  46 B  (id=9e243032-682e-4a50-8cc0-8c1b0a8c2ffb)
+[FILE] Chunk   55/112  46 B  (id=cef679a6-00eb-4cd4-89bf-51676a4de294)
+[FILE] Chunk   56/112  46 B  (id=50c9263f-1892-4715-b41c-3c3367c92c9c)
+[FILE] Chunk   57/112  46 B  (id=ddd44c03-3d2f-4644-81a6-ee831ae4830f)
+[FILE] Chunk   58/112  46 B  (id=70b6ba33-db8f-465d-8933-c3be7c1ec340)
+[FILE] Chunk   59/112  46 B  (id=c248ae16-998a-4ca5-9796-e678fe750a3e)
+[FILE] Chunk   60/112  46 B  (id=a30bca3c-f508-4b84-bb87-61f64be23eb5)
+[FILE] Chunk   61/112  46 B  (id=214a499a-1eda-4c50-9a5b-629285c3859f)
+[FILE] Chunk   62/112  46 B  (id=4b31161d-f36a-4be6-821b-43a34a9b73cd)
+[FILE] Chunk   63/112  46 B  (id=e8ebbfc7-e88a-49e6-b5ef-d12a7eeb5921)
+[FILE] Chunk   64/112  46 B  (id=572ff764-6639-45e6-83b3-f74638106a8d)
+[FILE] Chunk   65/112  46 B  (id=a1818277-c96e-4384-9a99-9967febcfa48)
+[FILE] Chunk   66/112  46 B  (id=9d710ec3-1f95-4481-989a-292d45a02ba4)
+[FILE] Chunk   67/112  46 B  (id=16e27294-02fb-4bd1-a050-4dc1a1fee483)
+[FILE] Chunk   68/112  46 B  (id=f5a4ca26-f5a1-411b-8343-d0faba2a77b7)
+[FILE] Chunk   69/112  46 B  (id=9b62dc27-bf07-4893-88c1-e193144c8cce)
+[FILE] Chunk   70/112  46 B  (id=b0b12434-871d-4edc-8d9d-a24874a615be)
+[FILE] Chunk   71/112  46 B  (id=c72dad2e-8514-4c0f-afa7-2af3c249b0d6)
+[FILE] Chunk   72/112  46 B  (id=fa1922da-1fcf-449e-8a33-54c40fb75461)
+[FILE] Chunk   73/112  46 B  (id=9a51a24a-bf79-4f77-84f9-f3df37d9e48d)
+[FILE] Chunk   74/112  46 B  (id=b8fefae5-8fd8-41c7-a99d-37820d88ebda)
+[FILE] Chunk   75/112  46 B  (id=83cbbfcc-b01e-41ad-847a-9f589943b85b)
+[FILE] Chunk   76/112  46 B  (id=938387a4-ac03-4df4-8648-6d0af72895f6)
+[FILE] Chunk   77/112  46 B  (id=b22f1703-9b5a-4db8-915f-a342da03a31c)
+[FILE] Chunk   78/112  46 B  (id=7f8164c4-8a3b-4420-b164-820530f3fbad)
+[FILE] Chunk   79/112  46 B  (id=7bedc8e4-c308-424a-bbc2-cffaa5d42641)
+[FILE] Chunk   80/112  46 B  (id=f434fc99-e565-4856-adca-9b6920679fc3)
+[RADIO] Using cached Uplink DR5 and Downlink DR5
+[FILE] 5120 bytes  │  112 chunks  │  46 B/chunk  │  CRC32=0x7F7C6651
+[FILE] confirmed=False  enqueue_delay=0.0s
+[FILE] Chunk    1/112  46 B  (id=145a9ba6-7a52-4193-a771-43c97d039bbf)
+[FILE] Chunk    2/112  46 B  (id=9287fe8c-9d31-4083-ac96-fdbf8e9aa70b)
+[FILE] Chunk    3/112  46 B  (id=2678df9c-5e54-4840-9fda-d488300dc38d)
+[FILE] Chunk    4/112  46 B  (id=1f5a0ed9-3a52-4989-9613-4b43d3e69c15)
+[FILE] Chunk    5/112  46 B  (id=ea57364b-ba65-434a-87a2-5ab94bc42cf9)
+[FILE] Chunk    6/112  46 B  (id=b62d16f1-4ac6-471b-9f06-ee37aeb1fec3)
+[FILE] Chunk    7/112  46 B  (id=82f07b9d-f12e-498c-ad29-4a5f0584280c)
+[FILE] Chunk    8/112  46 B  (id=66d4aa2d-ecb2-4ef3-9fe5-035aa5aff92a)
+[FILE] Chunk    9/112  46 B  (id=2c22d532-383e-4380-9368-352f9a560bcc)
+[FILE] Chunk   10/112  46 B  (id=d59f45e8-6a03-4633-960f-0968534f4ad0)
+[FILE] Chunk   11/112  46 B  (id=b4c60baf-e606-4f7a-9700-f9cb6bbd5a15)
+[FILE] Chunk   12/112  46 B  (id=c441f770-7dff-4b8d-885c-ef418265bc99)
+[FILE] Chunk   13/112  46 B  (id=f7f19518-fa32-4640-959f-b61b04ed0420)
+[FILE] Chunk   14/112  46 B  (id=957028cc-bf8f-4ef5-a455-acda9649f38c)
+[FILE] Chunk   15/112  46 B  (id=a28edd21-753b-44d0-bd4e-9202fcb1f022)
+[FILE] Chunk   16/112  46 B  (id=5f8bc89b-1f62-4eb3-b94e-f5bcaeba1227)
+[FILE] Chunk   17/112  46 B  (id=2d7b9b46-47c0-499a-913a-5be3ab04680d)
+[FILE] Chunk   18/112  46 B  (id=7bdcd7fd-40dd-4209-907c-e040a87c79b7)
+[FILE] Chunk   19/112  46 B  (id=0795b1b7-da18-4587-af4a-26e1ac436d20)
+[FILE] Chunk   20/112  46 B  (id=640a6470-b139-45ef-8cd7-0acfb4bf4438)
+[FILE] Chunk   21/112  46 B  (id=0fcbca7b-523c-4b6a-a4a5-dad5d921b150)
+[FILE] Chunk   22/112  46 B  (id=b61b2151-b3a7-42d6-a5c3-1e009145e19f)
+[FILE] Chunk   23/112  46 B  (id=c8273eeb-fd98-44d2-b943-473028eec29b)
+[FILE] Chunk   24/112  46 B  (id=133140d6-08c9-4daf-b2c9-5f6d445c6fb6)
+[FILE] Chunk   25/112  46 B  (id=85ac1036-f556-4146-a61f-a614e9dc19b2)
+[FILE] Chunk   26/112  46 B  (id=8403e184-0049-4e42-b2a2-d775c43552ed)
+[FILE] Chunk   27/112  46 B  (id=520fc962-68d7-48f0-bfed-1f2b7d894588)
+[FILE] Chunk   28/112  46 B  (id=64769265-4da6-4331-81ee-d3a0330794dd)
+[FILE] Chunk   29/112  46 B  (id=c77fccb9-a15b-40b5-90cc-12e0a32f866e)
+[FILE] Chunk   30/112  46 B  (id=0e54a348-7c27-4705-8b0b-8d4e9d43bc70)
+[FILE] Chunk   31/112  46 B  (id=9e4d67b9-5b86-4498-8def-a0fd3d3d9c9a)
+[FILE] Chunk   32/112  46 B  (id=eee72e39-eb0f-4867-bacf-fecff4a1acd7)
+[FILE] Chunk   33/112  46 B  (id=c4d45c00-5070-4127-91d7-d645608676dc)
+[FILE] Chunk   34/112  46 B  (id=74b79ed7-7dbd-4f8e-8f6d-461396b0d148)
+[FILE] Chunk   35/112  46 B  (id=c7513bba-3089-42d3-9b1e-a0f65c5a7d28)
+[FILE] Chunk   36/112  46 B  (id=11d6a29a-2734-4e0d-b736-fdc28b62f9ac)
+[FILE] Chunk   37/112  46 B  (id=0adf83aa-310d-4df6-82e0-6b4ec0e6b02a)
+[FILE] Chunk   38/112  46 B  (id=6ab87d9c-0db9-48cf-b926-ba424f54d592)
+[FILE] Chunk   39/112  46 B  (id=4af9f4c9-7267-45f1-b6ab-f84811217f03)
+[FILE] Chunk   40/112  46 B  (id=f207b902-c437-42b9-93ae-3420a0f2ef3b)
+[FILE] Chunk   41/112  46 B  (id=2d519baa-8768-432a-bf1e-2c163db79e86)
+[FILE] Chunk   42/112  46 B  (id=275bbde1-f233-49d7-84e5-be9a40359308)
+[FILE] Chunk   43/112  46 B  (id=a11aa0af-ce34-4585-8f49-d6e48b24844e)
+[FILE] Chunk   44/112  46 B  (id=07321232-e7fe-443c-8aae-e8d9e3997b1a)
+[FILE] Chunk   45/112  46 B  (id=1421258e-b444-4c2e-8fcd-2cb267acd6f8)
+[FILE] Chunk   46/112  46 B  (id=a6351c7c-03c4-48f0-a4b4-885e6356d422)
+[FILE] Chunk   47/112  46 B  (id=5298e8ab-41a2-4e31-9345-2aa64f558c86)
+[FILE] Chunk   48/112  46 B  (id=923a70a5-8ea1-4f4b-befd-b60dbccfd308)
+[FILE] Chunk   49/112  46 B  (id=e3420fdc-0ec7-4b18-8dba-8878536fa6ae)
+[FILE] Chunk   50/112  46 B  (id=c6e4628b-ecfc-4942-b8e5-e39c97ef691a)
+[FILE] Chunk   51/112  46 B  (id=90aae586-749d-4fd7-abc4-c2fb512e38d2)
+[FILE] Chunk   52/112  46 B  (id=b6df619e-a8cb-4439-a7fc-98c11284f4ad)
+[FILE] Chunk   53/112  46 B  (id=00f67f04-ae6e-45b1-8a3c-a387ecc64dac)
+[FILE] Chunk   54/112  46 B  (id=feebe442-cd98-4c5e-819c-f47d0ebcb476)
+[FILE] Chunk   55/112  46 B  (id=9e5dd130-9509-4b73-8ee3-e72ccd1fc26b)
+[FILE] Chunk   56/112  46 B  (id=97bb38eb-8367-4917-95a1-12b57eff6575)
+[FILE] Chunk   57/112  46 B  (id=99af6101-2327-4614-8221-ed90775f8139)
+[FILE] Chunk   58/112  46 B  (id=c5085e2e-8ff5-4c4f-befc-2fe8d4af5b5f)
+[FILE] Chunk   59/112  46 B  (id=bf25dace-0caa-4b5a-8adf-b02581f39d8e)
+[FILE] Chunk   60/112  46 B  (id=a534096d-1eb9-4bce-9144-a6a26b2cee4c)
+[FILE] Chunk   61/112  46 B  (id=330f051c-867f-407e-b700-676170cac6b9)
+[FILE] Chunk   62/112  46 B  (id=5fc4fd67-3a3a-40ab-ae7b-c11e42cd6ce9)
+[FILE] Chunk   63/112  46 B  (id=6b5c0b17-fe80-4d56-a8bc-e4aea1c7f918)
+[FILE] Chunk   64/112  46 B  (id=87925fc0-f5cf-4271-abbc-e692e1ab1174)
+[FILE] Chunk   65/112  46 B  (id=963e5ba1-107b-4552-95a5-5a64be3ed2c3)
+[FILE] Chunk   66/112  46 B  (id=34bfadb5-f90a-4831-af68-d9605b0099dc)
+[FILE] Chunk   67/112  46 B  (id=f40cdcfd-9aad-4650-aa85-d2e83a001739)
+[FILE] Chunk   68/112  46 B  (id=6b3fe561-35a0-487d-ad86-d1797b19e89a)
+[FILE] Chunk   69/112  46 B  (id=ca64d03d-e433-4da0-b773-4863dc843f2c)
+[FILE] Chunk   70/112  46 B  (id=d089965e-7d82-4e2e-8639-a88332171b9a)
+[FILE] Chunk   71/112  46 B  (id=c4c432e4-095f-443f-85fc-14f8cfa78efc)
+[FILE] Chunk   72/112  46 B  (id=c497b15b-abb6-44fd-bd37-9011ee685a2f)
+[FILE] Chunk   73/112  46 B  (id=36459b99-6263-4a31-97f2-31ef9a80ca24)
+[FILE] Chunk   74/112  46 B  (id=7318e7df-4c50-4a01-a46e-3a7f275dab2d)
+[FILE] Chunk   75/112  46 B  (id=5dcd3f7c-3560-4e2a-92c0-36e9b1a92264)
+[FILE] Chunk   76/112  46 B  (id=a94ac562-934a-4b5e-85dd-831807623ee6)
+[FILE] Chunk   77/112  46 B  (id=ba36d46d-d7c6-4710-9478-6c014fb417b8)
+[FILE] Chunk   78/112  46 B  (id=0e4a278c-72b9-43a9-aef4-4bde25177625)
+[FILE] Chunk   79/112  46 B  (id=bb382063-87f5-4632-8281-609622c8ec5d)
+[FILE] Chunk   80/112  46 B  (id=ea12ae65-198e-4798-89d3-388b5580dd1a)
+[FILE] Chunk   81/112  46 B  (id=4e8f874c-7975-4781-9005-f676326417e5)
+[FILE] Chunk   82/112  46 B  (id=d3df9e03-4ec9-4de5-9717-eab1e853dec0)
+[FILE] Chunk   83/112  46 B  (id=a926df19-a09c-4592-8153-a140942373cc)
+[FILE] Chunk   84/112  46 B  (id=19deb20f-49fb-4001-a817-ee6b6f9a3563)
+[FILE] Chunk   85/112  46 B  (id=ecc7f6ad-88ef-48d5-b854-c2cd62250605)
+[FILE] Chunk   86/112  46 B  (id=cf7b370b-2ded-414c-a11c-a828f559a9fa)
+[FILE] Chunk   87/112  46 B  (id=087c7f7f-30d9-442e-a06b-4c50c5531f4e)
+[FILE] Chunk   88/112  46 B  (id=a08b4c45-69c3-4ef5-b823-29a3ed123323)
+[FILE] Chunk   89/112  46 B  (id=cb4e225b-86da-40a3-add6-e3fb737f7d4e)
+[FILE] Chunk   90/112  46 B  (id=bfbe8afa-ee0b-4512-82f4-dc1cb343a635)
+[FILE] Chunk   91/112  46 B  (id=072d47d6-968c-477b-91c0-7e5cca4061f7)
+[FILE] Chunk   92/112  46 B  (id=b1236555-06ae-4b87-9fbd-88cfa8544fcd)
+[FILE] Chunk   93/112  46 B  (id=e789fce8-0492-42a8-bd8b-82d88148f7b4)
+[FILE] Chunk   94/112  46 B  (id=d3dffa8b-b0ba-4564-95c0-496d08872547)
+[FILE] Chunk   95/112  46 B  (id=f104390f-8186-4cbf-ada0-818033e24ccf)
+[FILE] Chunk   96/112  46 B  (id=87a0f6b8-0273-477a-b7b8-03af01d76ed8)
+[FILE] Chunk   97/112  46 B  (id=387b4d57-5fd9-4bd5-b1a7-a1635913a95a)
+[FILE] Chunk   98/112  46 B  (id=39747d59-c937-441f-ba3b-2211ed125d6b)
+[FILE] Chunk   99/112  46 B  (id=747e9c35-092d-4901-b727-bc0d93e9bea5)
+[FILE] Chunk  100/112  46 B  (id=6632865f-840e-42a9-89d5-302cafedb690)
+[FILE] Chunk  101/112  46 B  (id=6b1ca16a-5810-41f8-a15f-bc504a27ebae)
+[FILE] Chunk  102/112  46 B  (id=1be3aeca-91ee-43e1-b041-a3681a079093)
+[FILE] Chunk  103/112  46 B  (id=71166e09-df8f-4a31-b680-a7fbb2c82a9c)
+[FILE] Chunk  104/112  46 B  (id=563d2856-fc49-489c-a159-fd5a2dd1ba81)
+[FILE] Chunk  105/112  46 B  (id=f34d940e-33b6-4126-afc3-f8900968563a)
+[FILE] Chunk  106/112  46 B  (id=dae11e1c-ac34-4cd5-92df-ecaa24335eeb)
+[FILE] Chunk  107/112  46 B  (id=79af22de-2057-4bb9-a7e4-dc42bdd92986)
+[FILE] Chunk  108/112  46 B  (id=d24b1b9b-889b-4655-8ec7-67ec1f03c581)
+[FILE] Chunk  109/112  46 B  (id=44f3de11-ae18-4e9f-8940-184c6e3bd399)
+[FILE] Chunk  110/112  46 B  (id=18df1ddd-377d-43b9-94e3-5dc949e86822)
+[FILE] Chunk  111/112  46 B  (id=4c5d04c1-6e81-4e81-bdde-5e1de95622a2)
+[FILE] Chunk  112/112  14 B  (id=db475301-c47d-4fb5-be48-36cfdba0327d)
+
+[FILE] 112 frames enqueued.
+[FILE] Queue depth now: 253
+
+  Class A estimate:
+    ~2688s at 24s uplink interval  (use `set-interval` to speed up)
+  Class C estimate:
+    Depends on gateway duty cycle; typically seconds to low minutes
+
+===================================================
+Energy Model
+===================================================
+Fragments           : 28
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+Downlink Payload    : 46 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+DL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.091392 s
+P-TX/P-RX/P-Idle/P-Sleep : 1000.0/450.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1  (min legal interval: 0.914 s)
+
+Class A
+-------------------------------------------
+Latency             : 705.182 s
+Energy              : 14.996016 J
+  TX                : 5.182016 J
+  Idle              : 5.236000 J
+  RX                : 1.890000 J
+  Sleep             : 2.688000 J
+  UL interval       : 24.000 s
+  Legal w/ duty cyc : True
+
+Class C
+-------------------------------------------
+Latency             : 190.185 s
+Energy              : 85.489572 J
+  TX                : 0.185072 J
+  Idle              : 0.187000 J
+  RX                : 85.117500 J
+  Fragment interval : 7.000 s
+  Legal w/ duty cyc : True
+
+Recommendation (relative utility, lambda=0.50)
+-------------------------------------------
+Energy ratio  A / best : 1.000
+Energy ratio  C / best : 5.701
+Latency ratio A / best : 3.708
+Latency ratio C / best : 1.000
+Utility A              : 0.519323
+Utility C              : 0.418824
+Best class             : A
+
+Total time: 0.85 seconds
+[RADIO] Using cached Uplink DR5 and Downlink DR5
+[FILE] 5120 bytes  │  112 chunks  │  46 B/chunk  │  CRC32=0x0436082B
+[FILE] confirmed=False  enqueue_delay=0.0s
+[FILE] Chunk    1/112  46 B  (id=62830845-2fbf-4daf-89cc-128c98c36e00)
+[FILE] Chunk    2/112  46 B  (id=77c333db-35ed-48fe-96e8-455484aeea30)
+[FILE] Chunk    3/112  46 B  (id=b3da3277-9260-4271-bf78-b20aeaa86978)
+[FILE] Chunk    4/112  46 B  (id=a8e7ffd5-0316-41d4-a38a-63664cb63790)
+[FILE] Chunk    5/112  46 B  (id=054ff39d-51a7-4123-bb5c-625e25d5b700)
+[FILE] Chunk    6/112  46 B  (id=78d01003-1629-4785-92dd-308dd68b9f13)
+[FILE] Chunk    7/112  46 B  (id=b21f8c63-0068-4d1e-b6bd-73ea3b6589fb)
+[FILE] Chunk    8/112  46 B  (id=46fba971-74cb-4983-9f4d-fd1e0f4cda44)
+[FILE] Chunk    9/112  46 B  (id=82812daa-934d-4c9e-bbfa-be40938b2d73)
+[FILE] Chunk   10/112  46 B  (id=0f4712c1-a04f-4d48-9689-b8fb66ea49ec)
+[FILE] Chunk   11/112  46 B  (id=f3a8f2d8-4c60-4352-9758-8349b25a1c5c)
+[FILE] Chunk   12/112  46 B  (id=53b71c7b-0fa3-4b0f-82ba-eb72a1f123cc)
+[FILE] Chunk   13/112  46 B  (id=564dc51b-4953-43ec-9903-a29cda5790ae)
+[FILE] Chunk   14/112  46 B  (id=bbdf6b62-19ef-408b-b583-c5c580437944)
+[FILE] Chunk   15/112  46 B  (id=228cee34-548a-49da-9a9c-a511338c62b4)
+[FILE] Chunk   16/112  46 B  (id=df371220-47cc-4689-b0f7-f12667b0a952)
+[FILE] Chunk   17/112  46 B  (id=4a15b930-3a20-41d4-984a-17487e07a494)
+[FILE] Chunk   18/112  46 B  (id=04bc7485-0466-4e41-b7ce-ce35a6fa282a)
+[FILE] Chunk   19/112  46 B  (id=3b068e48-27c6-44b8-bd91-6894f3acb5c3)
+[FILE] Chunk   20/112  46 B  (id=ff331cfc-0901-4bb0-9046-5e3b25a1baee)
+[FILE] Chunk   21/112  46 B  (id=7afb13ce-4cb2-4e34-a707-e5426d51f56d)
+[FILE] Chunk   22/112  46 B  (id=89913661-88e3-4d7d-aa80-1b9688ac71b3)
+[FILE] Chunk   23/112  46 B  (id=51a07050-db52-4a03-aa5f-889bc8e05bc4)
+[FILE] Chunk   24/112  46 B  (id=4af4b62a-2a22-4a91-b896-cc6f08236930)
+[FILE] Chunk   25/112  46 B  (id=827d1ae5-6cb9-4aba-adab-092267218bba)
+[FILE] Chunk   26/112  46 B  (id=ffac02ba-bf00-4ace-8645-681f347bc7f2)
+[FILE] Chunk   27/112  46 B  (id=941891df-04c3-473b-bfa1-988a17041581)
+[FILE] Chunk   28/112  46 B  (id=071c09ae-b03b-4386-9b99-5685bb23c4ac)
+[FILE] Chunk   29/112  46 B  (id=04ca7e66-de59-4e38-af02-e602d3680210)
+[FILE] Chunk   30/112  46 B  (id=66ae7bdc-7fcf-4c52-abcb-d6a43fcc23ec)
+[FILE] Chunk   31/112  46 B  (id=5c294276-bd6e-4f23-9e5b-5b004951cfea)
+[FILE] Chunk   32/112  46 B  (id=acc23743-deb8-4c2b-8189-a3a4199c6db9)
+[FILE] Chunk   33/112  46 B  (id=520ad338-2a00-4e8e-9e14-18aeb5008297)
+[FILE] Chunk   34/112  46 B  (id=78ba0e0e-9575-4d66-8b13-78db7df04d38)
+[FILE] Chunk   35/112  46 B  (id=d77907a8-ec96-4896-9b33-6bbec8322436)
+[FILE] Chunk   36/112  46 B  (id=216da794-ca29-427a-9301-2b301cbfbc72)
+[FILE] Chunk   37/112  46 B  (id=8693add5-4682-44e2-a372-29f9005955d6)
+[FILE] Chunk   38/112  46 B  (id=65fc8e38-70ea-41d7-965a-3d6d71025d8d)
+[FILE] Chunk   39/112  46 B  (id=868d842c-ee71-42fd-a50e-b12f0889ea3a)
+[FILE] Chunk   40/112  46 B  (id=1bf84f8f-8dd0-444e-a1bd-955c35f47ece)
+[FILE] Chunk   41/112  46 B  (id=6b8813c8-8c76-4cb6-8df2-45b0d4ed84f4)
+[FILE] Chunk   42/112  46 B  (id=63e8e2ff-6388-4c4c-bb4f-3d72338fe3f8)
+[FILE] Chunk   43/112  46 B  (id=c172aab5-4a73-4bb7-86b8-0bab7c4d3f69)
+[FILE] Chunk   44/112  46 B  (id=941d598e-455d-43fb-b608-559dab08d0f7)
+[FILE] Chunk   45/112  46 B  (id=4f745b77-1dd5-4608-be9d-371e1ae6f266)
+[FILE] Chunk   46/112  46 B  (id=37b0841a-006e-4ff6-a8cc-ef58c887ac74)
+[FILE] Chunk   47/112  46 B  (id=7472c625-d338-447b-803e-f2e66354b3c7)
+[FILE] Chunk   48/112  46 B  (id=09d82bea-bab7-42bb-912c-49d7b404759c)
+[FILE] Chunk   49/112  46 B  (id=0942772d-c05f-4f0b-9932-c02e5da72002)
+[FILE] Chunk   50/112  46 B  (id=35d33af1-0c0d-43f4-87b9-e8263ffd0688)
+[FILE] Chunk   51/112  46 B  (id=bce79217-53d5-4b97-a519-2f3977a9c030)
+[FILE] Chunk   52/112  46 B  (id=31218744-a25b-460e-92dc-3fc9e2c7f8c8)
+[FILE] Chunk   53/112  46 B  (id=9bbb8ae3-d72a-46ca-8659-2cc1b1605993)
+[FILE] Chunk   54/112  46 B  (id=17dfde9a-504e-4e32-b997-c5b926f5fa90)
+[FILE] Chunk   55/112  46 B  (id=fe1aa7c8-38ff-4f3f-965d-605fbbec2431)
+[FILE] Chunk   56/112  46 B  (id=22a02665-be59-46d2-af46-d0fea8b9df11)
+[FILE] Chunk   57/112  46 B  (id=16a3fb3c-a815-465e-9968-cd974ed80fbf)
+[FILE] Chunk   58/112  46 B  (id=c14c780e-b062-40f2-b299-03668cf185d3)
+[FILE] Chunk   59/112  46 B  (id=8caa60db-2bd2-48a8-9519-871096728ff3)
+[FILE] Chunk   60/112  46 B  (id=46971db3-5e44-431b-a924-4b7c233e3654)
+[FILE] Chunk   61/112  46 B  (id=5050fdd5-a408-4f55-8d83-c4836483ae24)
+[FILE] Chunk   62/112  46 B  (id=b3ea93c6-bf43-468d-abc4-5a2c7ab8c961)
+[FILE] Chunk   63/112  46 B  (id=09fd2375-c64f-4090-bcca-3f4eb16ae5d4)
+[FILE] Chunk   64/112  46 B  (id=d2bfd846-877e-47e0-8e5a-d276661add13)
+[FILE] Chunk   65/112  46 B  (id=97c37b25-50de-46b3-8de5-1c87cbc97127)
+[FILE] Chunk   66/112  46 B  (id=5040ef48-3650-4b29-bbc9-0f0b2a8fc7c5)
+[FILE] Chunk   67/112  46 B  (id=33052bec-480a-48ce-9354-de3b77b09be8)
+[FILE] Chunk   68/112  46 B  (id=23fcba88-e004-40ed-9411-d65b04cd7708)
+[FILE] Chunk   69/112  46 B  (id=bc064815-efbd-49e2-a89b-ac94881b2466)
+[FILE] Chunk   70/112  46 B  (id=a59e919b-f5cf-4d35-ac06-b56fb130f56e)
+[FILE] Chunk   71/112  46 B  (id=4548545d-6b1c-4156-8370-816b1c5822ae)
+[FILE] Chunk   72/112  46 B  (id=0068f5d2-4703-4f57-b883-4d115054fbf8)
+[FILE] Chunk   73/112  46 B  (id=1c1fad9c-c883-4b5f-a446-5f7be5c5688a)
+[FILE] Chunk   74/112  46 B  (id=3b056e10-ba1a-4280-b0f0-bfb29ffa3951)
+[FILE] Chunk   75/112  46 B  (id=ec843861-a1c4-469d-9e96-a18ddaa82215)
+[FILE] Chunk   76/112  46 B  (id=d59725af-a421-410b-bc81-d8924e7c18f2)
+[FILE] Chunk   77/112  46 B  (id=660c3dc5-d786-44db-911c-584aaa6bfe8f)
+[FILE] Chunk   78/112  46 B  (id=91af6a4c-eaeb-43df-a1c2-31791bcc5256)
+[FILE] Chunk   79/112  46 B  (id=b688f44e-d884-497a-835f-55b3f8d5f0e3)
+[FILE] Chunk   80/112  46 B  (id=e5ba1f78-91c2-4524-ab34-b9752b761eb6)
+[FILE] Chunk   81/112  46 B  (id=a886d0a5-9311-4aea-a04d-718e98092941)
+[FILE] Chunk   82/112  46 B  (id=1cb5b81c-097c-4e23-9e16-251f1c8a0155)
+[FILE] Chunk   83/112  46 B  (id=78d40f58-0dbf-456d-b8b8-fa7f4de8fc16)
+[FILE] Chunk   84/112  46 B  (id=0eb1fca1-434b-430e-a046-92341c8d741e)
+[FILE] Chunk   85/112  46 B  (id=41d9750b-7be6-4d70-b0c9-cce6994f09d7)
+[FILE] Chunk   86/112  46 B  (id=8a4bf3d4-4b69-4543-8e40-890de21c81d1)
+[FILE] Chunk   87/112  46 B  (id=7bf611ac-6ae6-4b2c-8413-68fc8b9972c4)
+[FILE] Chunk   88/112  46 B  (id=c35461fe-28d2-47b0-a573-84c2cf9012ed)
+[FILE] Chunk   89/112  46 B  (id=b752b96e-b355-47f4-b312-d265c03b0e3b)
+[FILE] Chunk   90/112  46 B  (id=47471d82-d377-45a8-9e66-2089b512fb51)
+[FILE] Chunk   91/112  46 B  (id=3f4b6bb7-fbdf-4a07-9e82-8a9a004c63fa)
+[FILE] Chunk   92/112  46 B  (id=88d8e79e-3191-4c68-8a75-d47ca507a6f3)
+[FILE] Chunk   93/112  46 B  (id=c0b2d3d0-49be-4e7e-858d-45c732598abf)
+[FILE] Chunk   94/112  46 B  (id=68f7372a-cfc1-4c65-9fec-a69833cedec6)
+[FILE] Chunk   95/112  46 B  (id=8438ac16-30ab-4f5f-a054-6767fdf5830f)
+[FILE] Chunk   96/112  46 B  (id=c0d3e2d4-acfa-4473-b788-367dfc9c8ad9)
+[FILE] Chunk   97/112  46 B  (id=b11baacc-3617-4f40-bdd3-5af5ac5dab60)
+[FILE] Chunk   98/112  46 B  (id=51d5fa7c-17e1-45ba-9863-f0e125b93e43)
+[FILE] Chunk   99/112  46 B  (id=201c8d0d-67a2-4527-bba2-abfc19fc83ae)
+[FILE] Chunk  100/112  46 B  (id=af0df056-83c9-4ccf-a150-ce4895ca188e)
+[FILE] Chunk  101/112  46 B  (id=b5fe6973-3b99-429a-b21f-40bb493ea9ab)
+[FILE] Chunk  102/112  46 B  (id=533c1706-46a9-435e-93a0-c76efd4f6eac)
+[FILE] Chunk  103/112  46 B  (id=2497a0a2-9038-4f0b-8444-36301b90cfc8)
+[FILE] Chunk  104/112  46 B  (id=a2f543c2-de58-4445-892f-95ed7dd80fae)
+[FILE] Chunk  105/112  46 B  (id=a83e2367-cc53-45fe-bf90-20aea51a4c1e)
+[FILE] Chunk  106/112  46 B  (id=38f581cc-a2c8-4d1d-a4ba-15f494bb5c4a)
+[FILE] Chunk  107/112  46 B  (id=f010cc81-92d7-46d8-8ccd-0fbc34b7be65)
+[FILE] Chunk  108/112  46 B  (id=8218b581-2154-437c-ac80-32752bfbfdc8)
+[FILE] Chunk  109/112  46 B  (id=b23da77c-bbdd-405e-b10f-38ebe2bdd7ae)
+[FILE] Chunk  110/112  46 B  (id=a409337b-3dae-4168-91fa-bf6051aba2bb)
+[FILE] Chunk  111/112  46 B  (id=3bb9a7d2-f51e-448b-8060-727e395efab9)
+[FILE] Chunk  112/112  14 B  (id=c6fc3065-53fb-4ade-bcc2-c2886fcb7633)
+
+[FILE] 112 frames enqueued.
+[FILE] Queue depth now: 253
+
+  Class A estimate:
+    ~2688s at 24s uplink interval  (use `set-interval` to speed up)
+  Class C estimate:
+    Depends on gateway duty cycle; typically seconds to low minutes
+
+===================================================
+Energy Model
+===================================================
+Fragments           : 28
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+Downlink Payload    : 46 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+DL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.091392 s
+P-TX/P-RX/P-Idle/P-Sleep : 1000.0/450.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1  (min legal interval: 0.914 s)
+
+Class A
+-------------------------------------------
+Latency             : 705.182 s
+Energy              : 14.996016 J
+  TX                : 5.182016 J
+  Idle              : 5.236000 J
+  RX                : 1.890000 J
+  Sleep             : 2.688000 J
+  UL interval       : 24.000 s
+  Legal w/ duty cyc : True
+
+Class C
+-------------------------------------------
+Latency             : 190.185 s
+Energy              : 85.489572 J
+  TX                : 0.185072 J
+  Idle              : 0.187000 J
+  RX                : 85.117500 J
+  Fragment interval : 7.000 s
+  Legal w/ duty cyc : True
+
+Recommendation (relative utility, lambda=0.50)
+-------------------------------------------
+Energy ratio  A / best : 1.000
+Energy ratio  C / best : 5.701
+Latency ratio A / best : 3.708
+Latency ratio C / best : 1.000
+Utility A              : 0.519323
+Utility C              : 0.418824
+Best class             : A
+
+Total time: 0.88 seconds
+[RADIO] Using cached Uplink DR5 and Downlink DR5
+[FILE] 5120 bytes  │  112 chunks  │  46 B/chunk  │  CRC32=0xEEFD0F61
+[FILE] confirmed=False  enqueue_delay=0.0s
+[FILE] Chunk    1/112  46 B  (id=4390cdeb-d6a5-4bcd-905c-80952f58bc1c)
+[FILE] Chunk    2/112  46 B  (id=35f7f9f4-2b46-43c2-b926-c61dfad4c91a)
+[FILE] Chunk    3/112  46 B  (id=64f91a38-07ab-428f-b165-650afc3c90aa)
+[FILE] Chunk    4/112  46 B  (id=32873445-2435-4ba1-b8fe-c1974fd17726)
+[FILE] Chunk    5/112  46 B  (id=0c45c4b0-2fa1-47a7-9505-ea20b9eda3fb)
+[FILE] Chunk    6/112  46 B  (id=1f64f67b-2075-4d0b-b395-8e68497df999)
+[FILE] Chunk    7/112  46 B  (id=bb46d36f-f4a8-4958-888a-8b35c0e64040)
+[FILE] Chunk    8/112  46 B  (id=b087b305-4e5d-472c-9a4f-68838e88f28a)
+[FILE] Chunk    9/112  46 B  (id=2341692a-7214-45f3-b051-e9ca68b9e92c)
+[FILE] Chunk   10/112  46 B  (id=b01cf7cd-422c-496d-8d67-3c58ed8bf421)
+[FILE] Chunk   11/112  46 B  (id=c7d85fef-541e-4ad6-989b-523ce206929c)
+[FILE] Chunk   12/112  46 B  (id=074bb0c6-7482-4477-9e57-94f133572eba)
+[FILE] Chunk   13/112  46 B  (id=24eb546a-357f-4d67-b640-8f83b125afac)
+[FILE] Chunk   14/112  46 B  (id=1d3fdb31-fb50-4a72-ace6-3c126971912c)
+[FILE] Chunk   15/112  46 B  (id=b274957a-cd8d-48b5-93d2-922f237c19f0)
+[FILE] Chunk   16/112  46 B  (id=71a1ecb3-a0d7-4cbe-aa4f-5d745df1e1ed)
+[FILE] Chunk   17/112  46 B  (id=7e6551ce-9e53-442a-a873-2ce8b2ee2530)
+[FILE] Chunk   18/112  46 B  (id=032c8277-d835-4863-9fd1-e3e84706b34d)
+[FILE] Chunk   19/112  46 B  (id=4db51e95-0362-4dfd-abb8-3bfbd3698e75)
+[FILE] Chunk   20/112  46 B  (id=6f64b1df-c63c-4c2a-b675-7b31d3b91e57)
+[FILE] Chunk   21/112  46 B  (id=3436956e-a36e-49b5-9e8e-a167e6cbfc33)
+[FILE] Chunk   22/112  46 B  (id=ee7aac1f-9b6e-48ce-909c-9ea09e00b7d9)
+[FILE] Chunk   23/112  46 B  (id=e6b6d13c-9680-4a33-b6e2-e53df5fef4b8)
+[FILE] Chunk   24/112  46 B  (id=c236d50b-afac-4489-80e7-9d8bfa792462)
+[FILE] Chunk   25/112  46 B  (id=c2790071-83c2-4b0e-ad2b-16d97e79a832)
+[FILE] Chunk   26/112  46 B  (id=7a1d9513-f808-4bd5-882b-78dde2952ae2)
+[FILE] Chunk   27/112  46 B  (id=f2f79dc1-eef7-4605-a6d1-dc2e88861412)
+[FILE] Chunk   28/112  46 B  (id=abb113e0-1b85-405a-88c4-67745bbc0fb4)
+[FILE] Chunk   29/112  46 B  (id=60e025ae-91e0-4517-97bf-0f8cc4907083)
+[FILE] Chunk   30/112  46 B  (id=f44ba5c8-ce4d-4b95-94a2-f8ee55dc8e40)
+[FILE] Chunk   31/112  46 B  (id=ba5fa0e6-909b-4c52-bc58-6d1f045414b1)
+[FILE] Chunk   32/112  46 B  (id=6e690d42-1c04-43d3-8f64-5778a95f1916)
+[FILE] Chunk   33/112  46 B  (id=952bdff9-91d4-489b-910f-08bd6b4d1e32)
+[FILE] Chunk   34/112  46 B  (id=f279d979-f723-437b-b2ea-ce9faba6491c)
+[FILE] Chunk   35/112  46 B  (id=617ad632-3df9-4870-9ec2-1029750b8da7)
+[FILE] Chunk   36/112  46 B  (id=5a171898-fa91-4168-b8c7-129de6982e20)
+[FILE] Chunk   37/112  46 B  (id=841816cb-b5c3-4a3d-86d4-b5c8f8b9251f)
+[FILE] Chunk   38/112  46 B  (id=e24bad22-aa0f-440b-abf8-8065d96c7f43)
+[FILE] Chunk   39/112  46 B  (id=23a88361-20c6-46e3-bb80-d5350c0345f0)
+[FILE] Chunk   40/112  46 B  (id=efe863ef-ee06-45e0-a7f2-d66ebffad2ba)
+[FILE] Chunk   41/112  46 B  (id=56cff2e5-c576-4b8f-bb91-4c92ce36016b)
+[FILE] Chunk   42/112  46 B  (id=b801a2c5-d04a-42a0-a8ab-6734da077b8f)
+[FILE] Chunk   43/112  46 B  (id=a50890bb-1145-44a6-b78b-60b7926a11a5)
+[FILE] Chunk   44/112  46 B  (id=713e87e1-1dff-48ca-85b6-c8328c4af9cd)
+[FILE] Chunk   45/112  46 B  (id=f13d34ff-d831-4217-8720-eefe56d8f3e3)
+[FILE] Chunk   46/112  46 B  (id=7b768637-e94e-4253-95c5-c1bff70e61c2)
+[FILE] Chunk   47/112  46 B  (id=2d2e13f3-4466-47b5-8f2c-1f167cc2fba2)
+[FILE] Chunk   48/112  46 B  (id=88ea9f1d-9b62-4469-8784-b36447cc7c76)
+[FILE] Chunk   49/112  46 B  (id=a739cf6d-51e8-4ff2-8627-03f76d9ba46c)
+[FILE] Chunk   50/112  46 B  (id=6d8730f0-34e8-490b-b440-8c7a700ac3f9)
+[FILE] Chunk   51/112  46 B  (id=5e3317ad-f0bf-42eb-8c9c-9af7b12fc592)
+[FILE] Chunk   52/112  46 B  (id=2c9915cd-c8ad-40bc-9b09-9fbc6d8ccc04)
+[FILE] Chunk   53/112  46 B  (id=b46343e5-dbc7-419c-b5e5-34dcc42bbf53)
+[FILE] Chunk   54/112  46 B  (id=226eedfe-561c-4216-81ce-7f0f67b1369a)
+[FILE] Chunk   55/112  46 B  (id=96d5c8fb-8e97-4945-bc2c-efe59ea6e5dc)
+[FILE] Chunk   56/112  46 B  (id=7520150b-6912-4500-ae43-97461e437a6e)
+[FILE] Chunk   57/112  46 B  (id=38cdcd2a-9877-4ca2-934f-be142a8fb652)
+[FILE] Chunk   58/112  46 B  (id=3ff60555-22a1-4e91-a795-7c3aab0f6249)
+[FILE] Chunk   59/112  46 B  (id=7da59a03-fe06-4dee-ad11-da56433fe076)
+[FILE] Chunk   60/112  46 B  (id=35dfb9bc-6165-415b-9dc0-3839b3e07ceb)
+[FILE] Chunk   61/112  46 B  (id=04d5d498-2a35-4ea1-8324-15431e239fc6)
+[FILE] Chunk   62/112  46 B  (id=cb425676-a237-4624-85c9-2c09eb41a3d8)
+[FILE] Chunk   63/112  46 B  (id=ace156ca-0666-4d69-9b02-457546edd348)
+[FILE] Chunk   64/112  46 B  (id=91bcf463-812a-4829-a578-bd22d7dfc244)
+[FILE] Chunk   65/112  46 B  (id=a57ae37e-24d6-4253-bc8f-1f5c1ef7e4e8)
+[FILE] Chunk   66/112  46 B  (id=ba1e017c-2ec6-490d-ac84-94853bfdc474)
+[FILE] Chunk   67/112  46 B  (id=2f1aa454-e424-4ea4-8f4b-1c7b2cd96c34)
+[FILE] Chunk   68/112  46 B  (id=0d3171de-a8ed-406e-9b89-951f6db849ad)
+[FILE] Chunk   69/112  46 B  (id=093c8d36-cd7d-4099-be15-4095bbaf966f)
+[FILE] Chunk   70/112  46 B  (id=ff0fbe31-6217-4e24-a7d7-ad9f787b1a50)
+[FILE] Chunk   71/112  46 B  (id=fec12f1a-e3a0-44b2-8840-6e08b4af6ffa)
+[FILE] Chunk   72/112  46 B  (id=73b48a3f-6c2c-4d02-9c63-0f6e570b765d)
+[FILE] Chunk   73/112  46 B  (id=78071f28-7788-432f-8793-e28e9c224bb2)
+[FILE] Chunk   74/112  46 B  (id=2a7843df-9c70-414b-87af-ab7687630a3c)
+[FILE] Chunk   75/112  46 B  (id=4833734e-dea2-4e89-8ada-87405f11f92d)
+[FILE] Chunk   76/112  46 B  (id=05a9415f-5f3f-4aeb-bccd-de3bb87b40a8)
+[FILE] Chunk   77/112  46 B  (id=9146d494-bb05-4268-8371-cf46194faa8b)
+[FILE] Chunk   78/112  46 B  (id=15f51fec-7d39-45f3-baee-d0cadc9e414f)
+[FILE] Chunk   79/112  46 B  (id=d6da54a2-251f-43f4-bd76-483df4871e7f)
+[FILE] Chunk   80/112  46 B  (id=de3c4999-0875-4137-8e2f-b353cfa30842)
+[FILE] Chunk   81/112  46 B  (id=bfc75099-e3b6-4864-99ef-a3632fb21e9c)
+[FILE] Chunk   82/112  46 B  (id=fedb04f4-b05e-4c7a-94b0-62b96ce4c0ff)
+[FILE] Chunk   83/112  46 B  (id=32876b5b-62ea-46db-8a8b-a00e9a4bd88f)
+[FILE] Chunk   84/112  46 B  (id=2a855114-4b8f-4864-9a37-661c684658f4)
+[FILE] Chunk   85/112  46 B  (id=bd41fea8-5878-4d2f-b22b-e3ed95eff2dd)
+[FILE] Chunk   86/112  46 B  (id=c336fe5d-6456-4dd9-a1d8-767fb02b5324)
+[FILE] Chunk   87/112  46 B  (id=c6698605-309f-4367-bd21-06ca247a75ec)
+[FILE] Chunk   88/112  46 B  (id=7b4bf054-1175-45bc-9df6-19011f638be3)
+[FILE] Chunk   89/112  46 B  (id=f50712d4-2f6b-439f-95bc-18bffe51e12c)
+[FILE] Chunk   90/112  46 B  (id=4475acf1-441a-4b7b-b23a-495dcf563e0c)
+[FILE] Chunk   91/112  46 B  (id=56d49046-2c5a-4b2c-b9da-e478ecdc4ee3)
+[FILE] Chunk   92/112  46 B  (id=09902fb7-14f5-448f-b7f5-cbaf3b5fc45c)
+[FILE] Chunk   93/112  46 B  (id=4431cd15-058e-4531-b963-5cfa08dc58a5)
+[FILE] Chunk   94/112  46 B  (id=f6389bba-1005-4f63-92e9-a52929ba62e3)
+[FILE] Chunk   95/112  46 B  (id=f6a93982-9fcc-460d-bf96-943403968386)
+[FILE] Chunk   96/112  46 B  (id=bf710f7d-bd7e-4392-92a9-509f5fda1c44)
+[FILE] Chunk   97/112  46 B  (id=a084c9e9-2e72-4ba0-8a65-fa3ec459ef66)
+[FILE] Chunk   98/112  46 B  (id=e1f617f0-1953-4092-8622-390c224ab52b)
+[FILE] Chunk   99/112  46 B  (id=1c5a9053-67f9-4287-866d-47ed937e82ff)
+[FILE] Chunk  100/112  46 B  (id=db68a655-6d1f-4623-853d-19386de70b4d)
+[FILE] Chunk  101/112  46 B  (id=402630a6-86a0-4f5d-a5f5-13e5795a7542)
+[FILE] Chunk  102/112  46 B  (id=6be541bd-e20c-42c8-a4bd-78064ad63ae8)
+[FILE] Chunk  103/112  46 B  (id=d35952e4-a582-44ea-83a2-4f8d593daf49)
+[FILE] Chunk  104/112  46 B  (id=fec9e1d5-c097-4e3d-be00-0604715b1bca)
+[FILE] Chunk  105/112  46 B  (id=17d0f65c-e2b7-438f-8020-587bf54ce26f)
+[FILE] Chunk  106/112  46 B  (id=98822073-7991-402c-971b-a66808993181)
+[FILE] Chunk  107/112  46 B  (id=adaca769-08c9-4dbd-8fba-30c42ff36061)
+[FILE] Chunk  108/112  46 B  (id=1170d171-00bf-4e8f-94a7-43b2b3c40364)
+[FILE] Chunk  109/112  46 B  (id=7c534f7c-e195-4cfd-9055-018984c54084)
+[FILE] Chunk  110/112  46 B  (id=a7d854bd-e854-448a-8b15-1d3a997638e8)
+[FILE] Chunk  111/112  46 B  (id=b37ac08a-c530-46fe-941b-4e41ca1fab90)
+[FILE] Chunk  112/112  14 B  (id=963525f7-0e9d-456a-bef7-ac5462489bb1)
+
+[FILE] 112 frames enqueued.
+[FILE] Queue depth now: 251
+
+  Class A estimate:
+    ~560.0s at 5.0s uplink interval  (use `set-interval` to speed up)
+  Class C estimate:
+    Depends on gateway duty cycle; typically seconds to low minutes
+
+===================================================
+Energy Model
+===================================================
+Fragments           : 5
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+Downlink Payload    : 218 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+DL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.342272 s
+P-TX/P-RX/P-Idle/P-Sleep : 1000.0/450.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1  (min legal interval: 3.423 s)
+
+Class A
+-------------------------------------------
+Latency             : 30.925 s
+Energy              : 2.297860 J
+  TX                : 0.925360 J
+  Idle              : 0.935000 J
+  RX                : 0.337500 J
+  Sleep             : 0.100000 J
+  UL interval       : 5.000 s
+  Legal w/ duty cyc : True
+
+Class C
+-------------------------------------------
+Latency             : 15.185 s
+Energy              : 6.739572 J
+  TX                : 0.185072 J
+  Idle              : 0.187000 J
+  RX                : 6.367500 J
+  Fragment interval : 3.500 s
+  Legal w/ duty cyc : True
+
+Recommendation (relative utility, lambda=0.50)
+-------------------------------------------
+Energy ratio  A / best : 1.000
+Energy ratio  C / best : 2.933
+Latency ratio A / best : 2.037
+Latency ratio C / best : 1.000
+Utility A              : 0.700731
+Utility C              : 0.583910
+Best class             : A
+
+Total time: 0.88 seconds

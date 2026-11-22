@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bf566a2570b641cead7d217031b74383f03e276e52e18e143c7206321875cde2
-size 539
+{
+  "remaining_bytes": 1024,
+  "uplink_payload_bytes": 5,
+  "report_interval": 60,
+  "class_c_fragment_interval": 5.0,
+  "ul_dr": 5,
+  "dl_dr_a": 5,
+  "class_c_dr": 0,
+  "cr": 1,
+  "preamble": 7,
+  "crc": 0.0,
+  "header": -1,
+  "p_tx": 700.0,
+  "p_rx": 400.0,
+  "p_idle": 220.0,
+  "p_sleep": 4.0,
+  "rx1_delay": 1.0,
+  "rx2_delay": 2.0,
+  "t_tx_overhead": 0.35,
+  "t_rx_overhead": 0.26,
+  "rx_window": 0.05,
+  "duty_cycle": 0.01,
+  "dl_duty_cycle": 0.1,
+  "t_beacon_rx": 0.12,
+  "t_ping_rx": 0.128,
+  "t_beacon": 128.0,
+  "lambda_": 0.65
+}

@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:30623c6d619ab478bab5ac49114e53237f34643f2627cc29aff3e60df378e2e1
-size 132
+interval,start_time_s,end_time_s,duration_s,samples,energy_J,file
+1,50.0,11310.0,11260.0,7932958,725.114424661999,../interval_1.csv

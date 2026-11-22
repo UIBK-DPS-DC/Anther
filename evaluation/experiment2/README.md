@@ -1,3 +1,48 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:91a4fd40b74d69273fcb443f1038bcb0b16b9161f7c7f01b9a1f2393d609918d
-size 5778
+In this experiment the method will be tested and compared against baselines in a preprogrammed scenario, in which the Datarate will change from 5 to 2 and back to 5 in 20 minute intervals. This scenario is representative of the findings of this paper:
+
+Paper [https://www.mdpi.com/2306-5729/6/6/62] shows that a significant drop in SNR is possible, even in a "suburban scneario", which can be seen by analyisng the data the provided in this git repo: https://github.com/BUTResearch/MDPI_Data_Urban_LPWA_Measurement/tree/main.
+
+This image shows an extreme example of a jump from SNR 7 to -13.2: ![Proof for instable link qualities](proof_of_scenario.png)
+Such scenarios do happen frequently. For example: There are 17 6-hour intervals, in which the SNR drops by over 10 dB. Many of these drops take only 
+This is even though the total time period is only 2 months!   
+
+Data:
+Largest drops for 6 hour window
+ window_hours  duration_hours  start_snr  end_snr  snr_drop  start_rssi  end_rssi                          start_time                            end_time
+            6        0.855948        8.8    -12.5      21.3         -92       -93 2020-03-23 03:42:21.508879900+00:00 2020-03-23 04:33:42.923039913+00:00
+            6        5.168365        7.2    -14.0      21.2         -98      -111 2020-03-04 13:05:52.675410032+00:00 2020-03-04 18:15:58.787889957+00:00
+            6        4.992473       10.0    -10.8      20.8         -82      -119 2020-05-06 09:09:14.936049938+00:00 2020-05-06 14:08:47.837399960+00:00
+            6        2.732346        8.8    -11.5      20.3         -92       -76 2020-03-19 05:52:44.052119970+00:00 2020-03-19 08:36:40.498330116+00:00
+            6        4.698036        9.8    -10.0      19.8         -98       -89 2020-03-05 00:17:19.583810091+00:00 2020-03-05 04:59:12.514699935+00:00
+            6        0.854529        9.8     -9.0      18.8         -98      -101 2020-03-05 00:17:19.583810091+00:00 2020-03-05 01:08:35.888910055+00:00
+            6        1.279991        7.0     -9.2      16.2         -97      -103 2020-03-04 11:23:28.513499975+00:00 2020-03-04 12:40:16.482039928+00:00
+            6        5.123704       10.8     -3.8      14.6         -90       -90 2020-03-12 11:54:18.914489985+00:00 2020-03-12 17:01:44.249399900+00:00
+            6        5.408737        9.8     -4.8      14.6         -84       -78 2020-03-28 07:01:38.375129938+00:00 2020-03-28 12:26:09.829010010+00:00
+            6        2.562634        8.8     -5.2      14.0         -92       -88 2020-03-23 03:42:21.508879900+00:00 2020-03-23 06:16:06.992690086+00:00
+            6        2.562501        9.8     -3.8      13.6         -91       -87 2020-03-11 00:08:46.560379982+00:00 2020-03-11 02:42:31.564549923+00:00
+            6        1.282251       11.0     -1.5      12.5         -85       -86 2020-03-30 09:11:45.345609903+00:00 2020-03-30 10:28:41.449630022+00:00
+            6        4.293732       10.0     -2.0      12.0         -82       -73 2020-05-06 09:09:14.936049938+00:00 2020-05-06 13:26:52.372200012+00:00
+            6        4.097466       11.2     -0.2      11.4         -88       -89 2020-03-18 02:41:10.362760067+00:00 2020-03-18 06:47:01.240979910+00:00
+            6        1.279693        9.8     -1.5      11.3         -91       -83 2020-03-11 00:08:46.560379982+00:00 2020-03-11 01:25:33.455240011+00:00
+            6        5.296019        9.0     -1.5      10.5         -93      -111 2020-03-06 05:11:18.172389984+00:00    2020-03-06 10:29:03.839010+00:00
+            6        2.560136       10.2      0.2      10.0         -89       -84 2020-03-13 05:01:43.278130054+00:00 2020-03-13 07:35:19.768670082+00:00
+
+Largest drops for 3 hour window
+ window_hours  duration_hours  start_snr  end_snr  snr_drop  start_rssi  end_rssi                          start_time                            end_time
+            3        1.365235       10.2    -14.5      24.7         -91       -85 2020-05-07 03:00:24.456300020+00:00 2020-05-07 04:22:19.301160097+00:00
+            3        0.683585       11.8    -10.0      21.8         -82       -87 2020-04-28 00:47:43.080039978+00:00 2020-04-28 01:28:43.984479904+00:00
+            3        0.426672        7.0    -13.2      20.2         -97       -93 2020-03-04 11:23:28.513499975+00:00 2020-03-04 11:49:04.531470059+00:00
+            3        2.135106        8.8     -9.5      18.3         -84       -86 2020-03-31 23:57:55.639009953+00:00 2020-04-01 02:06:02.021019936+00:00
+            3        2.133162       12.0     -5.5      17.5         -83       -84 2020-03-27 10:01:58.773210049+00:00 2020-03-27 12:09:58.157429934+00:00
+            3        1.406870        9.5     -6.2      15.7         -89       -80 2020-03-21 06:20:27.973469973+00:00 2020-03-21 07:44:52.704250097+00:00
+            3        0.908853       10.5     -2.2      12.7         -81       -99 2020-04-27 23:17:44.491859913+00:00 2020-04-28 00:12:16.363650084+00:00
+            3        1.365232        9.0     -3.0      12.0         -87       -93 2020-03-16 09:31:36.713710070+00:00 2020-03-16 10:53:31.547749996+00:00
+            3        2.181859        9.0     -3.0      12.0         -93       -74 2020-03-06 05:11:18.172389984+00:00 2020-03-06 07:22:12.864120007+00:00
+            3        1.280274        9.8     -2.0      11.8         -92       -93 2020-03-23 12:43:15.946190119+00:00 2020-03-23 14:00:04.933370113+00:00
+
+We can conclude, that such scenarios do happen are therefore relevant. A drop of -7dB to -13dB in SNR would result in a decrease in Datarate, by a ADR algorithm which is the foundation of this scenario. 
+
+Concretely the scenario will be a possibly repeating time interval of 1 hour. In this time interval we will force the Datarate to be 5 at the beginning and 
+
+
+0-30: 5

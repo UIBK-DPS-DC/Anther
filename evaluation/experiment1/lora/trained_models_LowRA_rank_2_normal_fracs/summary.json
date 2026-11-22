@@ -1,3 +1,212 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8ff9dd9666a753ee8152de28a051dd72f67cfe30c99107824b7f9fba30b544df
-size 7592
+{
+  "mlp": {
+    "parameters": 65472,
+    "versions": {
+      "9333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/mlp/version_0_9333.pt",
+        "val_accuracy": 0.4323708898806813,
+        "test_accuracy": 0.41520033044196614
+      },
+      "27999": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/mlp/version_1_27999.pt",
+        "val_accuracy": 0.4410237726568904,
+        "test_accuracy": 0.4204047914085089
+      },
+      "46666": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/mlp/version_2_46666.pt",
+        "val_accuracy": 0.4457600874396575,
+        "test_accuracy": 0.42387443205287073
+      },
+      "65333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/mlp/version_3_65333.pt",
+        "val_accuracy": 0.44940340650332455,
+        "test_accuracy": 0.42610491532424616
+      },
+      "93333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/mlp/version_4_93333.pt",
+        "val_accuracy": 0.45004098733946624,
+        "test_accuracy": 0.42362660057827345
+      }
+    }
+  },
+  "cnn": {
+    "parameters": 11784,
+    "versions": {
+      "9333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/cnn/version_0_9333.pt",
+        "val_accuracy": 0.3718007104472174,
+        "test_accuracy": 0.37323420074349445
+      },
+      "27999": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/cnn/version_1_27999.pt",
+        "val_accuracy": 0.43073139630203117,
+        "test_accuracy": 0.4156959933911607
+      },
+      "46666": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/cnn/version_2_46666.pt",
+        "val_accuracy": 0.4517715638947081,
+        "test_accuracy": 0.43007021891780256
+      },
+      "65333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/cnn/version_3_65333.pt",
+        "val_accuracy": 0.4626104381091174,
+        "test_accuracy": 0.4466749277158199
+      },
+      "93333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/cnn/version_4_93333.pt",
+        "val_accuracy": 0.4811913653338191,
+        "test_accuracy": 0.4645187938868236
+      }
+    }
+  },
+  "cnn1d": {
+    "parameters": 25104,
+    "versions": {
+      "9333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/cnn1d/version_0_9333.pt",
+        "val_accuracy": 0.7416886783860096,
+        "test_accuracy": 0.7209417596034696
+      },
+      "27999": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/cnn1d/version_1_27999.pt",
+        "val_accuracy": 0.7532562164131524,
+        "test_accuracy": 0.7288723667905824
+      },
+      "46666": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/cnn1d/version_2_46666.pt",
+        "val_accuracy": 0.7526186355770107,
+        "test_accuracy": 0.728211482858323
+      },
+      "65333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/cnn1d/version_3_65333.pt",
+        "val_accuracy": 0.7538937972492941,
+        "test_accuracy": 0.7297810821974391
+      },
+      "93333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/cnn1d/version_4_93333.pt",
+        "val_accuracy": 0.7538937972492941,
+        "test_accuracy": 0.7278810408921933
+      }
+    }
+  },
+  "ds_cnn": {
+    "parameters": 14080,
+    "versions": {
+      "9333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/ds_cnn/version_0_9333.pt",
+        "val_accuracy": 0.7308498041716003,
+        "test_accuracy": 0.7137546468401487
+      },
+      "27999": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/ds_cnn/version_1_27999.pt",
+        "val_accuracy": 0.7579925311959195,
+        "test_accuracy": 0.7387856257744734
+      },
+      "46666": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/ds_cnn/version_2_46666.pt",
+        "val_accuracy": 0.7682849075507787,
+        "test_accuracy": 0.7524163568773234
+      },
+      "65333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/ds_cnn/version_3_65333.pt",
+        "val_accuracy": 0.771837143637854,
+        "test_accuracy": 0.7572903758777365
+      },
+      "93333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/ds_cnn/version_4_93333.pt",
+        "val_accuracy": 0.7799435285545132,
+        "test_accuracy": 0.7633209417596035
+      }
+    }
+  },
+  "svdf": {
+    "parameters": 9786,
+    "versions": {
+      "9333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/svdf/version_0_9333.pt",
+        "val_accuracy": 0.3648784042262501,
+        "test_accuracy": 0.3480380008261049
+      },
+      "27999": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/svdf/version_1_27999.pt",
+        "val_accuracy": 0.36378540850715,
+        "test_accuracy": 0.3464684014869889
+      },
+      "46666": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/svdf/version_2_46666.pt",
+        "val_accuracy": 0.3653338191092085,
+        "test_accuracy": 0.3460553490293267
+      },
+      "65333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/svdf/version_3_65333.pt",
+        "val_accuracy": 0.36542490208580014,
+        "test_accuracy": 0.3482858323007022
+      },
+      "93333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/svdf/version_4_93333.pt",
+        "val_accuracy": 0.3660624829219419,
+        "test_accuracy": 0.34539446509706734
+      }
+    }
+  },
+  "gru": {
+    "parameters": 15296,
+    "versions": {
+      "9333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/gru/version_0_9333.pt",
+        "val_accuracy": 0.44976773840969125,
+        "test_accuracy": 0.4299049979347377
+      },
+      "27999": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/gru/version_1_27999.pt",
+        "val_accuracy": 0.47481555697240185,
+        "test_accuracy": 0.45444031391986783
+      },
+      "46666": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/gru/version_2_46666.pt",
+        "val_accuracy": 0.48064486747426904,
+        "test_accuracy": 0.45790995456422967
+      },
+      "65333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/gru/version_3_65333.pt",
+        "val_accuracy": 0.4915748246652701,
+        "test_accuracy": 0.46501445683601816
+      },
+      "93333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/gru/version_4_93333.pt",
+        "val_accuracy": 0.498314964933054,
+        "test_accuracy": 0.4794712928541925
+      }
+    }
+  },
+  "crnn": {
+    "parameters": 31082,
+    "versions": {
+      "9333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/crnn/version_0_9333.pt",
+        "val_accuracy": 0.6567993442025686,
+        "test_accuracy": 0.642792234613796
+      },
+      "27999": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/crnn/version_1_27999.pt",
+        "val_accuracy": 0.6912287093542216,
+        "test_accuracy": 0.6792234613795952
+      },
+      "46666": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/crnn/version_2_46666.pt",
+        "val_accuracy": 0.698970762364514,
+        "test_accuracy": 0.6782321354812061
+      },
+      "65333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/crnn/version_3_65333.pt",
+        "val_accuracy": 0.7036159941706895,
+        "test_accuracy": 0.6874845105328377
+      },
+      "93333": {
+        "checkpoint": "trained_models_LowRA_rank_2_normal_fracs/crnn/version_4_93333.pt",
+        "val_accuracy": 0.7061663175152564,
+        "test_accuracy": 0.6929368029739778
+      }
+    }
+  }
+}

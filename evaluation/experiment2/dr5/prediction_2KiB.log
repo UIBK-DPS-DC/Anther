@@ -1,3 +1,631 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dd24338f4e466c666b8ea80f45aaef32e437cd65a98864bdb6520a7d945260e6
-size 29439
+[RADIO] Using cached Uplink DR5 and Downlink DR5
+[FILE] 2048 bytes  │  10 chunks  │  218 B/chunk  │  CRC32=0x3ED27BE6
+[FILE] confirmed=False  enqueue_delay=0.0s
+[FILE] Chunk    1/10  218 B  (id=1d0a2c98-0fb1-42a1-b508-3fdff07b3d80)
+[FILE] Chunk    2/10  218 B  (id=8d944241-7750-469b-b966-1ce72ecfe4c9)
+[FILE] Chunk    3/10  218 B  (id=be2b28b5-0362-4463-9b28-e6222fd227dd)
+[FILE] Chunk    4/10  218 B  (id=68791865-8dcd-4ea8-92ad-abefbce83aa2)
+[FILE] Chunk    5/10  218 B  (id=49e19cc5-d25a-4db2-a31a-2cf3d74ac5b1)
+[FILE] Chunk    6/10  218 B  (id=b2ed2a5c-adcb-4b65-bd44-b4760c2ee193)
+[FILE] Chunk    7/10  218 B  (id=f8ad4e47-4e2e-428e-96fb-3377a8f0a62c)
+[FILE] Chunk    8/10  218 B  (id=f9f0a5b1-3034-471b-857d-0aafd6c84469)
+[FILE] Chunk    9/10  218 B  (id=f220c821-470b-42f8-bae1-0f1cca1718c9)
+[FILE] Chunk   10/10  86 B  (id=a6993a2a-adc7-4a52-b373-67405cd74c70)
+
+[FILE] 10 frames enqueued.
+[FILE] Queue depth now: 21
+
+  Class A estimate:
+    ~50.0s at 5.0s uplink interval  (use `set-interval` to speed up)
+  Class C estimate:
+    Depends on gateway duty cycle; typically seconds to low minutes
+
+===================================================
+Energy Model
+===================================================
+Fragments           : 10
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+Downlink Payload    : 218 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+DL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.342272 s
+P-TX/P-RX/P-Idle/P-Sleep : 1000.0/450.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1  (min legal interval: 3.423 s)
+
+Class A
+-------------------------------------------
+Latency             : 61.851 s
+Energy              : 4.595720 J
+  TX                : 1.850720 J
+  Idle              : 1.870000 J
+  RX                : 0.675000 J
+  Sleep             : 0.200000 J
+  UL interval       : 5.000 s
+  Legal w/ duty cyc : True
+
+Class C
+-------------------------------------------
+Latency             : 32.685 s
+Energy              : 14.614572 J
+  TX                : 0.185072 J
+  Idle              : 0.187000 J
+  RX                : 14.242500 J
+  Fragment interval : 3.500 s
+  Legal w/ duty cyc : True
+
+Total time: 0.11 seconds
+[RADIO] Using cached Uplink DR5 and Downlink DR5
+[FILE] 2048 bytes  │  10 chunks  │  218 B/chunk  │  CRC32=0xD34B0849
+[FILE] confirmed=False  enqueue_delay=0.0s
+[FILE] Chunk    1/10  218 B  (id=36fe7d16-5ebf-4db1-bfd8-c339458db54e)
+[FILE] Chunk    2/10  218 B  (id=afa466fe-53cf-4b08-8216-53d22a8040a7)
+[FILE] Chunk    3/10  218 B  (id=8fc2b226-abd9-4a88-9435-6fc72e41f02e)
+[FILE] Chunk    4/10  218 B  (id=df587014-8c81-4852-b8b7-02aff2b85aea)
+[FILE] Chunk    5/10  218 B  (id=2655e857-c8a2-4829-98f8-5f38b475d2ee)
+[FILE] Chunk    6/10  218 B  (id=06b65439-9831-4c8d-a816-a67deaf9f238)
+[FILE] Chunk    7/10  218 B  (id=ef94105c-6653-40fe-b7b7-f43d38510a51)
+[FILE] Chunk    8/10  218 B  (id=8f20390d-72c0-48e2-9ea5-eb141d580f6a)
+[FILE] Chunk    9/10  218 B  (id=808d5a85-7c6e-4923-89cd-f77f68ddd889)
+[FILE] Chunk   10/10  86 B  (id=d7d4a998-8cce-4668-80c7-da8336fef252)
+
+[FILE] 10 frames enqueued.
+[FILE] Queue depth now: 22
+
+  Class A estimate:
+    ~50.0s at 5.0s uplink interval  (use `set-interval` to speed up)
+  Class C estimate:
+    Depends on gateway duty cycle; typically seconds to low minutes
+
+===================================================
+Energy Model
+===================================================
+Fragments           : 10
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+Downlink Payload    : 218 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+DL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.342272 s
+P-TX/P-RX/P-Idle/P-Sleep : 1000.0/450.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1  (min legal interval: 3.423 s)
+
+Class A
+-------------------------------------------
+Latency             : 61.851 s
+Energy              : 4.595720 J
+  TX                : 1.850720 J
+  Idle              : 1.870000 J
+  RX                : 0.675000 J
+  Sleep             : 0.200000 J
+  UL interval       : 5.000 s
+  Legal w/ duty cyc : True
+
+Class C
+-------------------------------------------
+Latency             : 32.685 s
+Energy              : 14.614572 J
+  TX                : 0.185072 J
+  Idle              : 0.187000 J
+  RX                : 14.242500 J
+  Fragment interval : 3.500 s
+  Legal w/ duty cyc : True
+
+Total time: 0.12 seconds
+[RADIO] Using cached Uplink DR2 and Downlink DR2
+[FILE] 2048 bytes  │  45 chunks  │  46 B/chunk  │  CRC32=0x2F7497BF
+[FILE] confirmed=False  enqueue_delay=0.0s
+[FILE] Chunk    1/45  46 B  (id=dea5a178-0829-48b6-b8af-6d7a461af2fa)
+[FILE] Chunk    2/45  46 B  (id=0856ec23-bf16-4873-88a9-58550a61924f)
+[FILE] Chunk    3/45  46 B  (id=cbdc5c2e-d23b-4929-a66b-ac89366a71ea)
+[FILE] Chunk    4/45  46 B  (id=b5ce800f-fd02-4f62-80aa-b1650150b3dd)
+[FILE] Chunk    5/45  46 B  (id=b63eacdf-be77-46fa-b007-a5d18a837f30)
+[FILE] Chunk    6/45  46 B  (id=8bbf3533-83cd-4224-a2e5-9e3edc1fbeaa)
+[FILE] Chunk    7/45  46 B  (id=d5de00c9-e30b-4822-8b23-a2257cb98802)
+[FILE] Chunk    8/45  46 B  (id=93c55605-c795-4f47-a76e-fb1ffb5dcc35)
+[FILE] Chunk    9/45  46 B  (id=f64275d2-02f6-43dd-a71d-16e06ff88157)
+[FILE] Chunk   10/45  46 B  (id=4972e017-a019-4b32-a6cb-44d54fc7de0d)
+[FILE] Chunk   11/45  46 B  (id=f78e48f7-07c4-45e9-9c0e-b7b77614b6b0)
+[FILE] Chunk   12/45  46 B  (id=2570ce9d-c4e5-438f-8672-b3076055b92b)
+[FILE] Chunk   13/45  46 B  (id=cdd8e8bc-abbb-4969-8ef0-17f3bbe39546)
+[FILE] Chunk   14/45  46 B  (id=c47436ba-6f55-43da-b047-8742177e5e89)
+[FILE] Chunk   15/45  46 B  (id=7c7c204a-447c-4f1a-b28d-4b183df9ff2d)
+[FILE] Chunk   16/45  46 B  (id=5bbaac10-7b0f-4289-968e-f6c7cdcaf54b)
+[FILE] Chunk   17/45  46 B  (id=ad09362a-78ac-4506-a36d-522d32d06ab4)
+[FILE] Chunk   18/45  46 B  (id=7e96f9f6-1cc8-4a0b-88fa-718f3219634c)
+[FILE] Chunk   19/45  46 B  (id=cf92ab15-aaad-4207-868d-bac1220ca5d7)
+[FILE] Chunk   20/45  46 B  (id=d1cb1727-89b0-420e-a8e5-13316cc97c00)
+[FILE] Chunk   21/45  46 B  (id=a8032d4e-b0b5-4aa9-9362-0721c6c73794)
+[FILE] Chunk   22/45  46 B  (id=2dee3aac-acd0-495a-9d38-8df9aae8a10d)
+[FILE] Chunk   23/45  46 B  (id=e11cd17f-e6aa-4d76-985a-e0c7869415ed)
+[FILE] Chunk   24/45  46 B  (id=e34a4f9d-d48a-411e-a0af-307ad5e16329)
+[FILE] Chunk   25/45  46 B  (id=fda68cc0-9945-4f14-9689-a23b2dceca9a)
+[FILE] Chunk   26/45  46 B  (id=3b978ae6-4d3e-4f56-acac-52bc8f808bf3)
+[FILE] Chunk   27/45  46 B  (id=2545be3e-a66a-40b0-a9d8-79e7598c74b7)
+[FILE] Chunk   28/45  46 B  (id=33976b8e-291e-463c-a66f-70e3292e5bed)
+[FILE] Chunk   29/45  46 B  (id=ff7e2db7-2deb-4717-84c8-113df052ebb9)
+[FILE] Chunk   30/45  46 B  (id=7133d0b5-0fb1-436b-b838-ac8f242132b7)
+[FILE] Chunk   31/45  46 B  (id=58af1587-562d-4aa3-a79d-e05e25f98b69)
+[FILE] Chunk   32/45  46 B  (id=2ac3c358-a68e-4e78-a0f5-1cc9d1e8b2c4)
+[FILE] Chunk   33/45  46 B  (id=002f4cba-0e55-4aa9-a4b9-4c3fd159256e)
+[FILE] Chunk   34/45  46 B  (id=ab609137-a945-48c3-a4ce-716c18c4735b)
+[FILE] Chunk   35/45  46 B  (id=92a6b921-b5e5-4216-bb61-0ad3dcc4d661)
+[FILE] Chunk   36/45  46 B  (id=f641d724-2c7f-4e73-9416-ddb29e9446c3)
+[FILE] Chunk   37/45  46 B  (id=10f6f12d-14cc-4a63-bf76-df0d1c630125)
+[FILE] Chunk   38/45  46 B  (id=fc6ff437-6649-4b11-86f4-b41ed97a9530)
+[FILE] Chunk   39/45  46 B  (id=7e6eca56-7e09-49ef-b5f6-20336d7ad89c)
+[FILE] Chunk   40/45  46 B  (id=89fcc20d-6ad0-4112-82cd-3520ea132901)
+[FILE] Chunk   41/45  46 B  (id=89606742-77e5-4bc8-91e1-7b8ed676ba77)
+[FILE] Chunk   42/45  46 B  (id=d02b7042-eab5-4b6d-b674-5a414da340ed)
+[FILE] Chunk   43/45  46 B  (id=9e70446e-9330-47d2-9b02-728aa3c4de08)
+[FILE] Chunk   44/45  46 B  (id=18b1428c-a7e5-40d0-8e90-13b67a4009fe)
+[FILE] Chunk   45/45  24 B  (id=c6c07e1a-59b6-4289-a702-a3334ff8b73f)
+
+[FILE] 45 frames enqueued.
+[FILE] Queue depth now: 93
+
+  Class A estimate:
+    ~1080.0s at 24.0s uplink interval  (use `set-interval` to speed up)
+  Class C estimate:
+    Depends on gateway duty cycle; typically seconds to low minutes
+
+===================================================
+Energy Model
+===================================================
+Fragments           : 45
+Uplink Payload      : 5 B (DR2 cap: 51 B)
+Downlink Payload    : 46 B (DR2 cap: 51 B)
+UL DR / SF          : 2 / 10
+DL DR / SF          : 2 / 10
+UL Time On Air      : 0.239616 s
+DL Time On Air      : 0.567296 s
+P-TX/P-RX/P-Idle/P-Sleep : 1000.0/450.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 23.962 s)
+DL Duty-Cycle       : 0.1  (min legal interval: 5.673 s)
+
+Class A
+-------------------------------------------
+Latency             : 1142.533 s
+Energy              : 33.305220 J
+  TX                : 17.532720 J
+  Idle              : 8.415000 J
+  RX                : 3.037500 J
+  Sleep             : 4.320000 J
+  UL interval       : 24.000 s
+  Legal w/ duty cyc : True
+
+Class C
+-------------------------------------------
+Latency             : 309.390 s
+Energy              : 139.244116 J
+  TX                : 0.389616 J
+  Idle              : 0.187000 J
+  RX                : 138.667500 J
+  Fragment interval : 7.000 s
+  Legal w/ duty cyc : True
+
+Recommendation (relative utility, lambda=0.50)
+-------------------------------------------
+Energy ratio  A / best : 1.000
+Energy ratio  C / best : 4.181
+Latency ratio A / best : 3.693
+Latency ratio C / best : 1.000
+Utility A              : 0.520378
+Utility C              : 0.489066
+Best class             : A
+
+Total time: 0.37 seconds
+[RADIO] Using cached Uplink DR2 and Downlink DR2
+[FILE] 2048 bytes  │  45 chunks  │  46 B/chunk  │  CRC32=0x4B3C80CE
+[FILE] confirmed=False  enqueue_delay=0.0s
+[FILE] Chunk    1/45  46 B  (id=3adaf87a-ddaa-4bb4-8689-54969927d1b4)
+[FILE] Chunk    2/45  46 B  (id=08e929ea-2c61-4068-a1ee-55f0a794a599)
+[FILE] Chunk    3/45  46 B  (id=5386663a-8654-4fb0-bc51-28ad1b7d4a0d)
+[FILE] Chunk    4/45  46 B  (id=d8d7d5be-5bf9-46b1-b4ce-0ebb80df544b)
+[FILE] Chunk    5/45  46 B  (id=2286e1e2-798e-4393-a249-c75a99b336b5)
+[FILE] Chunk    6/45  46 B  (id=0ac33b2d-fe3c-4887-a547-3d207ad58144)
+[FILE] Chunk    7/45  46 B  (id=d61a9607-d4e3-4131-b5b7-74d8497636e4)
+[FILE] Chunk    8/45  46 B  (id=666f6b49-c482-4dd5-b5bb-a5e7a545519d)
+[FILE] Chunk    9/45  46 B  (id=06ab622f-1862-4b8c-b328-9b9764f69028)
+[FILE] Chunk   10/45  46 B  (id=b6c54341-5dfd-461b-a249-1d614578bb51)
+[FILE] Chunk   11/45  46 B  (id=a7946aea-dbb1-4775-9cac-9074f66aa875)
+[FILE] Chunk   12/45  46 B  (id=d9ad14e5-7bfd-4e65-a96b-224ae2a75496)
+[FILE] Chunk   13/45  46 B  (id=c7b1300a-fbcd-4c2d-a612-52e6d1781cad)
+[FILE] Chunk   14/45  46 B  (id=56b0918e-e9ce-4644-bd06-a3c303b45feb)
+[FILE] Chunk   15/45  46 B  (id=c7289ab6-332a-4939-a647-c2f240ced2f1)
+[FILE] Chunk   16/45  46 B  (id=3422c3ae-dbea-4cf4-add4-9a246021d54e)
+[FILE] Chunk   17/45  46 B  (id=57321446-662d-42e3-949b-cd6b6b10e216)
+[FILE] Chunk   18/45  46 B  (id=a439f4b8-6166-4eac-9019-31ca4606e48a)
+[FILE] Chunk   19/45  46 B  (id=01c1b1fe-ec75-4bcc-be64-91ece0f99860)
+[FILE] Chunk   20/45  46 B  (id=330e9926-784c-4d3c-88f4-015b4114cf4d)
+[FILE] Chunk   21/45  46 B  (id=fc223555-ff17-4c56-8837-a898c3807488)
+[FILE] Chunk   22/45  46 B  (id=103308f9-4130-4067-9f99-597f494bb45a)
+[FILE] Chunk   23/45  46 B  (id=fc0b4513-3f2d-499d-96c8-d67e81a7b80b)
+[FILE] Chunk   24/45  46 B  (id=47156d15-26a2-4ba0-918f-448f3cdfe50e)
+[FILE] Chunk   25/45  46 B  (id=70db9dd4-6b70-42e7-9a0a-1c1ae1c97e7f)
+[FILE] Chunk   26/45  46 B  (id=829a39f2-fb47-4178-89e5-3c5aa18157d1)
+[FILE] Chunk   27/45  46 B  (id=21f02f33-b4c6-47f7-b8f2-6bdc058e2eec)
+[FILE] Chunk   28/45  46 B  (id=0842173a-8f63-4e9d-b6a2-09c0fa87a793)
+[FILE] Chunk   29/45  46 B  (id=6ece31c4-05e7-4012-a79a-fe9a457727f3)
+[FILE] Chunk   30/45  46 B  (id=047d6ea7-912e-4455-baa1-9d90af92a829)
+[FILE] Chunk   31/45  46 B  (id=e9f6dcbc-802e-4b21-bbcb-a4e53e3e5fc8)
+[FILE] Chunk   32/45  46 B  (id=81e7b20b-f0c6-4965-9bc6-aa3d82924613)
+[FILE] Chunk   33/45  46 B  (id=1139907b-9b20-4cdd-9807-52073d062039)
+[FILE] Chunk   34/45  46 B  (id=10f81c2c-8a1a-412d-9716-01d531c1ab21)
+[FILE] Chunk   35/45  46 B  (id=67971c46-49b3-44e1-99d1-b4dcdf96abb1)
+[FILE] Chunk   36/45  46 B  (id=e322cb25-78c0-4d7e-bc82-fe5ee340152f)
+[FILE] Chunk   37/45  46 B  (id=0bc16c57-6900-4da4-b0b9-d18da0d1ed36)
+[FILE] Chunk   38/45  46 B  (id=ec0c5af7-8f54-4793-ab14-13798b66ff1f)
+[FILE] Chunk   39/45  46 B  (id=4cc75181-12aa-4fe8-9ea2-c14594623051)
+[FILE] Chunk   40/45  46 B  (id=a0a647f3-8694-49a8-b86d-821ef91f6674)
+[FILE] Chunk   41/45  46 B  (id=c5187a0d-8b7e-42a0-90d8-c543e7f5f224)
+[FILE] Chunk   42/45  46 B  (id=0d335e44-34a9-4ece-b346-f9dc93c8b793)
+[FILE] Chunk   43/45  46 B  (id=e938426b-9a05-402b-9554-825562b04a2c)
+[FILE] Chunk   44/45  46 B  (id=6560704c-9b3e-41b5-9be3-5c03291c4610)
+[FILE] Chunk   45/45  24 B  (id=4cdfcd3e-8d08-48f8-8fa9-0aa46be913d1)
+
+[FILE] 45 frames enqueued.
+[FILE] Queue depth now: 235
+
+  Class A estimate:
+    ~1080.0s at 24.0s uplink interval  (use `set-interval` to speed up)
+  Class C estimate:
+    Depends on gateway duty cycle; typically seconds to low minutes
+
+===================================================
+Energy Model
+===================================================
+Fragments           : 45
+Uplink Payload      : 5 B (DR2 cap: 51 B)
+Downlink Payload    : 46 B (DR2 cap: 51 B)
+UL DR / SF          : 2 / 10
+DL DR / SF          : 2 / 10
+UL Time On Air      : 0.239616 s
+DL Time On Air      : 0.567296 s
+P-TX/P-RX/P-Idle/P-Sleep : 1000.0/450.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 23.962 s)
+DL Duty-Cycle       : 0.1  (min legal interval: 5.673 s)
+
+Class A
+-------------------------------------------
+Latency             : 1142.533 s
+Energy              : 33.305220 J
+  TX                : 17.532720 J
+  Idle              : 8.415000 J
+  RX                : 3.037500 J
+  Sleep             : 4.320000 J
+  UL interval       : 24.000 s
+  Legal w/ duty cyc : True
+
+Class C
+-------------------------------------------
+Latency             : 309.390 s
+Energy              : 139.244116 J
+  TX                : 0.389616 J
+  Idle              : 0.187000 J
+  RX                : 138.667500 J
+  Fragment interval : 7.000 s
+  Legal w/ duty cyc : True
+
+Recommendation (relative utility, lambda=0.50)
+-------------------------------------------
+Energy ratio  A / best : 1.000
+Energy ratio  C / best : 4.181
+Latency ratio A / best : 3.693
+Latency ratio C / best : 1.000
+Utility A              : 0.520378
+Utility C              : 0.489066
+Best class             : A
+
+Total time: 0.37 seconds
+[RADIO] Using cached Uplink DR5 and Downlink DR5
+[FILE] 2048 bytes  │  45 chunks  │  46 B/chunk  │  CRC32=0xDF70AED7
+[FILE] confirmed=False  enqueue_delay=0.0s
+[FILE] Chunk    1/45  46 B  (id=9fb384b8-2854-4deb-8772-6091aedcebdd)
+[FILE] Chunk    2/45  46 B  (id=abdd0807-11a8-491e-a676-dc4c312d6079)
+[FILE] Chunk    3/45  46 B  (id=6112e2dc-d56b-4c51-9d61-1f1af76fd2f0)
+[FILE] Chunk    4/45  46 B  (id=f675235f-48e7-47ff-9e28-117de1536eed)
+[FILE] Chunk    5/45  46 B  (id=4d821a46-cbd6-434f-b62b-e9e0125fe8b1)
+[FILE] Chunk    6/45  46 B  (id=185cbc2d-3a55-4147-b081-70068dfd068b)
+[FILE] Chunk    7/45  46 B  (id=45ec0634-36b0-404b-92a6-f93cd694c463)
+[FILE] Chunk    8/45  46 B  (id=bbc1bcb3-2226-43d5-9cf8-75acef49a50b)
+[FILE] Chunk    9/45  46 B  (id=ff862895-1a5d-41cb-9b8d-3377b5728ffe)
+[FILE] Chunk   10/45  46 B  (id=b2f2d38f-1442-469d-9566-d67ecf638ee6)
+[FILE] Chunk   11/45  46 B  (id=906edaaa-5abe-4c9e-b85e-ece68901ee7c)
+[FILE] Chunk   12/45  46 B  (id=a2cc7d19-be04-4f55-9ad1-1b8ecb826982)
+[FILE] Chunk   13/45  46 B  (id=2897296b-5bee-4173-b403-30edebf63c73)
+[FILE] Chunk   14/45  46 B  (id=db10f42c-46b0-49ac-8fe2-68d05f7f4fe1)
+[FILE] Chunk   15/45  46 B  (id=d2e5707f-8036-4313-a8fd-f761958eaf8e)
+[FILE] Chunk   16/45  46 B  (id=cd3ee3ef-ce0e-4d8f-9b4a-0302ad1e4ca9)
+[FILE] Chunk   17/45  46 B  (id=8baa5051-14b7-43c1-86d7-ef92079c363c)
+[FILE] Chunk   18/45  46 B  (id=ec9acf21-899f-4c8c-a410-06c1d0420e9c)
+[FILE] Chunk   19/45  46 B  (id=89bee93c-2238-4f53-9f51-53aa7b29a56e)
+[FILE] Chunk   20/45  46 B  (id=5e068b59-c041-4aa4-a058-0e49b6a54228)
+[FILE] Chunk   21/45  46 B  (id=917b3ff6-0dd8-43a3-81b9-adee2bb175de)
+[FILE] Chunk   22/45  46 B  (id=4594fe26-863f-472e-b223-596a55ce6a98)
+[FILE] Chunk   23/45  46 B  (id=cdbcfe78-616a-4975-a0a4-7ab9c2de4df5)
+[FILE] Chunk   24/45  46 B  (id=82be8ddf-d768-49fc-80e7-3a12ef47ec63)
+[FILE] Chunk   25/45  46 B  (id=b3ef574e-df2e-416f-a8a9-f4c2736ac337)
+[FILE] Chunk   26/45  46 B  (id=8c193182-c366-4249-96e6-61694d9e0ae4)
+[FILE] Chunk   27/45  46 B  (id=760c44c0-02a9-41d8-a115-131b5c4b412c)
+[FILE] Chunk   28/45  46 B  (id=676f676f-bb19-48ef-a679-cb3a63e73c18)
+[FILE] Chunk   29/45  46 B  (id=84118bf2-38a5-4260-991c-07f8150d97ba)
+[FILE] Chunk   30/45  46 B  (id=87d31235-658d-47c6-8eb4-2b19835ecfa5)
+[FILE] Chunk   31/45  46 B  (id=10306f6e-e038-4643-9a25-29236d6fcf5f)
+[FILE] Chunk   32/45  46 B  (id=fb5c84d7-350c-41c5-904a-70536b43fca6)
+[FILE] Chunk   33/45  46 B  (id=2cbac1d9-6d8c-4f4b-86f4-cf0916118db3)
+[FILE] Chunk   34/45  46 B  (id=13035a29-0fbd-4907-a73a-0495fb39a7db)
+[FILE] Chunk   35/45  46 B  (id=a6da431d-a468-4ce8-a9a8-10d847172792)
+[FILE] Chunk   36/45  46 B  (id=190d65d4-1888-44b7-b009-3cb04a297437)
+[FILE] Chunk   37/45  46 B  (id=9298b7f7-3a01-4daf-8cf4-3a75394d8fcc)
+[FILE] Chunk   38/45  46 B  (id=0a0be86b-664a-4469-b69f-15a1d95aadfe)
+[FILE] Chunk   39/45  46 B  (id=a8daff2b-bcc8-4456-a57a-bea50d157023)
+[FILE] Chunk   40/45  46 B  (id=241c54d9-76b6-4be7-8e58-979d29526e18)
+[FILE] Chunk   41/45  46 B  (id=b881bdd8-9d43-412c-a86e-28c164088052)
+[FILE] Chunk   42/45  46 B  (id=53df798f-f58b-4fe2-a1b0-1c3a7838f1b0)
+[FILE] Chunk   43/45  46 B  (id=08a911e5-c81d-4466-883e-1352024319e1)
+[FILE] Chunk   44/45  46 B  (id=231b13f1-43cc-43f0-8058-2ab6d59fe42d)
+[FILE] Chunk   45/45  24 B  (id=e05feb5f-67e9-4289-bedf-cbfd091d1465)
+
+[FILE] 45 frames enqueued.
+[FILE] Queue depth now: 93
+
+  Class A estimate:
+    ~1080s at 24s uplink interval  (use `set-interval` to speed up)
+  Class C estimate:
+    Depends on gateway duty cycle; typically seconds to low minutes
+
+===================================================
+Energy Model
+===================================================
+Fragments           : 28
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+Downlink Payload    : 46 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+DL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.091392 s
+P-TX/P-RX/P-Idle/P-Sleep : 1000.0/450.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1  (min legal interval: 0.914 s)
+
+Class A
+-------------------------------------------
+Latency             : 705.182 s
+Energy              : 14.996016 J
+  TX                : 5.182016 J
+  Idle              : 5.236000 J
+  RX                : 1.890000 J
+  Sleep             : 2.688000 J
+  UL interval       : 24.000 s
+  Legal w/ duty cyc : True
+
+Class C
+-------------------------------------------
+Latency             : 190.185 s
+Energy              : 85.489572 J
+  TX                : 0.185072 J
+  Idle              : 0.187000 J
+  RX                : 85.117500 J
+  Fragment interval : 7.000 s
+  Legal w/ duty cyc : True
+
+Recommendation (relative utility, lambda=0.50)
+-------------------------------------------
+Energy ratio  A / best : 1.000
+Energy ratio  C / best : 5.701
+Latency ratio A / best : 3.708
+Latency ratio C / best : 1.000
+Utility A              : 0.519323
+Utility C              : 0.418824
+Best class             : A
+
+Total time: 0.40 seconds
+[RADIO] Using cached Uplink DR5 and Downlink DR5
+[FILE] 2048 bytes  │  45 chunks  │  46 B/chunk  │  CRC32=0x62FDDEB2
+[FILE] confirmed=False  enqueue_delay=0.0s
+[FILE] Chunk    1/45  46 B  (id=d6044849-2391-4d8f-a8c2-35b328d7dc21)
+[FILE] Chunk    2/45  46 B  (id=a8d60ead-134a-4679-8b5f-962b205ab499)
+[FILE] Chunk    3/45  46 B  (id=1ab56702-16fa-469d-8add-bfab95e41a40)
+[FILE] Chunk    4/45  46 B  (id=f573867f-6e89-497e-a0fa-3821d673d211)
+[FILE] Chunk    5/45  46 B  (id=5ff5764a-7eab-4c1f-8097-15d7ccba8c92)
+[FILE] Chunk    6/45  46 B  (id=9a59c746-9251-4af1-b857-f17c857d9a23)
+[FILE] Chunk    7/45  46 B  (id=0dd5a80c-d3a4-4c51-b907-321ad365d3bb)
+[FILE] Chunk    8/45  46 B  (id=010655b9-e42d-4289-90dc-f4c6655f0cc4)
+[FILE] Chunk    9/45  46 B  (id=e0c57b2a-201b-4437-850d-662c8c971be2)
+[FILE] Chunk   10/45  46 B  (id=f79277d5-1199-4dec-b03a-c2880888ea36)
+[FILE] Chunk   11/45  46 B  (id=cf92c642-85a0-4c31-8e0f-f31f926edcc9)
+[FILE] Chunk   12/45  46 B  (id=b95b1473-3544-47be-be45-ac35b913c057)
+[FILE] Chunk   13/45  46 B  (id=f1790934-8975-4a2c-8ede-ad31f6383a4b)
+[FILE] Chunk   14/45  46 B  (id=f160419f-0670-4175-a7c0-03779359492f)
+[FILE] Chunk   15/45  46 B  (id=ba32f3de-f501-42ae-98c3-6a7ebc753c0f)
+[FILE] Chunk   16/45  46 B  (id=39681025-c91d-41db-810c-d25518c674ad)
+[FILE] Chunk   17/45  46 B  (id=b6b1a3ba-c4a1-4fdd-8335-e3b17a36878c)
+[FILE] Chunk   18/45  46 B  (id=f00b6288-2b7f-495b-acf3-da1a26af89c7)
+[FILE] Chunk   19/45  46 B  (id=4b5bb4da-c9b0-4291-8c71-90b081b95c3f)
+[FILE] Chunk   20/45  46 B  (id=59748ceb-b942-4b98-b079-f4d9fcbc7860)
+[FILE] Chunk   21/45  46 B  (id=8a619d94-6ee3-49e1-8fb6-12fbd400f034)
+[FILE] Chunk   22/45  46 B  (id=de70dbf2-85f4-4162-bd3f-72994f66b80f)
+[FILE] Chunk   23/45  46 B  (id=49870265-c9ec-4f2f-a7b8-15c60a3b8549)
+[FILE] Chunk   24/45  46 B  (id=9fc949b4-19a1-4d08-b658-e3bc78e28b79)
+[FILE] Chunk   25/45  46 B  (id=25e62187-6de5-4134-94b4-9866211ea51b)
+[FILE] Chunk   26/45  46 B  (id=6441fba1-1749-4bf5-a081-ad5cf72f6b22)
+[FILE] Chunk   27/45  46 B  (id=6211557a-f463-40c8-89ff-39a3f23f9422)
+[FILE] Chunk   28/45  46 B  (id=b30f1199-85d1-4202-b7ff-1c4fcbf6b8bb)
+[FILE] Chunk   29/45  46 B  (id=60b86612-f73e-4183-8151-5f4c25c47c59)
+[FILE] Chunk   30/45  46 B  (id=b45ed567-935e-4ca9-bcd8-10c83a0d2279)
+[FILE] Chunk   31/45  46 B  (id=9c52c179-22a9-4e2f-b788-e7fd904f59a6)
+[FILE] Chunk   32/45  46 B  (id=6990bec3-2c64-48ff-a49a-2b4d736fe87b)
+[FILE] Chunk   33/45  46 B  (id=5c03f978-d5d0-43da-bc29-48698e39489a)
+[FILE] Chunk   34/45  46 B  (id=11c5b28a-f125-415c-a03b-490f1f66ca5d)
+[FILE] Chunk   35/45  46 B  (id=0cd2b36a-3171-4fb7-b122-666a68fbf61f)
+[FILE] Chunk   36/45  46 B  (id=0000b8be-b9ff-49ca-886b-f8edb55d222f)
+[FILE] Chunk   37/45  46 B  (id=fd9b1394-4168-4114-b906-05a64a0c4c1d)
+[FILE] Chunk   38/45  46 B  (id=06d03f68-b694-4873-a38d-a363457abf84)
+[FILE] Chunk   39/45  46 B  (id=cec8bc5a-b298-43c6-a7f7-321150556277)
+[FILE] Chunk   40/45  46 B  (id=bbddb733-2add-4fe9-907d-d9a88b0ad004)
+[FILE] Chunk   41/45  46 B  (id=d4550b55-23e5-42a7-84fc-01ab46ad5683)
+[FILE] Chunk   42/45  46 B  (id=15b27a55-d5ca-4e6f-80d7-2ea68b3e743d)
+[FILE] Chunk   43/45  46 B  (id=c0053f1a-eaa3-4a85-bffa-e0937ebcb4bf)
+[FILE] Chunk   44/45  46 B  (id=280ffc7e-8335-43d6-88ba-99a0b3858d49)
+[FILE] Chunk   45/45  24 B  (id=2926559f-67c6-40c4-9bdd-672c310308fe)
+
+[FILE] 45 frames enqueued.
+[FILE] Queue depth now: 94
+
+  Class A estimate:
+    ~1080s at 24s uplink interval  (use `set-interval` to speed up)
+  Class C estimate:
+    Depends on gateway duty cycle; typically seconds to low minutes
+
+===================================================
+Energy Model
+===================================================
+Fragments           : 28
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+Downlink Payload    : 46 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+DL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.091392 s
+P-TX/P-RX/P-Idle/P-Sleep : 1000.0/450.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1  (min legal interval: 0.914 s)
+
+Class A
+-------------------------------------------
+Latency             : 705.182 s
+Energy              : 14.996016 J
+  TX                : 5.182016 J
+  Idle              : 5.236000 J
+  RX                : 1.890000 J
+  Sleep             : 2.688000 J
+  UL interval       : 24.000 s
+  Legal w/ duty cyc : True
+
+Class C
+-------------------------------------------
+Latency             : 190.185 s
+Energy              : 85.489572 J
+  TX                : 0.185072 J
+  Idle              : 0.187000 J
+  RX                : 85.117500 J
+  Fragment interval : 7.000 s
+  Legal w/ duty cyc : True
+
+Recommendation (relative utility, lambda=0.50)
+-------------------------------------------
+Energy ratio  A / best : 1.000
+Energy ratio  C / best : 5.701
+Latency ratio A / best : 3.708
+Latency ratio C / best : 1.000
+Utility A              : 0.519323
+Utility C              : 0.418824
+Best class             : A
+
+Total time: 0.38 seconds
+[RADIO] Using cached Uplink DR5 and Downlink DR5
+[FILE] 2048 bytes  │  45 chunks  │  46 B/chunk  │  CRC32=0x0CCF36E3
+[FILE] confirmed=False  enqueue_delay=0.0s
+[FILE] Chunk    1/45  46 B  (id=cf80fe78-793a-47f1-8c3b-77ba4470d53c)
+[FILE] Chunk    2/45  46 B  (id=5f0f9fa1-e6c5-4b88-9dc5-59f18c226ea2)
+[FILE] Chunk    3/45  46 B  (id=bd3c2af2-073e-4218-88d9-0ad51c07174c)
+[FILE] Chunk    4/45  46 B  (id=7da2ea52-fb30-431f-b10e-5ef6b5e4ff53)
+[FILE] Chunk    5/45  46 B  (id=21b6b55f-90f3-4df5-b71e-ed7926f0f08f)
+[FILE] Chunk    6/45  46 B  (id=911360f2-a43e-426f-b7bd-f3e8e2852428)
+[FILE] Chunk    7/45  46 B  (id=cf70c3bb-f584-4d0a-821a-5be26db62fcb)
+[FILE] Chunk    8/45  46 B  (id=2ec19a92-f239-4009-8fbf-467f692d9b2e)
+[FILE] Chunk    9/45  46 B  (id=28d23c7c-4c6b-4e2d-8636-500ee2d40a7c)
+[FILE] Chunk   10/45  46 B  (id=95bf70de-04d2-4572-84fe-b4894f9ff028)
+[FILE] Chunk   11/45  46 B  (id=05314f37-aa3d-4ea7-b6a2-eaab20d2f335)
+[FILE] Chunk   12/45  46 B  (id=4032ef49-eeb3-4b94-9b5f-9838bf3a1074)
+[FILE] Chunk   13/45  46 B  (id=7a973a76-e067-4ae8-b51a-8d721b514930)
+[FILE] Chunk   14/45  46 B  (id=203ce443-cb5f-4cc4-8c9e-7a0d3a5fef34)
+[FILE] Chunk   15/45  46 B  (id=bf3ac597-f421-4bc8-bd47-d77c2fe01549)
+[FILE] Chunk   16/45  46 B  (id=4bdd3256-3e19-4df5-9c11-d3c93b856b29)
+[FILE] Chunk   17/45  46 B  (id=db26c25b-ed7c-4baf-b078-511c529a2ac8)
+[FILE] Chunk   18/45  46 B  (id=6e7f9b64-0c6b-4ee9-8447-10371cdb1e8e)
+[FILE] Chunk   19/45  46 B  (id=b45c6d8e-6881-4102-a54c-7820bcc90c46)
+[FILE] Chunk   20/45  46 B  (id=c44f718a-382e-46ed-a880-9003d87eb763)
+[FILE] Chunk   21/45  46 B  (id=c0561a80-3bb5-4ece-8b60-206e861e2c9c)
+[FILE] Chunk   22/45  46 B  (id=7801845d-bc34-4c2a-9aca-9fee72a7fbf9)
+[FILE] Chunk   23/45  46 B  (id=8c01796d-1f87-4d22-87eb-42f9c3f183b4)
+[FILE] Chunk   24/45  46 B  (id=d17193ed-3bf5-4c20-9e26-fb9ed5a00ded)
+[FILE] Chunk   25/45  46 B  (id=5bd6d31c-04dc-4c74-b26a-abae88cfe46a)
+[FILE] Chunk   26/45  46 B  (id=eabe3fb9-c765-4881-98ad-4def2cddb0c0)
+[FILE] Chunk   27/45  46 B  (id=90402c87-1c77-4a7f-9ecc-90f85e49653a)
+[FILE] Chunk   28/45  46 B  (id=382eca86-9ee9-428b-9c20-552160ad3dfe)
+[FILE] Chunk   29/45  46 B  (id=05f4c14b-9ac7-4d94-8bdb-2519fdc85611)
+[FILE] Chunk   30/45  46 B  (id=d82f4757-e855-4ccc-bf0e-2fb9686dad1b)
+[FILE] Chunk   31/45  46 B  (id=85c6be33-b623-4cbe-8d3b-ca422e324fa5)
+[FILE] Chunk   32/45  46 B  (id=dba08eab-b2b8-403b-9843-17ba879c4bf3)
+[FILE] Chunk   33/45  46 B  (id=b59ca9a4-233a-437a-b476-ea4a4bd15aaa)
+[FILE] Chunk   34/45  46 B  (id=f9908de4-10d2-49c7-8733-9a41015be85b)
+[FILE] Chunk   35/45  46 B  (id=5a370d69-c13a-4727-920a-873f46315513)
+[FILE] Chunk   36/45  46 B  (id=84d3cb5f-eecf-4721-bc29-c93540a79818)
+[FILE] Chunk   37/45  46 B  (id=0f59c1eb-6c40-4cf3-a4f2-abc1b4c488be)
+[FILE] Chunk   38/45  46 B  (id=20320a4b-cefc-4d7e-a6a2-e3094ca5d6bb)
+[FILE] Chunk   39/45  46 B  (id=8de0575e-e5d6-45f6-8784-f9a551e78539)
+[FILE] Chunk   40/45  46 B  (id=49bd9c4c-2688-4647-b309-766d2c1357a9)
+[FILE] Chunk   41/45  46 B  (id=fe1d22e1-a8e1-4927-96a4-7b4872382855)
+[FILE] Chunk   42/45  46 B  (id=994bc4c6-bee9-4cd6-8ffb-bff9816be5c2)
+[FILE] Chunk   43/45  46 B  (id=af6ee159-9f3b-4fba-8277-434d2b3a9e8b)
+[FILE] Chunk   44/45  46 B  (id=407d1e5c-fece-464f-97df-67ad2e72798e)
+[FILE] Chunk   45/45  24 B  (id=0d1448f5-f45e-4a7d-b8ec-89841168895b)
+
+[FILE] 45 frames enqueued.
+[FILE] Queue depth now: 94
+
+  Class A estimate:
+    ~225.0s at 5.0s uplink interval  (use `set-interval` to speed up)
+  Class C estimate:
+    Depends on gateway duty cycle; typically seconds to low minutes
+
+===================================================
+Energy Model
+===================================================
+Fragments           : 5
+Uplink Payload      : 5 B (DR5 cap: 222 B)
+Downlink Payload    : 218 B (DR5 cap: 222 B)
+UL DR / SF          : 5 / 7
+DL DR / SF          : 5 / 7
+UL Time On Air      : 0.035072 s
+DL Time On Air      : 0.342272 s
+P-TX/P-RX/P-Idle/P-Sleep : 1000.0/450.0/220.0/4.0 mW
+UL Duty-Cycle       : 0.01  (min legal interval: 3.507 s)
+DL Duty-Cycle       : 0.1  (min legal interval: 3.423 s)
+
+Class A
+-------------------------------------------
+Latency             : 30.925 s
+Energy              : 2.297860 J
+  TX                : 0.925360 J
+  Idle              : 0.935000 J
+  RX                : 0.337500 J
+  Sleep             : 0.100000 J
+  UL interval       : 5.000 s
+  Legal w/ duty cyc : True
+
+Class C
+-------------------------------------------
+Latency             : 15.185 s
+Energy              : 6.739572 J
+  TX                : 0.185072 J
+  Idle              : 0.187000 J
+  RX                : 6.367500 J
+  Fragment interval : 3.500 s
+  Legal w/ duty cyc : True
+
+Recommendation (relative utility, lambda=0.50)
+-------------------------------------------
+Energy ratio  A / best : 1.000
+Energy ratio  C / best : 2.933
+Latency ratio A / best : 2.037
+Latency ratio C / best : 1.000
+Utility A              : 0.700731
+Utility C              : 0.583910
+Best class             : A
+
+Total time: 0.36 seconds
